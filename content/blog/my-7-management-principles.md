@@ -1,14 +1,14 @@
 ---
-title: "My 7 Principles of Management"
+title: "My 7 Management Principles"
 date: 2018-05-01T20:00:00+00:00
 draft: false
 tags: ["management"]
 author: "Pedro Lopez"
 ---
 
-![image](/images/my-7-principles-of-management.jpg)
+![image](/images/my-7-management-principles.jpg)
 
-As a manager I like to follow what I call "my 7 principles of management" when I work with my team. Sometimes we find ourselves overwhelmed and under pressure. Having a set of clear principles that are easy to remember can help us, managers, get back on track quickly. Mine are based on my own experience and have helped me in the past in numerous occasions.
+As a manager I like to follow what I call "my 7 management principles" when I work with my team. Sometimes we find ourselves overwhelmed and under pressure. Having a set of clear principles that are easy to remember can help us, managers, get back on track quickly. Mine are based on my own experience and have helped me in the past in numerous occasions.
 
  The 7 principles are the following.
 
