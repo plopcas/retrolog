@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Retrolog.io</title>
+    <link>https://retrolog.io/tags/software/</link>
+    <description>Recent content in software on Retrolog.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 04 Nov 2018 20:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://retrolog.io/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Pragmatic Approach to System Design</title>
+      <link>https://retrolog.io/blog/a-pragmatic-approach-to-system-design/</link>
+      <pubDate>Sun, 04 Nov 2018 20:00:00 +0000</pubDate>
+      
+      <guid>https://retrolog.io/blog/a-pragmatic-approach-to-system-design/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-system-design.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Designing a new system is not an easy task. In this post I will introduce a pragmatic approach to system design that will help you tackle any system in a repeatable and consistent way.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+baseURL = "https://retrolog.io/"
+languageCode = "en-gb"
+title = "Retrolog.io"
+
+theme = "papaya"
+
+[taxonomies]
+  tag = "tags"
+
+# The value of pre is the icon name in https://feathericons.com/
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    pre = "edit"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    pre = "tag"
+    url = "/tags/"
+    weight = 3
+
+[params]
+  dateFormat = "Jan 2, 2006"
+  authorName = "Pedro Lopez"
+
+[deployment]
+  [[deployment.targets]]
+  name = "s3"
+  URL = "s3://retrolog.io?region=eu-west-2"

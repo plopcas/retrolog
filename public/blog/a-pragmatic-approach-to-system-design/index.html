@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="https://retrolog.io/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    <title>Retrolog.io | A Pragmatic Approach to System Design</title>
+</head>
+
+<body>
+    <div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        
+        
+        <a class="nav-link" href="/"><i data-feather="home"></i> Home</a>
+        
+        
+        
+        <a class="nav-link" href="/blog/"><i data-feather="edit"></i> Blog</a>
+        
+        
+        
+        <a class="nav-link" href="/tags/"><i data-feather="tag"></i> Tags</a>
+        
+    </nav>
+</div>
+    
+    <div class="container">
+        <main id="main">
+            
+
+<h1>A Pragmatic Approach to System Design</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2018-11-04">Nov 4, 2018</time>
+
+<i data-feather="tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://retrolog.io/tags/software">software</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://retrolog.io/tags/design">design</a>
+
+
+<br><br>
+<p><img src="/images/a-pragmatic-approach-to-system-design.jpg" alt="image"></p>
+<p>Designing a new system is not an easy task. In this post I will introduce a pragmatic approach to system design that will help you tackle any system in a repeatable and consistent way.</p>
+<p>This approach consists of four sections or steps:</p>
+<ul>
+<li>Requirements</li>
+<li>Capacity</li>
+<li>Application layers</li>
+<li>Optimisation</li>
+<li>Final considerations</li>
+</ul>
+<h4 id="1-requirements">1. Requirements</h4>
+<p>First clarify all the requirements. Ask your stakeholders. They could be a project manager, a product owner, a business analyst or even an interviewer (if that is what you are doing).</p>
+<p>Ask as many questions as you need to explore the details. Focus on two different groups of requirements.</p>
+<ol>
+<li>Functional: they specify something that the system should do, e.g. let user post tweets, send emails or upload photos.</li>
+<li>Non Functional: they describe how the system should behave, e.g. in terms of performance, scalability, capacity, availability, latency or security.</li>
+</ol>
+<p>Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.</p>
+<h4 id="2-capacity">2. Capacity</h4>
+<p>How many users does your system have? How much data do you need? Now it's the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.</p>
+<p>Number of users, requests per second, gigabytes of memory&hellip; those are things that you are typically looking for here.</p>
+<h4 id="3-application-layers">3. Application layers</h4>
+<p>There will be three layers to consider in any system.</p>
+<ol>
+<li>Data layer: if you have a database, which type? SQL/NoSQL/Graph&hellip; Do you need tables? Design the schema now if you need one.</li>
+<li>API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.</li>
+<li>Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don't know where to start, try first a naive approach and optimise later.</li>
+</ol>
+<p>At this point you should be able to draw a basic block diagram of your system. Don't worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.</p>
+<h4 id="4-optimisation">4. Optimisation</h4>
+<p>There are at least four things to consider:</p>
+<ol>
+<li>Redundancy/replication: if you need high availability, you will need some kind of redundancy in the form of multiple nodes. Also, you will need to decide how the data will be replicated between those nodes.</li>
+<li>Sharding: similar concept but now for your database. Depending on what DB technology you used, sharding might come out of the box. But in any case is good to take a minute to consider the options.</li>
+<li>Caching: most likely some of the data in your application can be cached to reduce latency and improve performance. Look at different CDN options and in-app caching. Adding a key-value in-memory data store like Redis is a great option to consider.</li>
+<li>Loadbalancing: finally, some of your services, depending on your capacity analysis, will require some form of loadbalancing so that the load is distributed between the nodes. Round-robin DNS and virtual IP are the most common ones.</li>
+</ol>
+<h4 id="5-final-considerations">5. Final considerations</h4>
+<p>If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.</p>
+<p>Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.</p>
+<p>Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.</p>
+<p>It's worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.</p>
+<p>Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWOT tokens&hellip;</p>
+<p>And remember to share your design with other people! It's very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.</p>
+<p class="footer text-center">Copyright (c) 2020 Pedro Lopez</p>
+
+
+        </main>
+    </div>
+    
+<script src="https://retrolog.io/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+
+</html>
