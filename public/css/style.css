@@ -35,8 +35,28 @@ h1.title {
     font-size: 125%;
 }
 
+.feather-16 {
+    width: 16px;
+    height: 16px;
+}
+
 .tag-btn {
     margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.twitter-btn {
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+    color: white;
+    background-color: rgb(29, 161, 242);
+}
+
+.linkedin-btn {
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+    color: white;
+    background-color: #0077b5;
 }
 
 img {
