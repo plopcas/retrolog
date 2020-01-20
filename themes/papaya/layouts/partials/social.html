@@ -1,0 +1,6 @@
+{{ $url := urls.Parse .Permalink }}	
+<span id="social">
+    <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{ .Site.Social.twitter }}"
+        class="btn btn-sm btn-outline-dark twitter-btn" data-show-count="false" aria-label="Share on Twitter">
+        <i class="feather-16" data-feather="twitter"></i> Tweet</a>
+</span>
