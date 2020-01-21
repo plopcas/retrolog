@@ -29,9 +29,10 @@ theme = "papaya"
   dateFormat = "Jan 2, 2006"
   authorName = "Pedro Lopez"
   googleAdSense = "ca-pub-9945087415580189"
+  googleAnalytics = "UA-156682837-1"
 
 [social]
-  twitter = "Retrolog.io"
+  twitter = "Retrologio"
 
 [deployment]
   [[deployment.targets]]
