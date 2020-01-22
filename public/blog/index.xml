@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Retrolog.io</title>
@@ -8,7 +7,7 @@
     <language>en-gb</language>
     <lastBuildDate>Mon, 21 Jan 2019 20:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,7 +17,64 @@
       
       <guid>https://retrolog.io/blog/managing-high-performers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/managing-high-performers.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Following up from the last article about managing low performers, this time I will talk about the other side of the coin, high performers. But first, we need to understand what they are.&lt;/p&gt;</description>
+&lt;p&gt;Following up from the last article about managing low performers, this time I will talk about the other side of the coin, high performers. But first, we need to understand what they are.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;They maintain a &lt;strong&gt;positive attitude&lt;/strong&gt; at all times, focused on what they can do. They believe that through hard work and persistence they can achieve anything. Therefore, they have a strong &lt;strong&gt;long-term focus&lt;/strong&gt; and &lt;strong&gt;self-discipline&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They are &lt;strong&gt;inspiring&lt;/strong&gt; to others, and display &lt;strong&gt;natural leadership&lt;/strong&gt; qualities. Other people will rally around them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They care about &lt;strong&gt;growth&lt;/strong&gt;, always eager to &lt;strong&gt;learn&lt;/strong&gt; new skills and sharpen existing ones. They learn from mistakes too. As a result, they usually find innovative solutions to challenging problems, and are flexible and adaptable.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They are &lt;strong&gt;problem solvers&lt;/strong&gt;, and &lt;strong&gt;get things done&lt;/strong&gt;. It&#39;s almost as if they lived to accomplish the most challenging tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;They are &lt;strong&gt;self-driven&lt;/strong&gt;. With little or no external motivation they can and will deliver.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Below you can find some tips to manage those of your employees that fit into this category.&lt;/p&gt;
+&lt;h4 id=&#34;be-ready-to-give-constructive-feedback-regularly&#34;&gt;Be ready to give constructive feedback, regularly&lt;/h4&gt;
+&lt;p&gt;High performers are always looking to improve, and getting constructive feedback on a regular basis is a key part of this process. Use your 1:1s to maximise the impact of your feedback, and avoid using them as status updates (remember that 1:1s should be mainly about removing blockers and aligning priorities).&lt;/p&gt;
+&lt;p&gt;They will expect you to help them identify areas for improvement more than anything else, although do not forget to add praise and thanks as well, even if they seem indifferent to it. Monthly is acceptable, but if you can do it more often, even better. Weekly would be ideal, and it will allow some flexibility in case you need to skip it once in a while.&lt;/p&gt;
+&lt;h4 id=&#34;help-them-learn-inside-and-outside-the-organisation&#34;&gt;Help them learn, inside and outside the organisation&lt;/h4&gt;
+&lt;p&gt;High performers seek feedback not only from you and their peers, but also outside the organisation. It&#39;s not uncommon for them to attend conferences and meetups, and be part of side project teams (e.g. open source projects). Help them by introducing them to some of these external groups, particularly if you are more experienced in the same field. You&#39;ll be able to help them separate the wheat from the chaff.&lt;/p&gt;
+&lt;p&gt;Support them with budget for training, conferences, online courses&amp;hellip; they are eager for knowledge and it&#39;s in your hand to find the resources.&lt;/p&gt;
+&lt;p&gt;And, why not? Go with them. Leading by example is paramount in order to build trust.&lt;/p&gt;
+&lt;h4 id=&#34;agree-on-clear-goals-and-align-expectations&#34;&gt;Agree on clear goals and align expectations&lt;/h4&gt;
+&lt;p&gt;Goals should be agreed by both parties. You will need to make these very clear. Small and measurable objectives that are time-bounded work like a charm. There are many frameworks about this topic e.g. SMART goals, OKRs&amp;hellip; Ultimately choose what works for you, your team and your organisation. A good goal has crystal clear deliverables, require a bit of &amp;ldquo;stretching&amp;rdquo; from the employee and are linked to high level initiatives.&lt;/p&gt;
+&lt;h4 id=&#34;give-them-the-tools-they-need&#34;&gt;Give them the tools they need&lt;/h4&gt;
+&lt;p&gt;As a manager, you should set the strategy, provide the direction and give your people the tools they need to succeed in terms of people, budget, training, software&amp;hellip; If you don&#39;t, you will be adding blockers instead of removing them.&lt;/p&gt;
+&lt;h4 id=&#34;get-out-of-their-way&#34;&gt;Get out of their way&lt;/h4&gt;
+&lt;p&gt;One you set up goals and expectations, give them flexibility in how they work. Avoid micromanaging at all costs. On the contrary, give them autonomy with minimum interference.&lt;/p&gt;
+&lt;p&gt;Also, encourage them to decompress. Working long hours and sacrificing their own well-being, although it might make them meet a deadline, it will be detrimental to their productivity and performance in the long run. Those who manage high performers need to gently remind them to pace themselves and think about their contributions on a larger scale. They cannot work at an optimal level if they&#39;re perpetually burned out and exhausted.&lt;/p&gt;
+&lt;h4 id=&#34;keep-it-interesting&#34;&gt;Keep It Interesting&lt;/h4&gt;
+&lt;p&gt;High achievers place a great importance on interesting and challenging work. I have noticed this in my own teams very often. If you want proof, use the Moving Motivators technique and you&#39;ll see how they crave for interesting things to do, tools to try and new problems to tackle.&lt;/p&gt;
+&lt;p&gt;This is especially important if there are limited opportunities for advancement in your organisation.&lt;/p&gt;
+&lt;p&gt;Another option to make it interesting it by identifying ways for them to expand their skillset, e.g. shadowing programs or a temporary reallocation to a different team.&lt;/p&gt;
+&lt;p&gt;Overall, make sure they are being challenged, but pay attention to the right balance between pressure and performance.&lt;/p&gt;
+&lt;h4 id=&#34;provide-opportunities-for-growth&#34;&gt;Provide opportunities for growth&lt;/h4&gt;
+&lt;p&gt;Growth can come from things we have mentioned already like online courses, working on part time projects or getting certified in some particular area.&lt;/p&gt;
+&lt;p&gt;Make sure you give them visibility, so that their growth is noticed outside your own team as well. Provide them with mentors when possible.&lt;/p&gt;
+&lt;p&gt;Ultimately, remember that the lack of growth opportunities can be particularly frustrating for high performers and is often the reason why they look for opportunities elsewhere.&lt;/p&gt;
+&lt;h4 id=&#34;surround-them-with-other-top-players&#34;&gt;Surround them with other top players&lt;/h4&gt;
+&lt;p&gt;One of the best ways to keep top people motivated is to surround them with other top players, so that they can learn from them and improve the overall success of the team.&lt;/p&gt;
+&lt;p&gt;It makes also sense to get them involved in recruitment, because high performers identify high performers quite easily. They will have a say in hiring someone they actually want to work with. Have in mind that in order to increase your chances to attract high performers you must invest in your own employer brand, e.g. by running a technical blog or giving back to the community.&lt;/p&gt;
+&lt;h4 id=&#34;design-a-career-path-for-them&#34;&gt;Design a career path for them&lt;/h4&gt;
+&lt;p&gt;Create a career path within the organisation with different levels of seniority and multiple options for specialisation. Make them responsible when you feel they are ready and then reward them. Little by little they can have greater involvement in planning and decision making, gaining more exposure at a more senior level.&lt;/p&gt;
+&lt;h4 id=&#34;create-a-safe-environment-that-embraces-failure&#34;&gt;Create a safe environment that embraces failure&lt;/h4&gt;
+&lt;p&gt;Everybody makes mistakes, it&#39;s part of the human condition. You should account for it, and have the mechanisms in place that will make it acceptable to fail sometimes. Even if a deadline is missed, it shouldn&#39;t be the end of the world. Remind your employees that you are running a marathon, not a sprint.&lt;/p&gt;
+&lt;p&gt;Ironically, the more others celebrate a high achiever&#39;s successes, the more afraid they can become of making mistakes. This causes them to shy away from risky challenges. You should help high achievers overcome this fear of failure as well.&lt;/p&gt;
+&lt;h4 id=&#34;remember-your-other-employees&#34;&gt;Remember your other employees&lt;/h4&gt;
+&lt;p&gt;High performers can positively motivate others on your team but they can do quite the opposite as well. A good leader must defend the team, even if it means cutting a high performer.&lt;/p&gt;
+&lt;p&gt;Have in mind that high performers are usually perfectionists and quite independent, which means they could run out of patience if paired with other employees.&lt;/p&gt;
+&lt;p&gt;Also, sometimes they might think that results justify binding the rules a little, and this can cause friction and more issues. In some ways, it&#39;s understandable that their manager overlooks some of those shortcuts as long as they keep turning in record-breaking achievements, but it doesn&#39;t help them to be perceived as team players.&lt;/p&gt;
+&lt;p&gt;As a manager, help them understand that by embracing the protocol, they can send the message that they don&#39;t see themselves as exempt and privileged, and that ultimately, we are all on the same team.&lt;/p&gt;
+&lt;h4 id=&#34;accept-that-sooner-or-later-they-might-move-on&#34;&gt;Accept that sooner or later they might move on&lt;/h4&gt;
+&lt;p&gt;Finally, no matter how much growth opportunities you put in place, how engaging and interesting the work feels or how great the environment is, at some point they will most likely leave. This is normal and expected. Just remember not to put all your eggs in one basket. Avoid single points of failure (something is known by only one person), favour knowledge transfer and cross-functionality, design effective hand-over procedures and manage the expectations of the rest of the team once your rock star is gone.&lt;/p&gt;
+&lt;p&gt;If you follow these tips, you will have a great process in place that will help you find high performers and keep them in your team for quite a long time.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,7 +84,43 @@
       
       <guid>https://retrolog.io/blog/managing-low-performers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/managing-low-performers.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&#39;s annual performance review time, and even though for most people this is a smooth and straightforward process, from time to time managers need to deal with some not so pleasant situations. Managing low performers is all but straightforward, so keep reading for some tips on how to deal with it and start the year off on the right foot.&lt;/p&gt;</description>
+&lt;p&gt;It&#39;s annual performance review time, and even though for most people this is a smooth and straightforward process, from time to time managers need to deal with some not so pleasant situations. Managing low performers is all but straightforward, so keep reading for some tips on how to deal with it and start the year off on the right foot.&lt;/p&gt;
+&lt;h4 id=&#34;performance-matters-all-the-time&#34;&gt;Performance matters all the time&lt;/h4&gt;
+&lt;p&gt;Even though most places have a formal performance review once or twice a year, you should keep an eye on performance all the time. Use your 1:1s to get an insight on problems or misalignments. Look for red flags and be proactive. Don&#39;t wait until the problem is too big, the sooner you address it, the easiest and fastest the solution will be.&lt;/p&gt;
+&lt;h4 id=&#34;data-data-and-data&#34;&gt;Data, data and data&lt;/h4&gt;
+&lt;p&gt;How do we know someone is not performing well? We are dealing with a delicate matter here, so we can&#39;t base our actions on a hunch or on someone&#39;s comment out of the blue. We need to gather data, and we need to do it all year round.&lt;/p&gt;
+&lt;p&gt;Ask your employees for regular self-assessments, use measurable performance metrics when possible (e.g. number of project iterations completed successfully) and use 360° feedback. It&#39;s important to keep notes of any relevant fact, achievement or complaint that has happened throughout the year. A single comment should be taken with a pinch of salt, but if you see a pattern, or similar comments coming from different sources, that might be a cue to action.&lt;/p&gt;
+&lt;p&gt;However, don&#39;t fall into the trap of trying to measure every single thing. Not all metrics are equally valuable. Some of them might even be harmful.&lt;/p&gt;
+&lt;p&gt;Take as an example measuring lines of code, in the context of a team of developers. If you use this as a metric, developers will tend to write verbose code when not necessary, just to perform well according to the (wrong) metric.&lt;/p&gt;
+&lt;p&gt;Another example, if you are using an issue tracking system for instance, when the number of closed tickets is your main metric, your employees will complete the smallest and easiest tickets first, leaving other most complex tasks unattended.&lt;/p&gt;
+&lt;p&gt;Sometimes the solution is to combine multiple metrics or refine the criteria. In the previous example, if instead of just counting the number of tickets, there was a way to objectively add complexity or business value to the mix, then you can reinforce other behaviours that are more beneficial for the company, the team and ultimately the employee.&lt;/p&gt;
+&lt;h4 id=&#34;improve-your-feedback&#34;&gt;Improve your feedback&lt;/h4&gt;
+&lt;p&gt;Feedback should be direct and succinct. Let your employee know that you noticed a drop in performance and you would like to do something about it. There is no point in trying to cover up the message with positive comments, something known as the sandwich technique where you put a bad piece of feedback between two positive ones. People can often see right through this, and your message will lose clarity. Focus on one thing at a time. Praise is necessary, but right now we are dealing with bad performance, and it needs to be fixed.&lt;/p&gt;
+&lt;p&gt;Be understanding though, your employee probably feels bad about it already, there is no need to be harsh. Instead, focus on what needs to be done to correct course. Be open as well, and give the person space to express their feelings, but don&#39;t allow excuses, you have your data to back you up.&lt;/p&gt;
+&lt;h4 id=&#34;find-out-reasons-for-bad-performance&#34;&gt;Find out reasons for bad performance&lt;/h4&gt;
+&lt;p&gt;If there is a reasonable explanation, it is your duty as a manager to find out. There could be personal issues, problems outside work, lack of motivation, burnout, skill gaps&amp;hellip; even a lack of confidence in their own abilities.&lt;/p&gt;
+&lt;p&gt;Nonetheless, you should explore all the options, and get to the bottom of the issue.&lt;/p&gt;
+&lt;p&gt;Sometimes the employee is not aware of the specific reasons. In that case you should help them with coaching to discover the answer.&lt;/p&gt;
+&lt;p&gt;Finally, in some other occasions, the employee was not even aware of the fact that there was a  problem. This most likely has to do with miscommunication. If that is the case, review the communication channels. Find out the preferred means for the employee. Look out for Chinese whispers, lack of alignment with high level goals, and misuse of tools e.g. clogged email inboxes.&lt;/p&gt;
+&lt;h4 id=&#34;clearly-outline-expectations&#34;&gt;Clearly outline expectations&lt;/h4&gt;
+&lt;p&gt;If they are a new starter, or recently assumed a new role, or are working on a new project, ask them if there is any part of the job where they do not understand what is expected of them. Give them the opportunity to ask questions and iron out any potential areas of confusion.&lt;/p&gt;
+&lt;h4 id=&#34;prepare-an-action-plan&#34;&gt;Prepare an action plan&lt;/h4&gt;
+&lt;p&gt;Without a viable solution, any negative feedback is rather useless. People might even feel we are giving up on them. The best way to show that we care is with a well crafted plan. Be open to input and fine-tune the details with the employee. Ultimately, it&#39;s paramount to get buy in and come to an agreement.&lt;/p&gt;
+&lt;h4 id=&#34;set-new-goals&#34;&gt;Set new goals&lt;/h4&gt;
+&lt;p&gt;If the old goals were misaligned, it&#39;s time to review them. Clarify grey areas and find new goals that are focused on recovering and getting back on track. Reassign some of the old but still important goals to someone else if possible. That way you&#39;ll create some space for them to focus on their improvement. Make sure you explain why you are doing it, or they might feel you lost your trust in them.&lt;/p&gt;
+&lt;p&gt;Sometimes all they need is to relieve some stress, hit some wins, regain their confidence, and they are back in business.&lt;/p&gt;
+&lt;h4 id=&#34;make-them-understand-the-impact&#34;&gt;Make them understand the impact&lt;/h4&gt;
+&lt;p&gt;Sometimes low performers are unaware of the impact of their actions. They might think it&#39;s no big deal to miss a deadline here and there, or to produce some low quality hacks.&lt;/p&gt;
+&lt;p&gt;Make them see the implications, how it&#39;s impacting team morale, how other people need to fix issues they left unattended and how it&#39;s costing money and resources.&lt;/p&gt;
+&lt;p&gt;If understanding that their bad performance is making their team unhappy and putting their jobs at risk doesn&#39;t make them react, then nothing will.&lt;/p&gt;
+&lt;h4 id=&#34;follow-up&#34;&gt;Follow up&lt;/h4&gt;
+&lt;p&gt;Raising awareness of the issue and putting together an improvement plan is just the beginning. Have regular catch-ups, focus on providing support, and highlight progress made. As a general rule, try to avoid micromanaging, but at this point, a bit more handholding than usual is acceptable as a temporary measure. As always, be transparent about what you are doing.&lt;/p&gt;
+&lt;h4 id=&#34;say-it-when-performance-is-back-to-good&#34;&gt;Say it when performance is back to good&lt;/h4&gt;
+&lt;p&gt;A performance improvement plan must have an end. And it has to be clearly defined and agreed from the beginning. Make sure you say it when the performance is good enough again. But remind them  that moving forward, you both should keep and eye on the issues that were fixed, so that they stay on the right track.&lt;/p&gt;
+&lt;h4 id=&#34;clear-the-deadwood&#34;&gt;Clear the deadwood&lt;/h4&gt;
+&lt;p&gt;Sometimes enough is enough. When improvement doesn&#39;t happen after a reasonable amount of time, it&#39;s time to let your employee go. Think of your team, they are having a hard time too, covering for unfinished work, and feeling somewhat helpless. At the end of the day, if you have done everything in your hand to help the person improve and nothing changed (or didn&#39;t change enough), you will have made the right decision.&lt;/p&gt;
+&lt;h4 id=&#34;be-proactive-by-avoiding-low-performance-hires&#34;&gt;Be proactive by avoiding low-performance hires&lt;/h4&gt;
+&lt;p&gt;It is impossible to predict low performance 100% accurately during recruitment, but it&#39;s definitely something to have in mind when assessing a candidate. Ask yourself, will they perform at the level we require in the time that we need? If the answer is no and you still hire, chances are you will be revisiting this post soon enough.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +130,49 @@
       
       <guid>https://retrolog.io/blog/a-pragmatic-approach-to-system-design/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-system-design.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Designing a new system is not an easy task. In this post I will introduce a pragmatic approach to system design that will help you tackle any system in a repeatable and consistent way.&lt;/p&gt;</description>
+&lt;p&gt;Designing a new system is not an easy task. In this post I will introduce a pragmatic approach to system design that will help you tackle any system in a repeatable and consistent way.&lt;/p&gt;
+&lt;p&gt;This approach consists of four sections or steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Requirements&lt;/li&gt;
+&lt;li&gt;Capacity&lt;/li&gt;
+&lt;li&gt;Application layers&lt;/li&gt;
+&lt;li&gt;Optimisation&lt;/li&gt;
+&lt;li&gt;Final considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;1-requirements&#34;&gt;1. Requirements&lt;/h4&gt;
+&lt;p&gt;First clarify all the requirements. Ask your stakeholders. They could be a project manager, a product owner, a business analyst or even an interviewer (if that is what you are doing).&lt;/p&gt;
+&lt;p&gt;Ask as many questions as you need to explore the details. Focus on two different groups of requirements.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Functional: they specify something that the system should do, e.g. let user post tweets, send emails or upload photos.&lt;/li&gt;
+&lt;li&gt;Non Functional: they describe how the system should behave, e.g. in terms of performance, scalability, capacity, availability, latency or security.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.&lt;/p&gt;
+&lt;h4 id=&#34;2-capacity&#34;&gt;2. Capacity&lt;/h4&gt;
+&lt;p&gt;How many users does your system have? How much data do you need? Now it&#39;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
+&lt;p&gt;Number of users, requests per second, gigabytes of memory&amp;hellip; those are things that you are typically looking for here.&lt;/p&gt;
+&lt;h4 id=&#34;3-application-layers&#34;&gt;3. Application layers&lt;/h4&gt;
+&lt;p&gt;There will be three layers to consider in any system.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Data layer: if you have a database, which type? SQL/NoSQL/Graph&amp;hellip; Do you need tables? Design the schema now if you need one.&lt;/li&gt;
+&lt;li&gt;API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.&lt;/li&gt;
+&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&#39;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&#39;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
+&lt;h4 id=&#34;4-optimisation&#34;&gt;4. Optimisation&lt;/h4&gt;
+&lt;p&gt;There are at least four things to consider:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Redundancy/replication: if you need high availability, you will need some kind of redundancy in the form of multiple nodes. Also, you will need to decide how the data will be replicated between those nodes.&lt;/li&gt;
+&lt;li&gt;Sharding: similar concept but now for your database. Depending on what DB technology you used, sharding might come out of the box. But in any case is good to take a minute to consider the options.&lt;/li&gt;
+&lt;li&gt;Caching: most likely some of the data in your application can be cached to reduce latency and improve performance. Look at different CDN options and in-app caching. Adding a key-value in-memory data store like Redis is a great option to consider.&lt;/li&gt;
+&lt;li&gt;Loadbalancing: finally, some of your services, depending on your capacity analysis, will require some form of loadbalancing so that the load is distributed between the nodes. Round-robin DNS and virtual IP are the most common ones.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;5-final-considerations&#34;&gt;5. Final considerations&lt;/h4&gt;
+&lt;p&gt;If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.&lt;/p&gt;
+&lt;p&gt;Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.&lt;/p&gt;
+&lt;p&gt;Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.&lt;/p&gt;
+&lt;p&gt;It&#39;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
+&lt;p&gt;Don&#39;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And remember to share your design with other people! It&#39;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,7 +183,26 @@
       <guid>https://retrolog.io/blog/developing-your-critical-thinking/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/developing-your-critical-thinking.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Every day we need to make decisions as leaders. But this is often not easy. How can we improve our chances to make good decisions? There are many techniques for this, one of which is critical thinking. This technique is particularly effective, and it allows us to deconstruct the situation removing undesired bias and revealing hidden issues.&lt;/p&gt;
-&lt;p&gt;When you use critical thinking, rather than making a decision just because it feels right, you will scrutinise every available option and apply scepticism. Using the tools described below you will eliminate everything but the most useful and reliable information.&lt;/p&gt;</description>
+&lt;p&gt;When you use critical thinking, rather than making a decision just because it feels right, you will scrutinise every available option and apply scepticism. Using the tools described below you will eliminate everything but the most useful and reliable information.&lt;/p&gt;
+&lt;p&gt;Here is one way of approaching critical thinking based on 5 steps, as created by &lt;em&gt;Samantha Agoos&lt;/em&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Formulate the question appropriately&lt;/strong&gt;: find out what you are really looking for. This is not always straightforward, as the real enquiry can be obscured by other factors. If the underlying question is not clear, you can try the &lt;em&gt;5 whys technique&lt;/em&gt; to identify the root of the problem at hand (ask why 5 times in a row to explore reasons deeper than the obvious and immediate ones).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Gather information&lt;/strong&gt;: having a clear idea of your question will help you determine what is relevant. You might ask an expert for their advise or seek other people&#39;s testimonies. This will help you weigh different options.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Apply the information&lt;/strong&gt;: consider what concepts apply, be aware of what assumptions you are making and ask yourself if your interpretation of the situation is logically sound. By asking critical questions to yourself, challenging what you know about the problem, you will narrow down your alternatives.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Consider the implications&lt;/strong&gt;: evaluate the consequences of choosing each option. Frequently, we tend to see only the short-term implications of our decisions, but it is important to consider the long-term impact as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Explore other points of view&lt;/strong&gt;: think about why other people prefer an alternative that is different from your preferred one at this point. Even if you disagree completely, this will help you understand why the rest of the options might appeal to others. This way you will explore alternatives, reconsider your own choices and ultimately make more informed decisions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This is just one technique, and it will not remove the difficulty of making a decision. But it can help you increase the number of positive choices you make. Critical thinking can definitely help you navigate through a sea of alternatives and find what you are looking for.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,7 +212,28 @@
       
       <guid>https://retrolog.io/blog/improving-your-conversational-skills/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/improving-your-conversational-skills.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;At work, great communicators have an advantage. They know how to have great conversations. Personality helps, but this is a skill that anyone can learn. Here I explore a few tips to improve your conversational skills.&lt;/p&gt;</description>
+&lt;p&gt;At work, great communicators have an advantage. They know how to have great conversations. Personality helps, but this is a skill that anyone can learn. Here I explore a few tips to improve your conversational skills.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Talk slowly: if you are like me, you will tend to speak faster than you should, particularly when you have a lot to say. Typically, good talkers do not rush into a conversation. Take your time to think. You will be perceived as calmer and more centred. And you will help the other person &amp;ldquo;pace&amp;rdquo; their dialog too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Focus on the conversation at hand: do not multitask! You will hear the message more clearly when you focus only on the conversation. This shows respect, and when you give them undivided attention, they will respect you more as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do not bring up controversial topics: there is a time and place for everything, but in general, your workplace is not good for controversy. Religion and politics are the most common ones. Even if you have strong views on particular issues, your goal is to respect everyone&#39;s different points of view. This kind of topics are best discussed with friends outside work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pay attention to nonverbal communication: for example, eye contact shows respect, nodding shows comprehension, facing them directly shows attention and focus, and leaning in demonstrates interest. Even when you are not speaking, your body language says a lot.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make the other person feel comfortable and confident: use positive questions to show interest and allow them to share their thoughts and expertise. Give them the opportunity to feel like an expert and explain what they have in mind.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stay positive even when you disagree: you could choose not to respond to their comment, but as a minimum be respectful. If someone is moaning about someone else in front of you, you might say that you are not sure you see the issue the same way, and focus on how to move forward. That way, even if you do not agree, you were not offensive to them either.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I hope this tips will help you take your conversation skills to the next level.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +245,20 @@
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/providing-purpose.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;A job pays the bills. But if that is all it means to you, it will be hard to feel inspired. It is not unreasonable to expect a job to excite you and provide you with a higher sense of purpose.&lt;/p&gt;
 &lt;p&gt;Purpose is feeling that your time is being well spent and your work is adding value to something that matters. For some people it is easier to feel purpose, and also some vocations are simply more likely to help you feel purpose e.g. teachers and healthcare professionals are frequently included in this category.&lt;/p&gt;
-&lt;p&gt;But most people are not wired to feel purpose that easily and most jobs are not clearly fulfilling in that sense. You, as a manager, have to effectively lead those people. What can you do?&lt;/p&gt;</description>
+&lt;p&gt;But most people are not wired to feel purpose that easily and most jobs are not clearly fulfilling in that sense. You, as a manager, have to effectively lead those people. What can you do?&lt;/p&gt;
+&lt;p&gt;You can indeed create a sense of purpose. In order to do that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First, you will need to articulate the important goals they are serving beyond their daily work. This could be related to the community, or education, or environmental goals. It is too easy to get lost in the routine and miss the bigger picture your organisation serves. As a manager, your duty is to remind them.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next, you must find ways to link your employees to the outcomes of their work, e.g. if they create applications for students, show them feedback from real users. Or even better, invite some to the office so that they can share their experiences first hand. Anything that can help them feel the value they are adding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, give your team voice and autonomy. That is input in the decision-making process and freedom to be creative and not micromanaged. This will have the side benefit of improving trust and creating opportunities for development. But will also make people feel they are in control of their own time, making a genuine and invaluable contribution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For some jobs it might be easier, but for any job, with a little effort, you can help people get over their routine and feel purpose.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,7 +269,28 @@
       <guid>https://retrolog.io/blog/avoiding-burnout-at-work/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/avoiding-burnout-at-work.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Even people that work in great high-performing teams can sometimes experience excessive stress and burnout. Burnout is about mental and physical exhaustion, caused by excessive and prolonged stress. It occurs when you feel overwhelmed, emotionally drained, and unable to meet constant demands.&lt;/p&gt;
-&lt;p&gt;As you look at your team, check whether you have seen any of these signs.&lt;/p&gt;</description>
+&lt;p&gt;As you look at your team, check whether you have seen any of these signs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;People claim they feel little control over their work, or that their work is not being recognised&lt;/li&gt;
+&lt;li&gt;People talk about work loads and work pressure&lt;/li&gt;
+&lt;li&gt;Employees seem tired all the time&lt;/li&gt;
+&lt;li&gt;You have sensed an increased level of procrastination&lt;/li&gt;
+&lt;li&gt;People complain more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These could mean your team is experiencing burnout. If you do not act now and it sets in, the negative effects will affect your employees&amp;rsquo; work life, and eventually, their personal lives too.&lt;/p&gt;
+&lt;p&gt;But it is not a lost battle. There are things you can do to help your team.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Start talking: ask your team members about how they feel and pay attention to what they say with both their words and body language. Have genuine conversations regularly. You can use your 1:1 meetings for these.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Slow down a little now: otherwise you will be risking being forced to slow down a lot later when the team hits its breaking point. Review the team&#39;s objectives and re-prioritise if possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Provide support and resources: help the team to stay connected, share good news and keep people in the loop. Remember to thank everyone for their work. In terms of resources, consider ways to ease off, make the office a fun place to work, and help them become more efficient by adopting new tools and techniques, reviewing tedious procedures and simplifying workflows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Anything you do will hugely help. Your job as a leader is to push everyone to new heights, but without causing unnecessary burnout. Hopefully these tips will give your team the boost it deserves.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -92,7 +300,20 @@
       
       <guid>https://retrolog.io/blog/building-self-awareness-as-a-manager/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/building-self-awareness-as-a-manager.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;For most people, it is hard to objectively self-evaluate their work and behaviours. Great leaders learn to build strong self-awareness. There are two main sources of information that can help you with this.&lt;/p&gt;</description>
+&lt;p&gt;For most people, it is hard to objectively self-evaluate their work and behaviours. Great leaders learn to build strong self-awareness. There are two main sources of information that can help you with this.&lt;/p&gt;
+&lt;h4 id=&#34;personal-data&#34;&gt;Personal Data&lt;/h4&gt;
+&lt;p&gt;The goal is to learn about yourself, focusing on your strengths and weaknesses. You can achieve this by keeping track of your performance over time. There are three sources of data you can use.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for a trend line that describes the evolution of your average performance in a period of time, maybe 6 or 12 months.&lt;/li&gt;
+&lt;li&gt;Look also for your relative performance compared to other members of the team.&lt;/li&gt;
+&lt;li&gt;Finally, go back to your previous performance evaluations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;feedback-from-others&#34;&gt;Feedback from others&lt;/h4&gt;
+&lt;p&gt;In this case the goal is to find at least one or two people that are willing to give you feedback. You will need someone more experienced than you for this, that has good exposure to your work, behaviours and performance.&lt;/p&gt;
+&lt;p&gt;Once you know who they are, approach them in private and ask them from their perspective on you and your work. Try to be as respectful as possible, they are investing time and effort in giving you quality feedback after all. The golden rule is, make sure you let them talk!&lt;/p&gt;
+&lt;h4 id=&#34;putting-things-together&#34;&gt;Putting things together&lt;/h4&gt;
+&lt;p&gt;It is important to self-reflect on the data we can gather ourselves before asking others for their opinions. This way we will be more open to receiving feedback.&lt;/p&gt;
+&lt;p&gt;Do this two or three times per year and you will have developed a deeper self-awareness that will help you improve faster at work.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -103,7 +324,36 @@
       <guid>https://retrolog.io/blog/my-7-management-principles/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/my-7-management-principles.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As a manager I like to follow what I call &amp;ldquo;my 7 management principles&amp;rdquo; when I work with my team. Sometimes we find ourselves overwhelmed and under pressure. Having a set of clear principles that are easy to remember can help us, managers, get back on track quickly. Mine are based on my own experience and have helped me in the past in numerous occasions.&lt;/p&gt;
-&lt;p&gt;The 7 principles are the following.&lt;/p&gt;</description>
+&lt;p&gt;The 7 principles are the following.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A manager must be supportive and work for the team&lt;/li&gt;
+&lt;li&gt;A manager must be flexible and adapt to the situation at hand&lt;/li&gt;
+&lt;li&gt;A manager must be aware and connected&lt;/li&gt;
+&lt;li&gt;A manager must challenge the team in constructive and engaging ways&lt;/li&gt;
+&lt;li&gt;A manager must be trustworthy and lead by example&lt;/li&gt;
+&lt;li&gt;A manager must be caring and empathic&lt;/li&gt;
+&lt;li&gt;A manager must be transparent and operate with candour&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;From these principles you can probably see what my management style looks like. I will explore each of the principles in more detail below.&lt;/p&gt;
+&lt;h4 id=&#34;1-a-manager-must-be-supportive-and-work-for-team&#34;&gt;1. A manager must be supportive and work for team&lt;/h4&gt;
+&lt;p&gt;This principle has to do with the concept of &lt;strong&gt;servant leader&lt;/strong&gt;.  The approach is supportive, encouraging and enabling those around. Servant leadership requires the leader to facilitate the success of the team by answering the question &amp;ldquo;what can I do for my team by removing obstacles to them achieving their organisational goal?&amp;quot;.&lt;/p&gt;
+&lt;h4 id=&#34;2-a-manager-must-be-flexible-and-adapt-to-the-situation-at-hand&#34;&gt;2. A manager must be flexible and adapt to the situation at hand&lt;/h4&gt;
+&lt;p&gt;Increasing your flexibility as a leader will allow you to be more effective when working with diverse individuals and responding to a variety of situations. Through self-awareness and hard work it is possible to increase your level of flexibility regardless of your natural style.&lt;/p&gt;
+&lt;h4 id=&#34;3-a-manager-must-be-aware-and-connected&#34;&gt;3. A manager must be aware and connected&lt;/h4&gt;
+&lt;p&gt;It is important for any manager to be aware of what is going on in the organisation as a whole. Depending on your context, part of your job could be to find opportunities for collaboration in other departments or to make sure on there is no duplication of efforts, and therefore waste. You will want to keep an eye on high performers and bring their knowledge into your team.&lt;/p&gt;
+&lt;p&gt;Additionally, you must also be aware of what is going on in your industry outside the organisation. If, like me, you work in software development, it is highly recommended to attend conferences and meetups, practice effective networking and be aware of the latest trends in your field, because you will need to give career advice to the people that report to you. It is also a good source of inspiration for motivational ideas for your team.&lt;/p&gt;
+&lt;h4 id=&#34;4-a-manager-must-challenge-the-team-in-constructive-and-engaging-ways&#34;&gt;4. A manager must challenge the team in constructive and engaging ways&lt;/h4&gt;
+&lt;p&gt;High performers get bored quickly if they do net get a constant flow of engaging and challenging work. As a manager you should be on the watch for this, and actively seek for interesting projects for your team. You should create your own if nothing comes from the business.&lt;/p&gt;
+&lt;p&gt;This will help your team, not only to sharpen their skills, but also to raise their levels of engagement and commitment with the organisation.&lt;/p&gt;
+&lt;h4 id=&#34;5-a-manager-must-be-trustworthy-and-lead-by-example&#34;&gt;5. A manager must be trustworthy and lead by example&lt;/h4&gt;
+&lt;p&gt;Trust is one of the truly essential elements of high performing teams. If people trust you, they will be willing to be honest and take risks on your behalf. But, you cannot just tell them you are trustworthy, you have to behave in a manner that clearly demonstrates trustworthiness.&lt;/p&gt;
+&lt;p&gt;Some key behaviours that can help build trust are showing integrity in every decision you make, genuinely seeking for opportunities to help others achieve their goals, collaborating instead of dictating and admitting when you are wrong.&lt;/p&gt;
+&lt;p&gt;Additionally, I would not ask my team to do something I would not do myself. This idea of leading by example is one of the most powerful behaviours you can show to make your team trust you.&lt;/p&gt;
+&lt;h4 id=&#34;6-a-manager-must-be-caring-and-empathic&#34;&gt;6. A manager must be caring and empathic&lt;/h4&gt;
+&lt;p&gt;Managers are not dictators and employees are not robots. If you work in a diverse team, you will have people from all kinds of cultural backgrounds and age groups, each one with their own particularities and problems. One day someone will need to leave early to pick up their kids from school, some other day someone will need to rearrange their holidays in the last minute. Whatever it is, as a manager, your job is to support them and understand their reasons when something comes up.&lt;/p&gt;
+&lt;h4 id=&#34;7-a-manager-must-be-transparent-and-operate-with-candour&#34;&gt;7. A manager must be transparent and operate with candour&lt;/h4&gt;
+&lt;p&gt;It is really important to be transparent with your team and your organisation. Not only this will help to build trust, it will also make it easier for others to give you feedback and it will make you more approachable and easy to work with.&lt;/p&gt;
+&lt;p&gt;Sometimes you want to be nice, positive, and politically correct, but in general candour is more important. You should be straightforward, fair and honest, as this will help you to be a more successful communicator.&lt;/p&gt;</description>
     </item>
     
   </channel>

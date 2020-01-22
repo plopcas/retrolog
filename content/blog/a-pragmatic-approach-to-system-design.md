@@ -66,6 +66,6 @@ Consider aspects like infrastructure-as-code, containers, blue/green deployments
 
 It's worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.
 
-Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWOT tokens...
+Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens...
 
 And remember to share your design with other people! It's very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.
