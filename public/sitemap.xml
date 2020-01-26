@@ -4,7 +4,32 @@
   
   <url>
     <loc>https://retrolog.io/blog/</loc>
-    <lastmod>2019-01-21T20:00:00+00:00</lastmod>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</loc>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/</loc>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/software/</loc>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/</loc>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/tools/</loc>
+    <lastmod>2020-01-25T00:43:54+00:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +39,6 @@
   
   <url>
     <loc>https://retrolog.io/blog/managing-high-performers/</loc>
-    <lastmod>2019-01-21T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/</loc>
-    <lastmod>2019-01-21T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/</loc>
     <lastmod>2019-01-21T20:00:00+00:00</lastmod>
   </url>
   
@@ -39,11 +54,6 @@
   
   <url>
     <loc>https://retrolog.io/tags/design/</loc>
-    <lastmod>2018-11-04T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/software/</loc>
     <lastmod>2018-11-04T20:00:00+00:00</lastmod>
   </url>
   

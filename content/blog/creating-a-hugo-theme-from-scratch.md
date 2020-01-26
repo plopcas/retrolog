@@ -1,7 +1,7 @@
 ---
 title: "Creating a Hugo Theme From Scratch"
 date: 2020-01-25T00:43:54Z
-draft: true
+draft: false
 tags: ["software", "tools"]
 author: "Pedro Lopez"
 ---

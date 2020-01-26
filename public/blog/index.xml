@@ -5,10 +5,331 @@
     <description>Recent content in Blog on Retrolog.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 21 Jan 2019 20:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 00:43:54 +0000</lastBuildDate>
     
         <atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a Hugo Theme From Scratch</title>
+      <link>https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</link>
+      <pubDate>Sat, 25 Jan 2020 00:43:54 +0000</pubDate>
+      
+      <guid>https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/creating-a-hugo-theme-from-scratch.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I use Hugo for my personal blog, and it&#39;s great! In this post I will show you how to build a minimalist theme for Hugo.&lt;/p&gt;
+&lt;h4 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;A basic understanding of Hugo templating and folder structure&lt;/li&gt;
+&lt;li&gt;Having installed Hugo locally &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;https://gohugo.io/getting-started/installing/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hugo is written in Go, but you do not need to install it for now.&lt;/p&gt;
+&lt;h4 id=&#34;getting-started&#34;&gt;Getting started&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new Hugo site
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Go into the newly created folder
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#007020&#34;&gt;cd&lt;/span&gt; example&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Create a new theme
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new theme exampleTheme&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;This will have created a &lt;code&gt;themes&lt;/code&gt; folder with a &lt;code&gt;exampleTheme&lt;/code&gt; subfolder, the folder structure should look like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── resources
+│   └── _gen
+│       ├── assets
+│       └── images
+├── static
+└── themes
+    └── exampleTheme
+        ├── LICENSE
+        ├── archetypes
+        │   └── default.md
+        ├── layouts
+        │   ├── 404.html
+        │   ├── _default
+        │   │   ├── baseof.html
+        │   │   ├── list.html
+        │   │   └── single.html
+        │   ├── index.html
+        │   └── partials
+        │       ├── footer.html
+        │       ├── head.html
+        │       └── header.html
+        ├── static
+        │   ├── css
+        │   └── js
+        └── theme.toml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Check that everything is working fine by starting the server
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to http://localhost:1313, and check there are no errors in the developer console (Chrome) or equivalent in your browser of choice&lt;/li&gt;
+&lt;li&gt;Check the &lt;code&gt;config.toml&lt;/code&gt; file and make sure it looks like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;baseURL = &amp;#34;http://example.org/&amp;#34;
+languageCode = &amp;#34;en-us&amp;#34;
+title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;I will be using this for the rest of the post, but feel free to customise it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;partials&#34;&gt;Partials&lt;/h4&gt;
+&lt;p&gt;Partials are small, context-aware components that can be used economically to keep your templating DRY.&lt;/p&gt;
+&lt;h5 id=&#34;head&#34;&gt;Head&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/partials/head.html&lt;/code&gt; in a text editor&lt;/li&gt;
+&lt;li&gt;This will be the place for metadata like the document title, character set, styles, scripts, and other meta information&lt;/li&gt;
+&lt;li&gt;Paste the following
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;viewport&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;content&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;width=device-width, initial-scale=1&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/css/bootstrap.min.css&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;text/css&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/css/style.css&amp;#34;&lt;/span&gt;&amp;gt;
+    {{ $title := print .Site.Title &amp;#34; | &amp;#34; .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;{{ $title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Here we are specifying the charset that our document will use, &lt;code&gt;utf-8&lt;/code&gt; in this case, the viewport information and couple of stylesheets&lt;/li&gt;
+&lt;li&gt;Let&#39;s go ahead and add the missing CSS files&lt;/li&gt;
+&lt;li&gt;Go to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt; and create a file called &lt;code&gt;style.css&lt;/code&gt;, we will place our custom CSS here later on&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;https://getbootstrap.com/&lt;/a&gt; and download the latest version of Bootstrap (v4.4.1 at the time of writing)&lt;/li&gt;
+&lt;li&gt;Extract the ZIP file and copy &lt;code&gt;bootstrap.min.css&lt;/code&gt; to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finally, for the title, we will render the site title as it appears in &lt;code&gt;config.toml&lt;/code&gt; when are at the homepage and we will concatenate the section name when we are in a section page e.g. &lt;code&gt;My New Hugo Site | Posts&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;script&#34;&gt;Script&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;In addition to Bootstrap, we are going to use Feather icons to display icons on our site&lt;/li&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://github.com/feathericons/feather#client-side-javascript&#34;&gt;https://github.com/feathericons/feather#client-side-javascript&lt;/a&gt; and download &lt;code&gt;feather.min.js&lt;/code&gt; into &lt;code&gt;example/themes/exampleTheme/static/js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a file &lt;code&gt;example/themes/exampleTheme/layouts/partials/script.html&lt;/code&gt; and paste the following
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/js/feather.min.js&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;
+  feather.replace()
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;script&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;header-and-footer&#34;&gt;Header and footer&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Let&#39;s add a nav to the header so that we can navigate between the different sections of our site&lt;/li&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/partials/header.html&lt;/code&gt; and paste the following
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav-border&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav justify-content-center&amp;#34;&lt;/span&gt;&amp;gt;
+        {{ range .Site.Menus.main }}
+        &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav-link&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;{{ .URL }}&amp;#34;&lt;/span&gt;&amp;gt;
+        {{ if .Pre }}
+        {{ $icon := printf &amp;#34;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;data-feather&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;\&amp;#34;%s\&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt;&amp;gt; &amp;#34; .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt;&amp;gt;
+        {{ end }}
+    &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;nav&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Here we are creating a nav menu that we be centred at the top of each page&lt;/li&gt;
+&lt;li&gt;Each menu item will have a link and also an icon if we configure it as a &lt;code&gt;pre&lt;/code&gt; property in &lt;code&gt;config.toml&lt;/code&gt;, more on that later&lt;/li&gt;
+&lt;li&gt;For the footer let&#39;s just add a basic copyright disclaimer
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;footer text-center&amp;#34;&lt;/span&gt;&amp;gt;Copyright (c) {{ now.Format &amp;#34;2006&amp;#34;}} John Doe&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;You can replace &lt;code&gt;John Doe&lt;/code&gt; with your name&lt;/li&gt;
+&lt;li&gt;The current year will be displayed as well&lt;/li&gt;
+&lt;li&gt;If you are wondering why &amp;ldquo;2006&amp;rdquo;, you can find out more about it &lt;a href=&#34;https://golang.org/src/time/format.go#L479&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;metadata&#34;&gt;Metadata&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Let&#39;s create one more partial to display metadata about each post e.g. date and tag.&lt;/li&gt;
+&lt;li&gt;Create a new file &lt;code&gt;example/themes/exampleTheme/layouts/partials/metadata.html&lt;/code&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ $dateTime := .PublishDate.Format &amp;#34;2006-01-02&amp;#34; }}
+{{ $dateFormat := .Site.Params.dateFormat | default &amp;#34;Jan 2, 2006&amp;#34; }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;data-feather&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;calendar&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;time&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;datetime&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;{{ $dateTime }}&amp;#34;&lt;/span&gt;&amp;gt;{{ .PublishDate.Format $dateFormat }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;time&lt;/span&gt;&amp;gt;
+{{ with .Params.tags }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;data-feather&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;i&lt;/span&gt;&amp;gt;
+{{ range . }}
+{{ $href := print (absURL &amp;#34;tags/&amp;#34;) (urlize .) }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;btn btn-sm btn-outline-dark tag-btn&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;{{ $href }}&amp;#34;&lt;/span&gt;&amp;gt;{{ . }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt;&amp;gt;
+{{ end }}
+{{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;We are using Feather icons to spice things up a little, but in fact we are just rendering the publication date and the tags&lt;/li&gt;
+&lt;li&gt;Tags will be passed in as parameters from the post itself in the front matter, more information &lt;a href=&#34;https://gohugo.io/content-management/front-matter/&#34;&gt;here&lt;/a&gt; e.g.
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
+author: &amp;#34;John Doe&amp;#34;
+title: &amp;#34;My First Post&amp;#34;
+date: &amp;#34;2006-02-01&amp;#34;
+tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;default-layouts&#34;&gt;Default layouts&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Now we have all the basic ingredients to work on the layouts&lt;/li&gt;
+&lt;li&gt;These are placed under &lt;code&gt;example/themes/exampleTheme/layouts/_default&lt;/code&gt; and, at least, consist of
+&lt;ul&gt;
+&lt;li&gt;baseof&lt;/li&gt;
+&lt;li&gt;list&lt;/li&gt;
+&lt;li&gt;single&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;baseof&#34;&gt;Baseof&lt;/h5&gt;
+&lt;p&gt;This will be the base template for all pages, and should reference the different partials we edited above.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/_default/baseof.html&lt;/code&gt;, it should look like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#007020&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;
+    {{- partial &amp;#34;head.html&amp;#34; . -}}
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+        {{- partial &amp;#34;header.html&amp;#34; . -}}
+        &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;
+        {{- block &amp;#34;main&amp;#34; . }}{{- end }}
+        &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+        {{- partial &amp;#34;footer.html&amp;#34; . -}}
+    &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Let&#39;s also include the &lt;code&gt;script.html&lt;/code&gt; partial with our Feather icons
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#007020&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;
+    {{- partial &amp;#34;head.html&amp;#34; . -}}
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+        {{- partial &amp;#34;header.html&amp;#34; . -}}
+        &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;content&amp;#34;&lt;/span&gt;&amp;gt;
+        {{- block &amp;#34;main&amp;#34; . }}{{- end }}
+        &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+        {{- partial &amp;#34;footer.html&amp;#34; . -}}
+        {{- partial &amp;#34;script.html&amp;#34; . -}}
+    &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;It&#39;s good practice to place our scripts at the end of the HTML code so that it doesn&#39;t block rendering the page&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;list&#34;&gt;List&lt;/h5&gt;
+&lt;p&gt;This layout will be used to display the list of posts on our site.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/_default/list.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;We will define the &lt;code&gt;main&lt;/code&gt; section of the &lt;code&gt;baseof&lt;/code&gt; layout like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ define &amp;#34;main&amp;#34; }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;
+{{ range .Pages.ByPublishDate.Reverse }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h3&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt;&amp;gt;&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h3&lt;/span&gt;&amp;gt;
+    {{ partial &amp;#34;metadata.html&amp;#34; . }}
+    &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;summary&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;{{ .RelPermalink }}&amp;#34;&lt;/span&gt;&amp;gt;
+        &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;{{ .Summary }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;
+    &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;a&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;
+{{ end }}
+{{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;We are displaying the metadata i.e. publication date and tags, and the summary of the post&lt;/li&gt;
+&lt;li&gt;We are also sorting posts by publication date in reverse order, most recent first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;single&#34;&gt;Single&lt;/h5&gt;
+&lt;p&gt;This layout will be used to display a single post.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/_default/single.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Similarly to what we did above, let&#39;s define the &lt;code&gt;main&lt;/code&gt; section
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ define &amp;#34;main&amp;#34; }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;
+{{ partial &amp;#34;metadata.html&amp;#34; . }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;br&lt;/span&gt;&amp;gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;br&lt;/span&gt;&amp;gt;
+{{ .Content }}
+{{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Like before, we will display the metadata, but in this case, we will display the full content instead of the summary&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;homepage&#34;&gt;Homepage&lt;/h4&gt;
+&lt;p&gt;This will be the landing page at the root of our site.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/index.html&lt;/code&gt; in a text editor&lt;/li&gt;
+&lt;li&gt;With Bootstrap in place, we can now use the Jumbotron component to render a hero section&lt;/li&gt;
+&lt;li&gt;Paste the following
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ define &amp;#34;main&amp;#34; }}
+&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;home-jumbotron&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;jumbotron text-center&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&amp;gt;{{ .Site.Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;404&#34;&gt;404&lt;/h4&gt;
+&lt;p&gt;This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&#39;s delete it for now.&lt;/p&gt;
+&lt;p&gt;Feel free to play with the contents of the file if you want to customise your error messages.&lt;/p&gt;
+&lt;h4 id=&#34;configuration&#34;&gt;Configuration&lt;/h4&gt;
+&lt;p&gt;We have created the template, now we need to tell Hugo to use it for our site.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open &lt;code&gt;example/config.toml&lt;/code&gt; and add a line to select the theme like this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;theme = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;exampleTheme&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;We&#39;ll also need a menu to navigate to the different sections, let&#39;s add it
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[menu]
+  [[menu.main]]
+    name = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;Home&amp;#34;&lt;/span&gt;
+    pre = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;home&amp;#34;&lt;/span&gt;
+    url = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;
+    weight = &lt;span style=&#34;color:#40a070&#34;&gt;1&lt;/span&gt;
+  [[menu.main]]
+    name = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;Posts&amp;#34;&lt;/span&gt;
+    pre = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;pen-tool&amp;#34;&lt;/span&gt;
+    url = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/posts/&amp;#34;&lt;/span&gt;
+    weight = &lt;span style=&#34;color:#40a070&#34;&gt;2&lt;/span&gt;
+  [[menu.main]]
+    name = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;Tags&amp;#34;&lt;/span&gt;
+    pre = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt;
+    url = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;/tags/&amp;#34;&lt;/span&gt;
+    weight = &lt;span style=&#34;color:#40a070&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Here we are defining a menu, and referencing it with the name &lt;code&gt;main&lt;/code&gt; to match our header (&lt;code&gt;.Site.Menus.main&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;In Hugo there is another way to create a menu quickly, and that is by adding this line to your &lt;code&gt;config.toml&lt;/code&gt; file instead, more information &lt;a href=&#34;https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers&#34;&gt;here&lt;/a&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;sectionPagesMenu = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;However want to be able to customise our nav menu and add icons, therefore we&#39;ll go with the manual approach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;write-your-first-post&#34;&gt;Write your first post&lt;/h4&gt;
+&lt;p&gt;The real value of a website is its content. Let&#39;s create a post before we have a look at the final result.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a terminal and use the following command from the root of your site to create a post
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new posts/my-first-post.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Open the newly created &lt;code&gt;example/content/posts/my-first-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add some tags to the front matter
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Add some content under the front matter&lt;/li&gt;
+&lt;li&gt;Hugo automatically takes the first 70 words of your content as its summary and stores it into the &lt;code&gt;.Summary&lt;/code&gt; variable&lt;/li&gt;
+&lt;li&gt;Instead, you can manually define where the summary ends with a &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; divider&lt;/li&gt;
+&lt;li&gt;Alternatively, you can add a &lt;code&gt;summary&lt;/code&gt; to the front matter if you don&#39;t want your summary to be the beginning of your post&lt;/li&gt;
+&lt;li&gt;The final result should look similar to this
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
+title: &amp;#34;My First Post&amp;#34;
+date: 2020-01-26T23:11:13Z
+draft: true
+tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
+---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+incididunt ut labore et dolore magna aliqua. Pellentesque eu tincidunt tortor 
+aliquam nulla facilisi cras fermentum odio. A erat nam at lectus urna duis. 
+Sed velit dignissim sodales ut eu sem. Lectus urna duis convallis convallis 
+tellus. Diam sit amet nisl suscipit adipiscing bibendum est. Sed felis eget 
+velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est 
+ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id 
+semper risus in hendrerit gravida rutrum.
+
+&amp;lt;!--more--&amp;gt;
+
+Ac ut consequat semper viverra nam. Hac habitasse platea dictumst vestibulum 
+rhoncus. Amet porttitor eget dolor morbi non. Justo eget magna fermentum 
+iaculis eu non. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec. Aliquam 
+id diam maecenas ultricies. Non sodales neque sodales ut etiam. Amet massa 
+vitae tortor condimentum lacinia quis. Erat imperdiet sed euismod nisi porta. 
+Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. Viverra 
+suspendisse potenti nullam ac. Tincidunt id aliquet risus feugiat in. Varius 
+quam quisque id diam vel. Egestas erat imperdiet sed euismod nisi. Scelerisque 
+felis imperdiet proin fermentum leo vel orci porta non. Ut faucibus pulvinar 
+elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;trying-it-out&#34;&gt;Trying it out&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Open a terminal and run the following from the root folder of your site
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo server -D&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;-D&lt;/code&gt; option means to include content marked as draft&lt;/li&gt;
+&lt;li&gt;Alternatively, edit the front matter of your post and change this line &lt;code&gt;draft: true&lt;/code&gt; to &lt;code&gt;draft: false&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to http://localhost:1313&lt;/li&gt;
+&lt;li&gt;You should see something like this
+&lt;img src=&#34;https://retrolog.io/images/creating-a-hugo-theme-from-scratch-result.jpg&#34; alt=&#34;image&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h4&gt;
+&lt;p&gt;In this post I&#39;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the &lt;code&gt;style.css&lt;/code&gt; file and modify the template to add more features.&lt;/p&gt;
+&lt;p&gt;In future posts I will show how to add share buttons and analytics to our site.&lt;/p&gt;
+&lt;p&gt;If you want to jump ahead and see the final template that I use for my site, you can find it in GitHub &lt;a href=&#34;https://github.com/plopcas/papaya&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks for reading!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Managing High Performers</title>
