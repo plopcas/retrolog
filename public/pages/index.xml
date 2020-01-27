@@ -1,0 +1,52 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Retrolog.io</title>
+    <link>https://retrolog.io/pages/</link>
+    <description>Recent content in Pages on Retrolog.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 27 Jan 2020 22:27:16 +0000</lastBuildDate>
+    
+        <atom:link href="https://retrolog.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Author</title>
+      <link>https://retrolog.io/pages/about/</link>
+      <pubDate>Mon, 27 Jan 2020 22:27:16 +0000</pubDate>
+      
+      <guid>https://retrolog.io/pages/about/</guid>
+      <description>
+&lt;h1&gt;Pedro Lopez&lt;/h1&gt;
+
+&lt;span id=&#34;social&#34;&gt;
+    &lt;a href=&#34;https://twitter.com/plopcas&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;Twitter&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://www.linkedin.com/in/plopcas/&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;LinkedIn&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;linkedin&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;http://github.com/plopcas/&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;GitHub&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;github&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://stackoverflow.com/users/3889230/pedro-lopez&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34;
+        data-show-count=&#34;false&#34; aria-label=&#34;Stack Overflow&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;layers&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://medium.com/@plopcas&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;Medium&#34; target=&#34;_blank&#34;&gt;M&lt;/a&gt;
+    &lt;a href=&#34;https://dev.to/plopcas&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;Dev.to&#34; target=&#34;_blank&#34;&gt;D&lt;/a&gt;
+    &lt;a href=&#34;https://www.instagram.com/plopcas/&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;Instagram&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;instagram&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://www.youtube.com/c/pedroclopezcasado&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34;
+        data-show-count=&#34;false&#34; aria-label=&#34;Youtube&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;youtube&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;a href=&#34;https://shutterstock.com/g/plopcas&#34; class=&#34;btn btn-sm btn-outline-dark share-btn&#34; data-show-count=&#34;false&#34;
+        aria-label=&#34;Shutterstock&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;feather-16&#34; data-feather=&#34;aperture&#34;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/span&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

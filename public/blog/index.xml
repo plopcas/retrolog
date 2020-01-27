@@ -149,7 +149,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 {{ end }}
 {{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;We are using Feather icons to spice things up a little, but in fact we are just rendering the publication date and the tags&lt;/li&gt;
-&lt;li&gt;Tags will be passed in as parameters from the post itself in the front matter, more information &lt;a href=&#34;https://gohugo.io/content-management/front-matter/&#34;&gt;here&lt;/a&gt; e.g.
+&lt;li&gt;Tags will be passed in as parameters from the post itself in the front matter, more information &lt;a href=&#34;https://gohugo.io/content-management/front-matter/&#34;&gt;here&lt;/a&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
 author: &amp;#34;John Doe&amp;#34;
 title: &amp;#34;My First Post&amp;#34;
@@ -271,7 +271,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;li&gt;Here we are defining a menu, and referencing it with the name &lt;code&gt;main&lt;/code&gt; to match our header (&lt;code&gt;.Site.Menus.main&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;In Hugo there is another way to create a menu quickly, and that is by adding this line to your &lt;code&gt;config.toml&lt;/code&gt; file instead, more information &lt;a href=&#34;https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers&#34;&gt;here&lt;/a&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;sectionPagesMenu = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;However want to be able to customise our nav menu and add icons, therefore we&#39;ll go with the manual approach&lt;/li&gt;
+&lt;li&gt;However we want to be able to customise our nav menu and add icons, therefore we&#39;ll go with the manual approach&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;write-your-first-post&#34;&gt;Write your first post&lt;/h4&gt;
 &lt;p&gt;The real value of a website is its content. Let&#39;s create a post before we have a look at the final result.&lt;/p&gt;

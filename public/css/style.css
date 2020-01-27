@@ -45,7 +45,7 @@ h1.title {
     padding-bottom: 0.3em;
 }
 
-.twitter-btn {
+.share-btn {
     margin-bottom: 0.3em;
     padding-bottom: 0.3em;
 }
@@ -66,4 +66,15 @@ a.summary:link, a.summary:visited, a.summary:hover, a.summary:active {
 
 .footer {
     color: darkgrey;
+}
+
+a.black-link:link, a.black-link:visited, a.black-link:active {
+    color: black;
+    text-decoration: none;
+}
+
+a.black-link:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }

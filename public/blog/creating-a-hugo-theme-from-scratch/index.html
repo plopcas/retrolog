@@ -68,10 +68,10 @@
 <span id="social">
     <i data-feather="share-2"></i></a>
     <a href="https://twitter.com/share?url=https%3a%2f%2fretrolog.io%2fblog%2fcreating-a-hugo-theme-from-scratch%2f&text=Creating%20a%20Hugo%20Theme%20From%20Scratch&via=Retrologio"
-        class="btn btn-sm btn-outline-dark twitter-btn" data-show-count="false" aria-label="Share on Twitter">
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on Twitter">
         <i class="feather-16" data-feather="twitter"></i></a>
     <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fblog%2fcreating-a-hugo-theme-from-scratch%2f&summary=In%20this%20post%20I%20will%20show%20you%20how%20to%20build%20a%20minimalist%20theme%20for%20Hugo.%0a&source=Retrolog.io"
-        class="btn btn-sm btn-outline-dark twitter-btn" data-show-count="false" aria-label="Share on Twitter">
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on LinkedIn">
         <i class="feather-16" data-feather="linkedin"></i></a>
 </span>
 
@@ -218,7 +218,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 {{ end }}
 {{ end }}</code></pre></div></li>
 <li>We are using Feather icons to spice things up a little, but in fact we are just rendering the publication date and the tags</li>
-<li>Tags will be passed in as parameters from the post itself in the front matter, more information <a href="https://gohugo.io/content-management/front-matter/">here</a> e.g.
+<li>Tags will be passed in as parameters from the post itself in the front matter, more information <a href="https://gohugo.io/content-management/front-matter/">here</a>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">---
 author: &#34;John Doe&#34;
 title: &#34;My First Post&#34;
@@ -340,7 +340,7 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
 <li>Here we are defining a menu, and referencing it with the name <code>main</code> to match our header (<code>.Site.Menus.main</code>)</li>
 <li>In Hugo there is another way to create a menu quickly, and that is by adding this line to your <code>config.toml</code> file instead, more information <a href="https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers">here</a>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml">sectionPagesMenu = <span style="color:#4070a0">&#34;main&#34;</span></code></pre></div></li>
-<li>However want to be able to customise our nav menu and add icons, therefore we'll go with the manual approach</li>
+<li>However we want to be able to customise our nav menu and add icons, therefore we'll go with the manual approach</li>
 </ul>
 <h4 id="write-your-first-post">Write your first post</h4>
 <p>The real value of a website is its content. Let's create a post before we have a look at the final result.</p>
