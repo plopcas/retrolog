@@ -7,6 +7,9 @@ theme = "papaya"
 [taxonomies]
   tag = "tags"
 
+[permalinks]
+  posts = "/blog/:title/"
+
 # The value of pre is the icon name in https://feathericons.com/
 [menu]
   [[menu.main]]
