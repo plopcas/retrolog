@@ -17,7 +17,7 @@
       
       <guid>https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/creating-a-hugo-theme-from-scratch.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I use Hugo for my personal blog, and it&#39;s great! In this post I will show you how to build a minimalist theme for Hugo.&lt;/p&gt;
+&lt;p&gt;In this post I will show you how to build a minimalist theme for Hugo.&lt;/p&gt;
 &lt;h4 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;A basic understanding of Hugo templating and folder structure&lt;/li&gt;
