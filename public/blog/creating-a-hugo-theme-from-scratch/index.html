@@ -164,7 +164,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 <li>Go to <code>example/themes/exampleTheme/static/css</code> and create a file called <code>style.css</code>, we will place our custom CSS here later on</li>
 <li>Go to <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> and download the latest version of Bootstrap (v4.4.1 at the time of writing)</li>
 <li>Extract the ZIP file and copy <code>bootstrap.min.css</code> to <code>example/themes/exampleTheme/static/css</code></li>
-<li>Finally, for the title, we will render the site title as it appears in <code>config.toml</code> when are at the homepage and we will concatenate the section name when we are in a section page e.g. <code>My New Hugo Site | Posts</code></li>
+<li>Finally, for the title, we will render the site title as it appears in <code>config.toml</code> when we are at the homepage and we will concatenate the section name when we are in a section page e.g. <code>My New Hugo Site | Posts</code></li>
 </ul>
 <h5 id="script">Script</h5>
 <ul>
@@ -194,7 +194,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
         {{ end }}
     &lt;/<span style="color:#062873;font-weight:bold">nav</span>&gt;
 &lt;/<span style="color:#062873;font-weight:bold">div</span>&gt;</code></pre></div></li>
-<li>Here we are creating a nav menu that we be centred at the top of each page</li>
+<li>Here we are creating a nav menu that will be centred at the top of each page</li>
 <li>Each menu item will have a link and also an icon if we configure it as a <code>pre</code> property in <code>config.toml</code>, more on that later</li>
 <li>For the footer let's just add a basic copyright disclaimer
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">p</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;footer text-center&#34;</span>&gt;Copyright (c) {{ now.Format &#34;2006&#34;}} John Doe&lt;/<span style="color:#062873;font-weight:bold">p</span>&gt;</code></pre></div></li>
@@ -204,7 +204,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 </ul>
 <h5 id="metadata">Metadata</h5>
 <ul>
-<li>Let's create one more partial to display metadata about each post e.g. date and tag.</li>
+<li>Let's create one more partial to display metadata about each post e.g. date and tags</li>
 <li>Create a new file <code>example/themes/exampleTheme/layouts/partials/metadata.html</code>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">{{ $dateTime := .PublishDate.Format &#34;2006-01-02&#34; }}
 {{ $dateFormat := .Site.Params.dateFormat | default &#34;Jan 2, 2006&#34; }}

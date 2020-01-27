@@ -100,7 +100,7 @@ Partials are small, context-aware components that can be used economically to ke
 - Go to `example/themes/exampleTheme/static/css` and create a file called `style.css`, we will place our custom CSS here later on
 - Go to https://getbootstrap.com/ and download the latest version of Bootstrap (v4.4.1 at the time of writing)
 - Extract the ZIP file and copy `bootstrap.min.css` to `example/themes/exampleTheme/static/css`
-- Finally, for the title, we will render the site title as it appears in `config.toml` when are at the homepage and we will concatenate the section name when we are in a section page e.g. `My New Hugo Site | Posts`
+- Finally, for the title, we will render the site title as it appears in `config.toml` when we are at the homepage and we will concatenate the section name when we are in a section page e.g. `My New Hugo Site | Posts`
 
 ##### Script
 
@@ -134,7 +134,7 @@ Partials are small, context-aware components that can be used economically to ke
     </nav>
 </div>
 {{< /highlight >}}
-- Here we are creating a nav menu that we be centred at the top of each page
+- Here we are creating a nav menu that will be centred at the top of each page
 - Each menu item will have a link and also an icon if we configure it as a `pre` property in `config.toml`, more on that later
 - For the footer let's just add a basic copyright disclaimer
 {{< highlight html>}}
@@ -146,7 +146,7 @@ Partials are small, context-aware components that can be used economically to ke
 
 ##### Metadata
 
-- Let's create one more partial to display metadata about each post e.g. date and tag.
+- Let's create one more partial to display metadata about each post e.g. date and tags
 - Create a new file `example/themes/exampleTheme/layouts/partials/metadata.html`
 {{< highlight html>}}
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
@@ -162,7 +162,7 @@ Partials are small, context-aware components that can be used economically to ke
 {{ end }}
 {{< /highlight >}}
 - We are using Feather icons to spice things up a little, but in fact we are just rendering the publication date and the tags
-- Tags will be passed in as parameters from the post itself in the front matter, more information [here](https://gohugo.io/content-management/front-matter/) e.g.
+- Tags will be passed in as parameters from the post itself in the front matter, more information [here](https://gohugo.io/content-management/front-matter/)
 {{< highlight markdown>}}
 ---
 author: "John Doe"
@@ -307,7 +307,7 @@ theme = "exampleTheme"
 {{< highlight toml>}}
 sectionPagesMenu = "main"
 {{< /highlight >}}
-- However want to be able to customise our nav menu and add icons, therefore we'll go with the manual approach
+- However we want to be able to customise our nav menu and add icons, therefore we'll go with the manual approach
 
 #### Write your first post
 
