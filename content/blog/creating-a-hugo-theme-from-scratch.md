@@ -8,7 +8,7 @@ author: "Pedro Lopez"
 
 ![image](/images/creating-a-hugo-theme-from-scratch.jpg)
 
-I use Hugo for my personal blog, and it's great! In this post I will show you how to build a minimalist theme for Hugo.
+In this post I will show you how to build a minimalist theme for Hugo.
 
 <!--more-->
 
