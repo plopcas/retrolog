@@ -1,0 +1,27 @@
+{{ if .Site.Params.amazonAffiliatesTitle }}
+<h3>{{ .Site.Params.amazonAffiliatesTitle }}</h3>
+{{ end }}
+<span id="social">
+    <a target="_blank" class="btn btn-sm btn-outline-dark share-btn" href="{{ .Site.Params.amazonAffiliatesButtonUrl }}">
+        <i class="feather-16" data-feather="book"></i>
+    </a>
+    <span> Help me publish more content with the Amazon Associates Program 🙏</span>
+</span>
+<p>
+    <script type="text/javascript">
+        amzn_assoc_ad_type = "responsive_search_widget";
+        amzn_assoc_tracking_id = "{{ .Site.Params.amazonAffiliatesTrackingId }}";
+        amzn_assoc_marketplace = "amazon";
+        amzn_assoc_region = "GB";
+        amzn_assoc_placement = "";
+        amzn_assoc_search_type = "search_widget";
+        amzn_assoc_width = "765";
+        amzn_assoc_height = "250";
+        amzn_assoc_default_search_category = "";
+        amzn_assoc_default_search_key = "{{ .Site.Params.amazonAffiliatesSearchKey }}";
+        amzn_assoc_theme = "light";
+        amzn_assoc_bg_color = "ffffff";
+    </script>
+    <script src="{{ .Site.Params.amazonAffiliatesWidgetUrl }}">
+    </script>
+</p>
