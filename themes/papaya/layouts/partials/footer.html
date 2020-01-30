@@ -1,1 +1,9 @@
-<p class="footer text-center">Copyright (c) {{ now.Format "2006"}} {{ .Site.Params.authorName | markdownify }}</p>
+<p class="footer text-center">
+    <span>
+        Copyright (c) {{ now.Format "2006"}} {{ .Site.Params.authorName | markdownify }}
+    </span>
+    <br>
+    {{ if .Site.Params.privacyPolicyUrl }}
+    <a class="grey-link" href="{{ .Site.Params.privacyPolicyUrl }}">Privacy policy</a>
+    {{ end}}
+</p>

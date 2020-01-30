@@ -32,6 +32,7 @@ theme = "papaya"
   description = "Read about management and leadership in software engineering. Learn from the past and move forward!"
   dateFormat = "Jan 2, 2006"
   authorName = "Pedro Lopez"
+  privacyPolicyUrl = "/pages/privacy-policy"
   googleAdSense = "ca-pub-9945087415580189"
   googleAnalytics = "UA-156682837-1"
   amazonAffiliates = true

@@ -4,6 +4,10 @@
     src: url(../fonts/Norican/Norican-Regular.ttf) format("truetype");
 }
 
+.content {
+    min-height: calc(100vh - 70px);
+}
+
 .container {
     max-width: 800px;
 }
@@ -66,6 +70,8 @@ a.summary:link, a.summary:visited, a.summary:hover, a.summary:active {
 
 .footer {
     color: darkgrey;
+    height: 50px;
+    font-size: xx-small;
 }
 
 a.black-link:link, a.black-link:visited, a.black-link:active {
@@ -75,6 +81,17 @@ a.black-link:link, a.black-link:visited, a.black-link:active {
 
 a.black-link:hover {
     color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.grey-link:link, a.grey-link:visited, a.grey-link:active {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a.grey-link:hover {
+    color: darkgrey;
     text-decoration: none;
     font-weight: bold;
 }
