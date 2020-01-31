@@ -5,4 +5,12 @@
   <p class="font-125">by <a class="black-link" href="/pages/about">{{ .Site.Params.authorName | markdownify }}</a></p>
 </div>
 
+{{ with .Site.Params.amazonAffiliatesRecommendationUrl }}
+<div id="recommendation" class="text-center">
+  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
+    src="{{ index (shuffle .) 0 }}">
+  </iframe>
+</div>
+{{ end }}
+
 {{ end }}

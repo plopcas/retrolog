@@ -41,6 +41,11 @@ theme = "papaya"
   amazonAffiliatesTrackingId = "retrolog-21"
   amazonAffiliatesButtonUrl = "https://www.amazon.co.uk/gp/search?ie=UTF8&tag=retrolog-21&linkCode=ur2&linkId=29bcc9e275d4c219971ab43b8f4ca0b3&camp=1634&creative=6738&index=books&keywords=pragmatic programmer"
   amazonAffiliatesWidgetUrl = "//z-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=GB"
+  amazonAffiliatesRecommendationUrl = [
+    "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=retrolog-21&marketplace=amazon&region=GB&placement=1480247871&asins=1480247871&linkId=ccc80e1bb6e6509866540253e3628c2f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+    "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=retrolog-21&marketplace=amazon&region=GB&placement=1680502395&asins=1680502395&linkId=f52eb2bf117b524812f95cbe4e833930&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+    "//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ac&ref=tf_til&ad_type=product_link&tracking_id=retrolog-21&marketplace=amazon&region=GB&placement=0321601912&asins=0321601912&linkId=26c586acc2e5d58c647834c84dd28ff9&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff",
+  ]
 
 [social]
   twitter = "Retrologio"
