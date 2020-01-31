@@ -5,11 +5,17 @@
 }
 
 .content {
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 90px);
 }
 
 .container {
     max-width: 800px;
+}
+
+.footer {
+    color: darkgrey;
+    height: 50px;
+    font-size: xx-small;
 }
 
 #nav a {
@@ -66,12 +72,6 @@ a.title:link, a.title:visited, a.title:hover, a.title:active {
 a.summary:link, a.summary:visited, a.summary:hover, a.summary:active {
     color: black;
     text-decoration: none;
-}
-
-.footer {
-    color: darkgrey;
-    height: 50px;
-    font-size: xx-small;
 }
 
 a.black-link:link, a.black-link:visited, a.black-link:active {
