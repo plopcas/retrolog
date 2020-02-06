@@ -19,9 +19,6 @@
     
     <title>Retrolog.io | Pages</title>
     
-    <script data-ad-client="ca-pub-9945087415580189" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
 </head>
 
 <body>
@@ -58,7 +55,34 @@
         
     </nav>
 </div>
+        <div id="cookie-banner" class="container my-4" style="display:none;">
+    <div class="alert alert-primary" role="alert">
+        We use cookies to personalize your experience and analyse our traffic.
         
+        Read our
+        <a class="black-link" href="/pages/privacy-policy">privacy policy</a>
+        to learn more.
+        
+        <button id="cookie-banner-button" class="btn-light" aria-label="Close">
+            <i class="feather-16" data-feather="x-square"></i>
+        </button>
+    </div>
+</div>
+<script>
+    function acceptCookies() {
+        document.cookie = "cookie-consent=true;";
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    };
+    if (!getCookie("cookie-consent")) {
+        document.getElementById("cookie-banner").style.display = "block";
+    }
+    document.getElementById("cookie-banner-button").addEventListener("click", acceptCookies);
+</script>
         <div class="container">
             <main id="main">
                 
@@ -75,16 +99,16 @@
     <a href="https://twitter.com/share?url=https%3a%2f%2fretrolog.io%2fpages%2fprivacy-policy%2f&text=Privacy%20Policy&via=Retrologio"
         class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on Twitter">
         <i class="feather-16" data-feather="twitter"></i></a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fpages%2fprivacy-policy%2f&summary=Privacy%20Policy%20This%20privacy%20policy%20applies%20to%20retrolog.io.%0aretrolo.io%20is%20a%20static%20website%2c%20therefore%20we%20do%20not%20store%20any%20information%20about%20you.%20However%20we%20use%20third%20party%20vendors%20for%20analytics%20and%20advertisement.%0aTracking%20your%20site%20visits%20Ads%20Third%20party%20vendors%2c%20including%20Google%2c%20use%20cookies%20to%20serve%20ads%20based%20on%20a%20user%27s%20previous%20visits%20to%20your%20website%20or%20other%20websites.%0aGoogle%27s%20use%20of%20advertising%20cookies%20enables%20it%20and%20its%20partners%20to%20serve%20ads%20to%20your%20users%20based%20on%20their%20visit%20to%20your%20sites%20and%2for%20other%20sites%20on%20the%20Internet.&source=Retrolog.io"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fpages%2fprivacy-policy%2f&summary=Privacy%20Policy%20This%20privacy%20policy%20applies%20to%20retrolog.io.%0aretrolog.io%20is%20a%20static%20website%2c%20therefore%20no%20information%20about%20you%20is%20stored%20on%20our%20servers.%20However%2c%20third%20party%20vendors%20are%20used%20for%20analytics%20and%20advertisement.%0aTracking%20your%20site%20visits%20Ads%20Third%20party%20vendors%20use%20cookies%20to%20serve%20ads%20based%20on%20user%27s%20previous%20visits%20to%20this%20website%20or%20other%20websites.%0aAnalytics%20retrolog.io%20uses%20Google%20Analytics%2c%20which%20employs%20cookies%20that%20are%20stored%20on%20your%20computer%20in%20order%20to%20facilitate%20an%20analysis%20of%20your%20use%20of%20the%20site.&source=Retrolog.io"
         class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on LinkedIn">
         <i class="feather-16" data-feather="linkedin"></i></a>
 </span>
 
     <a class="summary" href="/pages/privacy-policy/">
         <p>Privacy Policy This privacy policy applies to retrolog.io.
-retrolo.io is a static website, therefore we do not store any information about you. However we use third party vendors for analytics and advertisement.
-Tracking your site visits Ads Third party vendors, including Google, use cookies to serve ads based on a user's previous visits to your website or other websites.
-Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</p>
+retrolog.io is a static website, therefore no information about you is stored on our servers. However, third party vendors are used for analytics and advertisement.
+Tracking your site visits Ads Third party vendors use cookies to serve ads based on user's previous visits to this website or other websites.
+Analytics retrolog.io uses Google Analytics, which employs cookies that are stored on your computer in order to facilitate an analysis of your use of the site.</p>
     </a>
 </p>
 

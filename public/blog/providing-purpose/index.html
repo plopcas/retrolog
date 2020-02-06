@@ -19,9 +19,6 @@
     
     <title>Retrolog.io | Providing Purpose</title>
     
-    <script data-ad-client="ca-pub-9945087415580189" async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
 </head>
 
 <body>
@@ -58,7 +55,34 @@
         
     </nav>
 </div>
+        <div id="cookie-banner" class="container my-4" style="display:none;">
+    <div class="alert alert-primary" role="alert">
+        We use cookies to personalize your experience and analyse our traffic.
         
+        Read our
+        <a class="black-link" href="/pages/privacy-policy">privacy policy</a>
+        to learn more.
+        
+        <button id="cookie-banner-button" class="btn-light" aria-label="Close">
+            <i class="feather-16" data-feather="x-square"></i>
+        </button>
+    </div>
+</div>
+<script>
+    function acceptCookies() {
+        document.cookie = "cookie-consent=true;";
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    };
+    if (!getCookie("cookie-consent")) {
+        document.getElementById("cookie-banner").style.display = "block";
+    }
+    document.getElementById("cookie-banner-button").addEventListener("click", acceptCookies);
+</script>
         <div class="container">
             <main id="main">
                 
