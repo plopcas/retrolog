@@ -6,10 +6,16 @@
 </div>
 
 {{ with .Site.Params.amazonAffiliatesRecommendationUrl }}
-<div id="recommendation" class="text-center">
-  <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"
-    src="{{ index (shuffle .) 0 }}">
-  </iframe>
+{{ $book := index (shuffle .) 0 }}
+<div id="recommendation">
+  <div class="book-single">
+    <span>Hand-picked books!</span>
+    <br><br>
+    <a target="_blank" href="{{ $book.link }}">
+      <img src="{{ $book.image }}">
+    </a>
+    <img src="{{ $book.pixel }}" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" />
+  </div>
 </div>
 {{ end }}
 

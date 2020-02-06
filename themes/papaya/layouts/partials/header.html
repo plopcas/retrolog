@@ -1,13 +1,14 @@
 <div id="cookie-banner" class="container my-4" style="display:none;">
-    <div class="alert alert-primary" role="alert">
+    <div class="alert alert-dark text-center" role="alert">
         We use cookies to personalize your experience and analyse our traffic.
         {{ if .Site.Params.privacyPolicyUrl }}
         Read our
-        <a class="black-link" href="{{ .Site.Params.privacyPolicyUrl }}">privacy policy</a>
+        <a class="black-link-bold" href="{{ .Site.Params.privacyPolicyUrl }}">privacy policy</a>
         to learn more.
         {{ end}}
+        <br><br>
         <button id="cookie-banner-button" class="btn-light" aria-label="Close">
-            <i class="feather-16" data-feather="x-square"></i>
+            GOT IT
         </button>
     </div>
 </div>
