@@ -9,7 +9,7 @@
 {{ $book := index (shuffle .) 0 }}
 <div id="recommendation">
   <div class="book-single">
-    <span>Hand-picked books!</span>
+    <span>Hand-picked book of the day!</span>
     <br><br>
     <a target="_blank" href="{{ $book.link }}">
       <img src="{{ $book.image }}">

@@ -3,11 +3,11 @@
 <h1>{{ .Title }}</h1>
 {{ range $elem_index, $elem_val:= .Pages.ByPublishDate.Reverse }}
 <p>
-    <h3><a class="title" href="{{ .RelPermalink }}">{{ $elem_val.Title }}</a></h3>
-    {{ partial "metadata.html" . }}
-    <a class="summary" href="{{ .RelPermalink }}">
-        <p>{{ $elem_val.Summary }}</p>
-    </a>
+  <h3><a class="title" href="{{ .RelPermalink }}">{{ $elem_val.Title }}</a></h3>
+  {{ partial "metadata.html" . }}
+  <a class="summary" href="{{ .RelPermalink }}">
+    <p>{{ $elem_val.Summary }}</p>
+  </a>
 </p>
 {{ if eq $elem_index 0 }}
 {{ if .Site.Params.amazonAffiliates }}

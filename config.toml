@@ -36,7 +36,6 @@ theme = "papaya"
   #googleAdSense = "ca-pub-9945087415580189"
   googleAnalytics = "UA-156682837-1"
   amazonAffiliates = true
-  amazonAffiliatesTitle = "Check Out These Books"
   amazonAffiliatesSearchKey = "pragmatic programmer"
   amazonAffiliatesTrackingId = "retrolog-21"
   amazonAffiliatesButtonUrl = "https://www.amazon.co.uk/gp/search?ie=UTF8&tag=retrolog-21&linkCode=ur2&linkId=29bcc9e275d4c219971ab43b8f4ca0b3&camp=1634&creative=6738&index=books&keywords=pragmatic programmer"

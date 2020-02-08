@@ -117,10 +117,20 @@ a.grey-link:hover {
 }
 
 .book-single {
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     border: 1px solid black;
     border-radius: .25rem;
-    width: 280px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book-list {
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    background-color: black;
+    max-width: 770px;
+    max-height: 226px;
     margin: 0 auto;
     text-align: center;
 }
