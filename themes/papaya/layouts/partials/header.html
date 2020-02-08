@@ -14,7 +14,9 @@
 </div>
 <script>
     function acceptCookies() {
-        document.cookie = "cookie-consent=true;";
+        var expiryDate = new Date();
+        expiryDate.setTime(expiryDate.getTime() + 315532887600); // 10 years
+        document.cookie = "cookie-consent=true;;expires=" + expiryDate.toGMTString() + ";path=/";
         document.getElementById("cookie-banner").style.display = "none";
     }
     function getCookie(name) {
