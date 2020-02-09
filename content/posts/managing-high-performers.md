@@ -100,3 +100,8 @@ As a manager, help them understand that by embracing the protocol, they can send
 Finally, no matter how much growth opportunities you put in place, how engaging and interesting the work feels or how great the environment is, at some point they will most likely leave. This is normal and expected. Just remember not to put all your eggs in one basket. Avoid single points of failure (something is known by only one person), favour knowledge transfer and cross-functionality, design effective hand-over procedures and manage the expectations of the rest of the team once your rock star is gone.
 
 If you follow these tips, you will have a great process in place that will help you find high performers and keep them in your team for quite a long time.
+
+---
+
+Want to know more? Check out this book 👇
+{{< book link="https://www.amazon.co.uk/gp/product/1544972687/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=1544972687&linkCode=as2&tag=retrolog-21&linkId=dda5d11dfce1ff590cfb5cd93db1a274" image="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=1544972687&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=retrolog-21" pixel="//ir-uk.amazon-adsystem.com/e/ir?t=retrolog-21&l=am2&o=2&a=1544972687" >}}

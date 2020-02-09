@@ -83,3 +83,8 @@ Sometimes enough is enough. When improvement doesn't happen after a reasonable a
 #### Be proactive by avoiding low-performance hires
 
 It is impossible to predict low performance 100% accurately during recruitment, but it's definitely something to have in mind when assessing a candidate. Ask yourself, will they perform at the level we require in the time that we need? If the answer is no and you still hire, chances are you will be revisiting this post soon enough.
+
+---
+
+Want to know more? Check out this book 👇
+{{< book link="https://www.amazon.co.uk/gp/product/1544972687/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=1544972687&linkCode=as2&tag=retrolog-21&linkId=dda5d11dfce1ff590cfb5cd93db1a274" image="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=1544972687&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=retrolog-21" pixel="//ir-uk.amazon-adsystem.com/e/ir?t=retrolog-21&l=am2&o=2&a=1544972687" >}}

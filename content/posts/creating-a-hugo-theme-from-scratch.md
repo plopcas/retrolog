@@ -378,3 +378,5 @@ In future posts I will show how to add share buttons and analytics to our site.
 If you want to jump ahead and see the final template that I use for my site, you can find it in GitHub [here](https://github.com/plopcas/papaya).
 
 Thanks for reading!
+
+{{< book link="https://www.amazon.co.uk/gp/product/B06XHGH789/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=B06XHGH789&linkCode=as2&tag=retrolog-21&linkId=dc1faa49433c1c38a16db1f8cef5e817" image="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=B06XHGH789&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=retrolog-21" pixel="//ir-uk.amazon-adsystem.com/e/ir?t=retrolog-21&l=am2&o=2&a=B06XHGH789" >}}

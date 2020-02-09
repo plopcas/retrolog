@@ -1,0 +1,16 @@
+<p>
+    <div id="recommendation">
+        {{ with .Get "link"}}
+        <a target="_blank" href="{{ . }}">
+            {{ end}}
+            <div class="book-list">
+                {{ with .Get "image"}}
+                <img src="{{ .}}" height="180px">
+                {{ end }}
+                {{ with .Get "pixel"}}
+                <img src="{{ . }}" width="1" height="1" />
+                {{ end }}
+            </div>
+        </a>
+    </div>
+</p>
