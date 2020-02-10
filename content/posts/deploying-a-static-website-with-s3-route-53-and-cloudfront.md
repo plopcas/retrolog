@@ -12,7 +12,7 @@ Today I'll show you how to deploy your static website to S3, and how you can con
 
 <!--more-->
 
-Even though this information is available in the AWS documentation, I ran into different problems when setting it up for my own website. Hopefully this set of instructions will help someone else as well.
+Even though this information is available in the AWS documentation, I ran into different problems when setting it up for my own website. Hopefully this runbook will help someone else as well.
 
 #### Pre-requisites
 
@@ -29,11 +29,23 @@ The first step is to get a new domain for our website. We'll do that with Route 
 
 - Go to Route 53 https://console.aws.amazon.com/route53
 - If it's your first domain, choose "Get Started Now" under "Domain Registration". If you already have another domain, in the navigation pane, choose "Registered Domains".
-- Choose "Register Domain".
-![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-1.jpg)
-- Follow the steps and complete the registration.
 
-Source: https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-0.jpg)
+
+- Choose "Register Domain".
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-1.jpg)
+
+- Follow the steps and complete the registration. You will have to enter your contact details, verify your email address and make the payment.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-2.jpg)
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-3.jpg)
+
+- Please note that the process can take a few days to complete.
+- Once it's done, we can see a [Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html) has been automatically created for us. We will use this later on to configure our DNS records.
+
+Source: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
 
 #### Setting up S3 to serve static content
 
@@ -71,6 +83,8 @@ Next, let's configure the permissions so that the bucket is actually public. Not
 - Click on "Static website hosting".
 - Select "Use this bucket to host a website" and provide an index document e.g. `index.html`. This is the first page your website will load when a user lands on the root of the domain e.g. `https://example.com`.
 - The error document is optional (but recommended).
+
+Source: https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
 
 #### Setting up HTTPS with CloudFront
 
