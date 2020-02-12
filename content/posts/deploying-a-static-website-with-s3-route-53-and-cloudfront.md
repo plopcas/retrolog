@@ -226,9 +226,9 @@ We have all the ingredients, but there is one last step, we need to configure ou
 
 There is official documentation that covers this use case, however it's split between a few documents. Hopefully I've summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.
 
-- https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
-- https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
-- https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/
+- [Domain register](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
+- [Website hosting custom domain walkthrough](https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html)
+- [CloudFront HTTPs requests and S3](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/)
 
 Thanks for reading!
 
