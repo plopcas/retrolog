@@ -1,7 +1,7 @@
 ---
 title: "Deploying a Static Website with S3, Route 53 and CloudFront"
 date: 2020-02-09T18:55:52Z
-draft: true
+draft: false
 tags: ["software", "tools"]
 author: "Pedro Lopez"
 ---

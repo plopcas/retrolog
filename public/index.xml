@@ -5,10 +5,19 @@
     <description>Recent content on Retrolog.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 30 Jan 2020 21:34:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 18:55:52 +0000</lastBuildDate>
     
         <atom:link href="https://retrolog.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog</title>
+      <link>https://retrolog.io/blog/</link>
+      <pubDate>Sun, 09 Feb 2020 18:55:52 +0000</pubDate>
+      
+      <guid>https://retrolog.io/blog/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Pages</title>
@@ -16,15 +25,6 @@
       <pubDate>Thu, 30 Jan 2020 21:34:02 +0000</pubDate>
       
       <guid>https://retrolog.io/pages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://retrolog.io/blog/</link>
-      <pubDate>Sat, 25 Jan 2020 00:43:54 +0000</pubDate>
-      
-      <guid>https://retrolog.io/blog/</guid>
       <description></description>
     </item>
     

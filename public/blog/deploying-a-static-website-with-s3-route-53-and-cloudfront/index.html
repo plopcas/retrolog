@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Read about management and leadership in software engineering. Learn from the past and move forward!" />
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156682837-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-156682837-1');
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    
+    <title>Retrolog.io | Deploying a Static Website with S3, Route 53 and CloudFront</title>
+    
+</head>
+
+<body>
+    <div class="content">
+        <div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/blog/">
+        
+        
+        <i data-feather="edit"></i> 
+        
+        
+        Blog
+        </a>
+        
+        <a class="nav-link" href="/tags/">
+        
+        
+        <i data-feather="tag"></i> 
+        
+        
+        Tags
+        </a>
+        
+    </nav>
+</div>
+        <div id="cookie-banner" class="container my-4" style="display:none;">
+    <div class="alert alert-dark text-center" role="alert">
+        We use cookies to personalize your experience and analyse our traffic.
+        
+        Read our
+        <a class="black-link-bold" href="/pages/privacy-policy">privacy policy</a>
+        to learn more.
+        
+        <br><br>
+        <button id="cookie-banner-button" class="btn-light" aria-label="Close">
+            GOT IT
+        </button>
+    </div>
+</div>
+<script>
+    function acceptCookies() {
+        var expiryDate = new Date();
+        expiryDate.setTime(expiryDate.getTime() + 315532887600); 
+        document.cookie = "cookie-consent=true;;expires=" + expiryDate.toGMTString() + ";path=/";
+        document.getElementById("cookie-banner").style.display = "none";
+    }
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    };
+    if (!getCookie("cookie-consent")) {
+        document.getElementById("cookie-banner").style.display = "block";
+    }
+    document.getElementById("cookie-banner-button").addEventListener("click", acceptCookies);
+</script>
+        <div class="container">
+            <main id="main">
+                
+
+<h1>Deploying a Static Website with S3, Route 53 and CloudFront</h1>
+
+
+<i data-feather="calendar"></i> <time datetime="2020-02-09">Feb 9, 2020</time>
+<span id="social">
+    <i data-feather="share-2"></i></a>
+    <a href="https://twitter.com/share?url=https%3a%2f%2fretrolog.io%2fblog%2fdeploying-a-static-website-with-s3-route-53-and-cloudfront%2f&text=Deploying%20a%20Static%20Website%20with%20S3%2c%20Route%2053%20and%20CloudFront&via=Retrologio"
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on Twitter">
+        <i class="feather-16" data-feather="twitter"></i></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fblog%2fdeploying-a-static-website-with-s3-route-53-and-cloudfront%2f&summary=Today%20I%27ll%20show%20you%20how%20to%20deploy%20your%20static%20website%20to%20S3%2c%20and%20how%20you%20can%20configure%20a%20custom%20domain%20with%20Route%2053%20and%20enable%20HTTPS%20%28why%20wouldn%27t%20you%29%20with%20CloudFront.%20Keep%20reading%20to%20find%20out%20more%21%0a&source=Retrolog.io"
+        class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on LinkedIn">
+        <i class="feather-16" data-feather="linkedin"></i></a>
+</span>
+
+<i data-feather="tag"></i>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://retrolog.io/tags/software">software</a>
+
+
+<a class="btn btn-sm btn-outline-dark tag-btn" href="https://retrolog.io/tags/tools">tools</a>
+
+
+<br><br>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront.jpg" alt="image"></p>
+<p>Today I'll show you how to deploy your static website to S3, and how you can configure a custom domain with Route 53 and enable HTTPS (why wouldn't you) with CloudFront. Keep reading to find out more!</p>
+<p>Even though this information is available in the AWS documentation, I ran into different problems when setting it up for my own website. Hopefully this runbook will help someone else as well.</p>
+<h4 id="pre-requisites">Pre-requisites</h4>
+<ol>
+<li>An AWS account</li>
+<li>A static website e.g. built with Hugo</li>
+</ol>
+<p>Please note that Route 53 is not a free service. S3 and CloudFront are included in the AWS Free Tier within certain conditions. Check <a href="https://aws.amazon.com/free">https://aws.amazon.com/free</a> for more information.</p>
+<p>Estimated costs for running a small static website are $12/year for the domain and $0.60/month for the running costs.</p>
+<h4 id="getting-a-custom-domain-with-route-53">Getting a custom domain with Route 53</h4>
+<p>The first step is to get a new domain for our website. We'll do that with Route 53.</p>
+<ul>
+<li>Go to Route 53 <a href="https://console.aws.amazon.com/route53">https://console.aws.amazon.com/route53</a></li>
+<li>If it's your first domain, choose &ldquo;Get Started Now&rdquo; under &ldquo;Domain Registration&rdquo;. If you already have another domain, in the navigation pane, choose &ldquo;Registered Domains&rdquo;.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-0.jpg" alt="image"></p>
+<ul>
+<li>Choose &ldquo;Register Domain&rdquo;.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-1.jpg" alt="image"></p>
+<ul>
+<li>Follow the steps and complete the registration. You will have to enter your contact details, verify your email address and make the payment.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-2.jpg" alt="image"></p>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-3.jpg" alt="image"></p>
+<ul>
+<li>Please note that the process can take up to a few days to complete.</li>
+<li>Once it's done, we can see a <a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html">Hosted Zone</a> has been automatically created for us. We will use this later on to configure our DNS records.</li>
+</ul>
+<h4 id="setting-up-s3-to-serve-static-content">Setting up S3 to serve static content</h4>
+<p>We will use the AWS console, but everything could also be done via CLI or CloudFormation.</p>
+<p>Let's create the bucket first using the wizard.</p>
+<ul>
+<li>Create a new S3 bucket <a href="https://console.aws.amazon.com/s3">https://console.aws.amazon.com/s3</a>.</li>
+<li>Give it a name that matches your domain name from the previous step e.g. example.com.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-4.jpg" alt="image"></p>
+<ul>
+<li>Choose a region that is close to you and your potential users e.g. EU (Ireland). This is to minimise latency, however, because we will be using CloudFront to serve our content, this is not really an issue. Another reason is to comply with relevant regulations for your country.</li>
+<li>Everything in the next step is optional, so you can skip it.</li>
+<li>Disable the &ldquo;Block all public access&rdquo; checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven't made the bucket public yet, we just removed the blocker that prevented us from doing so.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-5.jpg" alt="image"></p>
+<ul>
+<li>Review and accept.</li>
+</ul>
+<p>Next, let's configure the bucket for static website hosting.</p>
+<ul>
+<li>Go to &ldquo;Properties&rdquo;.</li>
+<li>Click on &ldquo;Static website hosting&rdquo;.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-6.jpg" alt="image"></p>
+<ul>
+<li>Select &ldquo;Use this bucket to host a website&rdquo; and provide an index document e.g. <code>index.html</code>. This is the first page your website will load when a user lands on the root of the domain e.g. <code>https://example.com</code>. The error document is optional (but recommended).</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-7.jpg" alt="image"></p>
+<ul>
+<li>Make a note of the &ldquo;Endpoint&rdquo; URL at the top e.g. <code>http://example.com.s3-website-eu-west-1.amazonaws.com/</code> and click &ldquo;Save&rdquo;.</li>
+</ul>
+<p>Let's test things by uploading an <code>index.html</code> file to the bucket.</p>
+<ul>
+<li>Create a file named <code>index.html</code> with your favourite text editor or IDE and paste the following.</li>
+</ul>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">html</span>&gt;
+    &lt;<span style="color:#062873;font-weight:bold">body</span>&gt;
+        &lt;<span style="color:#062873;font-weight:bold">span</span>&gt;Hello world!&lt;/<span style="color:#062873;font-weight:bold">span</span>&gt;
+    &lt;/<span style="color:#062873;font-weight:bold">body</span>&gt;
+&lt;/<span style="color:#062873;font-weight:bold">html</span>&gt;</code></pre></div>
+<ul>
+<li>Go to the &ldquo;Overview&rdquo; tab and click on &ldquo;Upload&rdquo;, then select the <code>index.html</code> file you just created.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-8.jpg" alt="image"></p>
+<ul>
+<li>Click the &ldquo;Upload&rdquo; button at the bottom to skip all the additional steps and leave the defaults.</li>
+<li>Open the &ldquo;Endpoint&rdquo; URL from the previous step in a browser.</li>
+</ul>
+<p>A <strong>403 Forbidden</strong> error!? 😱 What's going on?</p>
+<p>What happened is that the file itself is not public yet. We can fix this!</p>
+<ul>
+<li>Go back to the &ldquo;Overview&rdquo; tab and click on the <code>index.html</code> file.</li>
+<li>On the new page, click on the &ldquo;Permissions&rdquo; tab.</li>
+<li>At the bottom, click on &ldquo;Everyone&rdquo;.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-9.jpg" alt="image"></p>
+<ul>
+<li>Select &ldquo;Read object&rdquo; like in the image.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-10.jpg" alt="image"></p>
+<ul>
+<li>Open again the &ldquo;Endpoint&rdquo; URL from the previous step in a browser (or refresh the tab).</li>
+</ul>
+<p><strong>Hello world!</strong> 🎉</p>
+<p>We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point.Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.</p>
+<ul>
+<li>Go back to the bucket itself using the breadcrumb menu at the top.</li>
+<li>Go to the &ldquo;Permissions&rdquo; tab.</li>
+<li>Click on &ldquo;Bucket Policy&rdquo;.</li>
+<li>Create a new policy with the following (remember to replace example.com with your bucket name).
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-json" data-lang="json">{
+    <span style="color:#062873;font-weight:bold">&#34;Version&#34;</span>: <span style="color:#4070a0">&#34;2008-10-17&#34;</span>,
+    <span style="color:#062873;font-weight:bold">&#34;Statement&#34;</span>: [
+        {
+            <span style="color:#062873;font-weight:bold">&#34;Sid&#34;</span>: <span style="color:#4070a0">&#34;PublicReadGetObject&#34;</span>,
+            <span style="color:#062873;font-weight:bold">&#34;Effect&#34;</span>: <span style="color:#4070a0">&#34;Allow&#34;</span>,
+            <span style="color:#062873;font-weight:bold">&#34;Principal&#34;</span>: <span style="color:#4070a0">&#34;*&#34;</span>,
+            <span style="color:#062873;font-weight:bold">&#34;Action&#34;</span>: <span style="color:#4070a0">&#34;s3:GetObject&#34;</span>,
+            <span style="color:#062873;font-weight:bold">&#34;Resource&#34;</span>: <span style="color:#4070a0">&#34;arn:aws:s3:::example.com/*&#34;</span>
+        }
+    ]
+}</code></pre></div></li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-11.jpg" alt="image"></p>
+<ul>
+<li>If we open the &ldquo;Endpoint&rdquo; URL once again&hellip;</li>
+</ul>
+<p><strong>Hello world!</strong> 🎉💃🕺🎉</p>
+<h4 id="setting-up-a-custom-domain">Setting up a custom domain</h4>
+<p>At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like <code>http://example.com.s3-website-eu-west-1.amazonaws.com/</code>. We don't want that, we want to use <code>http://example.com</code>.</p>
+<ul>
+<li>Go to Route 53 <a href="https://console.aws.amazon.com/route53">https://console.aws.amazon.com/route53</a></li>
+<li>Click on &ldquo;Hosted Zones&rdquo; and select the one that matches your domain name.</li>
+<li>Click on the &ldquo;Create Record Set&rdquo; button at the top.</li>
+<li>On the form, leave the <em>Name</em> box empty to use the default value e.g. example.com, and make sure IPv4 is selected.</li>
+<li>Select Alias &ldquo;Yes&rdquo;, click inside the input box and select your S3 bucket matching your domain name e.g. example.com.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-12.jpg" alt="image"></p>
+<ul>
+<li>Open your domain e.g. <code>http://example.com</code>.</li>
+</ul>
+<p><strong>Hello world!</strong> 🎉💃🕺💃🕺💃🕺💃🕺🎉</p>
+<p>We have our static (super simple) website running in a custom domain. However, we are still using http and not https, not good. Let's change that.</p>
+<h4 id="setting-up-https-with-cloudfront">Setting up HTTPS with CloudFront</h4>
+<ul>
+<li>Go to CloudFront <a href="https://console.aws.amazon.com/cloudfront">https://console.aws.amazon.com/cloudfront</a></li>
+<li>Click on &ldquo;Create distribution&rdquo;.</li>
+<li>On the next step, select Web as your delivery method by clicking the &ldquo;Getting Started&rdquo; button at the top.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-13.jpg" alt="image"></p>
+<ul>
+<li>On the next step, for &ldquo;Origin Domain Name&rdquo; insert your &ldquo;Endpoint&rdquo; URL without the <code>http://</code> e.g. <code>example.com.s3-website-eu-west-1.amazonaws.com</code>. 🚨 <strong>THIS IS VERY IMPORTANT!!!!</strong> 🚨 If you just select S3 from the drop down, by default it will autocomplete with something like <code>example.com.s3.amazonaws.com</code> and you will get an <code>Access denied</code> exception when accessing your website with HTTPS. This is because the latter is the REST format, but we need the website format, more information <a href="https://aws.amazon.com/premiumsupport/knowledge-center/s3-rest-api-cloudfront-error-403/">here</a>.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-14.jpg" alt="image"></p>
+<ul>
+<li>Select &ldquo;Redirect HTTP to HTTPS&rdquo; to make sure encryption its always used.</li>
+<li>Still on the same step, scroll down to the bottom of the form.</li>
+<li>Inside the &ldquo;Alternate Domain Names (CNAMEs)&rdquo; text area, enter your domain name e.g. example.com.</li>
+<li>For SSL Certificate, choose &ldquo;Custom SSL Certificate&rdquo;.</li>
+</ul>
+<p>Wait&hellip; it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says Request or Import a Certificate with ACM. This will open a new tab. Alternatively, you can navigate to ACM using the &ldquo;Services&rdquo; menu at the top of the AWS console as usual.</p>
+<ul>
+<li>Make sure that you are in the <strong>North Virginia</strong> region. 🚨 <strong>THIS IS VERY IMPORTANT!!!!</strong> 🚨 It's the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.</li>
+<li>Enter your domain name e.g. example.com.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-15.jpg" alt="image"></p>
+<ul>
+<li>Choose DNS validation.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-16.jpg" alt="image"></p>
+<ul>
+<li>Skip the next steps until you get to &ldquo;Review&rdquo; and click &ldquo;Confirm and request&rdquo;</li>
+<li>In the &ldquo;Validation&rdquo; step, click on the arrow next to your domain name to explan, and click on &ldquo;Create record on Route 53&rdquo;.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg" alt="image"></p>
+<ul>
+<li>In the pop-up window click &ldquo;Create&rdquo;. You'll see a warning message that saying that it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.</li>
+<li>Grab a cup of your favourite beverage and wait ☕️</li>
+</ul>
+<p>Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &ldquo;Custom SSL Certificate&rdquo;. Refresh the page if it's not the case, you might need to re-enter the information in the form.</p>
+<ul>
+<li>Back to CloudFront, select the recently created SSL certificate.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-18.jpg" alt="image"></p>
+<ul>
+<li>Leave everything else with the default values and click &ldquo;Create Distribution&rdquo; at the bottom.</li>
+</ul>
+<h4 id="joining-the-dots">Joining the dots</h4>
+<p>We have all the ingredients, but there is one last step, we need to configure our DNS records to use CloudFront instead of S3.</p>
+<ul>
+<li>Go to Route 53 <a href="https://console.aws.amazon.com/route53">https://console.aws.amazon.com/route53</a></li>
+<li>Navigate to your Hosted Zone.</li>
+<li>Select the alias that is pointing to S3 (Type A).</li>
+<li>On the form that shows up, click on the input field, delete its value and wait for the autocomplete to come up. Then scroll down and select your CloudFront distribution.</li>
+</ul>
+<p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-19.jpg" alt="image"></p>
+<ul>
+<li>Save and after a few minutes, navigate to your website using HTTPS e.g. <code>https://example.com</code> (replace with your domain name).</li>
+</ul>
+<pre><code>🎉🎉🎉🎉🎉🎉🎉🎉
+🎉Hello world! 🎉
+🎉🎉🎉🎉🎉🎉🎉🎉
+</code></pre><h4 id="read-more">Read more</h4>
+<p>There is official documentation that covers this use case, however it's split between a few documents. Hopefully I've summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html">https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html</a></li>
+<li><a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html">https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html</a></li>
+<li><a href="https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/">https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/</a></li>
+</ul>
+<p>Thanks for reading!</p>
+<hr>
+<p>
+    <div id="recommendation">
+        
+        <a target="_blank" href="https://www.amazon.co.uk/gp/product/1617295116/ref=as_li_tl?ie=UTF8&amp;camp=1634&amp;creative=6738&amp;creativeASIN=1617295116&amp;linkCode=as2&amp;tag=retrolog-21&amp;linkId=922f43e440dce0cd617f120fd471608c">
+            
+            <div class="book-list">
+                
+                <img src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;MarketPlace=GB&amp;ASIN=1617295116&amp;ServiceVersion=20070822&amp;ID=AsinImage&amp;WS=1&amp;Format=_SL250_&amp;tag=retrolog-21" height="180px">
+                
+                
+                <img src="///ir-uk.amazon-adsystem.com/e/ir?t=retrolog-21&amp;l=am2&amp;o=2&amp;a=1617295116" width="1" height="1" />
+                
+            </div>
+        </a>
+    </div>
+</p>
+
+
+            </main>
+        </div>
+    </div>
+    <p class="footer text-center">
+    <span>
+        Copyright (c) 2020 Pedro Lopez
+    </span>
+    <br>
+    
+    <a class="grey-link" href="/pages/privacy-policy">Privacy policy</a>
+    
+</p>
+    <script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+</body>
+
+</html>
