@@ -21,7 +21,7 @@ Even though this information is available in the AWS documentation, I ran into d
 
 Please note that Route 53 is not a free service. S3 and CloudFront are included in the AWS Free Tier within certain conditions. Check https://aws.amazon.com/free for more information.
 
-Estimated costs for running a small static website are $10/year for the domain and $0.60/month for the running costs.
+Estimated costs for running a small static website are $12/year for the domain and $0.60/month for the running costs.
 
 #### Getting a custom domain with Route 53
 
@@ -42,10 +42,8 @@ The first step is to get a new domain for our website. We'll do that with Route 
 
 ![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-3.jpg)
 
-- Please note that the process can take a few days to complete.
+- Please note that the process can take up to a few days to complete.
 - Once it's done, we can see a [Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html) has been automatically created for us. We will use this later on to configure our DNS records.
-
-Source: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
 
 #### Setting up S3 to serve static content
 
@@ -55,15 +53,72 @@ Let's create the bucket first using the wizard.
 
 - Create a new S3 bucket https://console.aws.amazon.com/s3.
 - Give it a name that matches your domain name from the previous step e.g. example.com.
-- Choose a region that is close to you and your potential users e.g. EU (London). This is to minimise latency, however, because we will be using CloudFront to serve our content, this is not really an issue. Another reason is to comply with relevant regulations for your country.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-4.jpg)
+
+- Choose a region that is close to you and your potential users e.g. EU (Ireland). This is to minimise latency, however, because we will be using CloudFront to serve our content, this is not really an issue. Another reason is to comply with relevant regulations for your country.
 - Everything in the next step is optional, so you can skip it.
-- Disable the "Block all public access" checkbox. As this is a bucket for a website, it needs to be public.
+- Disable the "Block all public access" checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven't made the bucket public yet, we just removed the blocker that prevented us from doing so.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-5.jpg)
+
 - Review and accept.
 
-Next, let's configure the permissions so that the bucket is actually public. Note that in the previous step we disabled a checkbox that was preventing us to do this. This is important, becuase it's a misconception that disabling that checkbox is all you need to do. That's not correct, you also need to explicitely declare the bucket as public. For that, we'll use a policy.
+Next, let's configure the bucket for static website hosting.
 
+- Go to "Properties".
+- Click on "Static website hosting".
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-6.jpg)
+
+- Select "Use this bucket to host a website" and provide an index document e.g. `index.html`. This is the first page your website will load when a user lands on the root of the domain e.g. `https://example.com`. The error document is optional (but recommended).
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-7.jpg)
+
+- Make a note of the "Endpoint" URL at the top e.g. `http://example.com.s3-website-eu-west-1.amazonaws.com/` and click "Save".
+
+Let's test things by uploading an `index.html` file to the bucket.
+
+- Create a file named `index.html` with your favourite text editor or IDE and paste the following.
+
+{{< highlight html >}}
+<html>
+    <body>
+        <span>Hello world!</span>
+    </body>
+</html>
+{{< /highlight >}}
+
+- Go to the "Overview" tab and click on "Upload", then select the `index.html` file you just created.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-8.jpg)
+
+- Click the "Upload" button at the bottom to skip all the additional steps and leave the defaults.
+- Open the "Endpoint" URL from the previous step in a browser.
+
+A **403 Forbidden** error!? 😱 What's going on?
+
+What happened is that the file itself is not public yet. We can fix this!
+
+- Go back to the "Overview" tab and click on the `index.html` file.
+- On the new page, click on the "Permissions" tab.
+- At the bottom, click on "Everyone".
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-9.jpg)
+
+- Select "Read object" like in the image.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-10.jpg)
+
+- Open again the "Endpoint" URL from the previous step in a browser (or refresh the tab).
+
+**Hello world!** 🎉
+
+We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point.Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.
+
+- Go back to the bucket itself using the breadcrumb menu at the top.
 - Go to the "Permissions" tab.
-- Click on "Bucket policy".
+- Click on "Bucket Policy".
 - Create a new policy with the following (remember to replace example.com with your bucket name).
 {{< highlight json >}}
 {
@@ -79,24 +134,103 @@ Next, let's configure the permissions so that the bucket is actually public. Not
     ]
 }
 {{< /highlight >}}
-- Go to "Properties".
-- Click on "Static website hosting".
-- Select "Use this bucket to host a website" and provide an index document e.g. `index.html`. This is the first page your website will load when a user lands on the root of the domain e.g. `https://example.com`.
-- The error document is optional (but recommended).
 
-Source: https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-11.jpg)
+
+- If we open the "Endpoint" URL once again...
+
+**Hello world!** 🎉💃🕺🎉
+
+#### Setting up a custom domain
+
+At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like `http://example.com.s3-website-eu-west-1.amazonaws.com/`. We don't want that, we want to use `http://example.com`.
+
+- Go to Route 53 https://console.aws.amazon.com/route53
+- Click on "Hosted Zones" and select the one that matches your domain name.
+- Click on the "Create Record Set" button at the top.
+- On the form, leave the *Name* box empty to use the default value e.g. example.com, and make sure IPv4 is selected.
+- Select Alias "Yes", click inside the input box and select your S3 bucket matching your domain name e.g. example.com.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-12.jpg)
+
+- Open your domain e.g. `http://example.com`.
+
+**Hello world!** 🎉💃🕺💃🕺💃🕺💃🕺🎉
+
+We have our static (super simple) website running in a custom domain. However, we are still using http and not https, not good. Let's change that.
 
 #### Setting up HTTPS with CloudFront
 
 - Go to CloudFront https://console.aws.amazon.com/cloudfront
-- Click on "Create distribution"
-![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-.jpg)
+- Click on "Create distribution".
+- On the next step, select Web as your delivery method by clicking the "Getting Started" button at the top.
 
-Source: https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-13.jpg)
+
+- On the next step, for "Origin Domain Name" insert your "Endpoint" URL without the `http://` e.g. `example.com.s3-website-eu-west-1.amazonaws.com`. 🚨 **THIS IS VERY IMPORTANT!!!!** 🚨 If you just select S3 from the drop down, by default it will autocomplete with something like `example.com.s3.amazonaws.com` and you will get an `Access denied` exception when accessing your website with HTTPS. This is because the latter is the REST format, but we need the website format, more information [here](https://aws.amazon.com/premiumsupport/knowledge-center/s3-rest-api-cloudfront-error-403/).
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-14.jpg)
+
+- Select "Redirect HTTP to HTTPS" to make sure encryption its always used.
+- Still on the same step, scroll down to the bottom of the form.
+- Inside the "Alternate Domain Names (CNAMEs)" text area, enter your domain name e.g. example.com.
+- For SSL Certificate, choose "Custom SSL Certificate".
+
+Wait... it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says Request or Import a Certificate with ACM. This will open a new tab. Alternatively, you can navigate to ACM using the "Services" menu at the top of the AWS console as usual.
+
+- Make sure that you are in the **North Virginia** region. 🚨 **THIS IS VERY IMPORTANT!!!!** 🚨 It's the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.
+- Enter your domain name e.g. example.com.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-15.jpg)
+
+- Choose DNS validation.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-16.jpg)
+
+- Skip the next steps until you get to "Review" and click "Confirm and request"
+- In the "Validation" step, click on the arrow next to your domain name to explan, and click on "Create record on Route 53".
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg)
+
+- In the pop-up window click "Create". You'll see a warning message that saying that it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.
+- Grab a cup of your favourite beverage and wait ☕️
+
+Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a "Custom SSL Certificate". Refresh the page if it's not the case, you might need to re-enter the information in the form.
+
+- Back to CloudFront, select the recently created SSL certificate.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-18.jpg)
+
+- Leave everything else with the default values and click "Create Distribution" at the bottom.
 
 #### Joining the dots
 
-#### (Hugo only) Deploying your website from CLI
+We have all the ingredients, but there is one last step, we need to configure our DNS records to use CloudFront instead of S3.
+
+- Go to Route 53 https://console.aws.amazon.com/route53
+- Navigate to your Hosted Zone.
+- Select the alias that is pointing to S3 (Type A).
+- On the form that shows up, click on the input field, delete its value and wait for the autocomplete to come up. Then scroll down and select your CloudFront distribution.
+
+![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-19.jpg)
+
+- Save and after a few minutes, navigate to your website using HTTPS e.g. `https://example.com` (replace with your domain name).
+
+```
+🎉🎉🎉🎉🎉🎉🎉🎉
+🎉Hello world! 🎉
+🎉🎉🎉🎉🎉🎉🎉🎉
+````
+
+#### Read more
+
+There is official documentation that covers this use case, however it's split between a few documents. Hopefully I've summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.
+
+- https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html
+- https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
+- https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/
+
+Thanks for reading!
 
 ---
 
