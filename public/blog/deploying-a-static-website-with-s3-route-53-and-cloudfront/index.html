@@ -188,7 +188,7 @@
 </ul>
 <p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-8.jpg" alt="image"></p>
 <ul>
-<li>Click the &ldquo;Upload&rdquo; button at the bottom to skip all the additional steps and leave the defaults.</li>
+<li>Click on the &ldquo;Upload&rdquo; button at the bottom to skip all the additional steps and leave the defaults.</li>
 <li>Open the &ldquo;Endpoint&rdquo; URL from the previous step in a browser.</li>
 </ul>
 <p>A <strong>403 Forbidden</strong> error!? 😱 What's going on?</p>
@@ -207,7 +207,7 @@
 <li>Open again the &ldquo;Endpoint&rdquo; URL from the previous step in a browser (or refresh the tab).</li>
 </ul>
 <p><strong>Hello world!</strong> 🎉</p>
-<p>We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point.Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.</p>
+<p>We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.</p>
 <ul>
 <li>Go back to the bucket itself using the breadcrumb menu at the top.</li>
 <li>Go to the &ldquo;Permissions&rdquo; tab.</li>
@@ -245,7 +245,7 @@
 <li>Open your domain e.g. <code>http://example.com</code>.</li>
 </ul>
 <p><strong>Hello world!</strong> 🎉💃🕺💃🕺💃🕺💃🕺🎉</p>
-<p>We have our static (super simple) website running in a custom domain. However, we are still using http and not https, not good. Let's change that.</p>
+<p>We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let's change that.</p>
 <h4 id="setting-up-https-with-cloudfront">Setting up HTTPS with CloudFront</h4>
 <ul>
 <li>Go to CloudFront <a href="https://console.aws.amazon.com/cloudfront">https://console.aws.amazon.com/cloudfront</a></li>
@@ -263,7 +263,7 @@
 <li>Inside the &ldquo;Alternate Domain Names (CNAMEs)&rdquo; text area, enter your domain name e.g. example.com.</li>
 <li>For SSL Certificate, choose &ldquo;Custom SSL Certificate&rdquo;.</li>
 </ul>
-<p>Wait&hellip; it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says Request or Import a Certificate with ACM. This will open a new tab. Alternatively, you can navigate to ACM using the &ldquo;Services&rdquo; menu at the top of the AWS console as usual.</p>
+<p>Wait&hellip; it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says &ldquo;Request or Import a Certificate with ACM&rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &ldquo;Services&rdquo; menu at the top of the AWS console as usual.</p>
 <ul>
 <li>Make sure that you are in the <strong>North Virginia</strong> region. 🚨 <strong>THIS IS VERY IMPORTANT!!!!</strong> 🚨 It's the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.</li>
 <li>Enter your domain name e.g. example.com.</li>
@@ -275,11 +275,11 @@
 <p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-16.jpg" alt="image"></p>
 <ul>
 <li>Skip the next steps until you get to &ldquo;Review&rdquo; and click &ldquo;Confirm and request&rdquo;</li>
-<li>In the &ldquo;Validation&rdquo; step, click on the arrow next to your domain name to explan, and click on &ldquo;Create record on Route 53&rdquo;.</li>
+<li>In the &ldquo;Validation&rdquo; step, click on the arrow next to your domain name to expand, and click on &ldquo;Create record on Route 53&rdquo;.</li>
 </ul>
 <p><img src="/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg" alt="image"></p>
 <ul>
-<li>In the pop-up window click &ldquo;Create&rdquo;. You'll see a warning message that saying that it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.</li>
+<li>In the pop-up window click on &ldquo;Create&rdquo;. You'll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.</li>
 <li>Grab a cup of your favourite beverage and wait ☕️</li>
 </ul>
 <p>Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &ldquo;Custom SSL Certificate&rdquo;. Refresh the page if it's not the case, you might need to re-enter the information in the form.</p>

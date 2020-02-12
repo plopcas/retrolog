@@ -93,7 +93,7 @@ Let's test things by uploading an `index.html` file to the bucket.
 
 ![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-8.jpg)
 
-- Click the "Upload" button at the bottom to skip all the additional steps and leave the defaults.
+- Click on the "Upload" button at the bottom to skip all the additional steps and leave the defaults.
 - Open the "Endpoint" URL from the previous step in a browser.
 
 A **403 Forbidden** error!? 😱 What's going on?
@@ -114,7 +114,7 @@ What happened is that the file itself is not public yet. We can fix this!
 
 **Hello world!** 🎉
 
-We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point.Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.
+We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let's configure the bucket so that all its objects are public at once. For that, we'll use a policy.
 
 - Go back to the bucket itself using the breadcrumb menu at the top.
 - Go to the "Permissions" tab.
@@ -157,7 +157,7 @@ At the beginning of this post, we bought a new custom domain e.g. example.com, b
 
 **Hello world!** 🎉💃🕺💃🕺💃🕺💃🕺🎉
 
-We have our static (super simple) website running in a custom domain. However, we are still using http and not https, not good. Let's change that.
+We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let's change that.
 
 #### Setting up HTTPS with CloudFront
 
@@ -176,7 +176,7 @@ We have our static (super simple) website running in a custom domain. However, w
 - Inside the "Alternate Domain Names (CNAMEs)" text area, enter your domain name e.g. example.com.
 - For SSL Certificate, choose "Custom SSL Certificate".
 
-Wait... it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says Request or Import a Certificate with ACM. This will open a new tab. Alternatively, you can navigate to ACM using the "Services" menu at the top of the AWS console as usual.
+Wait... it's grayed out!? 😱 We need an SSL certificate that we don't have. For that we'll use Amazon ACM. There is a convenient button that says "Request or Import a Certificate with ACM". This will open a new tab. Alternatively, you can navigate to ACM using the "Services" menu at the top of the AWS console as usual.
 
 - Make sure that you are in the **North Virginia** region. 🚨 **THIS IS VERY IMPORTANT!!!!** 🚨 It's the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.
 - Enter your domain name e.g. example.com.
@@ -188,11 +188,11 @@ Wait... it's grayed out!? 😱 We need an SSL certificate that we don't have. Fo
 ![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-16.jpg)
 
 - Skip the next steps until you get to "Review" and click "Confirm and request"
-- In the "Validation" step, click on the arrow next to your domain name to explan, and click on "Create record on Route 53".
+- In the "Validation" step, click on the arrow next to your domain name to expand, and click on "Create record on Route 53".
 
 ![image](/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg)
 
-- In the pop-up window click "Create". You'll see a warning message that saying that it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.
+- In the pop-up window click on "Create". You'll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we'll see that a new CNAME entry has been created.
 - Grab a cup of your favourite beverage and wait ☕️
 
 Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a "Custom SSL Certificate". Refresh the page if it's not the case, you might need to re-enter the information in the form.

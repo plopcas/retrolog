@@ -90,7 +90,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-8.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Click the &amp;ldquo;Upload&amp;rdquo; button at the bottom to skip all the additional steps and leave the defaults.&lt;/li&gt;
+&lt;li&gt;Click on the &amp;ldquo;Upload&amp;rdquo; button at the bottom to skip all the additional steps and leave the defaults.&lt;/li&gt;
 &lt;li&gt;Open the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;A &lt;strong&gt;403 Forbidden&lt;/strong&gt; error!? 😱 What&#39;s going on?&lt;/p&gt;
@@ -109,7 +109,7 @@
 &lt;li&gt;Open again the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser (or refresh the tab).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉&lt;/p&gt;
-&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point.Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&#39;s configure the bucket so that all its objects are public at once. For that, we&#39;ll use a policy.&lt;/p&gt;
+&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&#39;s configure the bucket so that all its objects are public at once. For that, we&#39;ll use a policy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go back to the bucket itself using the breadcrumb menu at the top.&lt;/li&gt;
 &lt;li&gt;Go to the &amp;ldquo;Permissions&amp;rdquo; tab.&lt;/li&gt;
@@ -147,7 +147,7 @@
 &lt;li&gt;Open your domain e.g. &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉💃🕺💃🕺💃🕺💃🕺🎉&lt;/p&gt;
-&lt;p&gt;We have our static (super simple) website running in a custom domain. However, we are still using http and not https, not good. Let&#39;s change that.&lt;/p&gt;
+&lt;p&gt;We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let&#39;s change that.&lt;/p&gt;
 &lt;h4 id=&#34;setting-up-https-with-cloudfront&#34;&gt;Setting up HTTPS with CloudFront&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to CloudFront &lt;a href=&#34;https://console.aws.amazon.com/cloudfront&#34;&gt;https://console.aws.amazon.com/cloudfront&lt;/a&gt;&lt;/li&gt;
@@ -165,7 +165,7 @@
 &lt;li&gt;Inside the &amp;ldquo;Alternate Domain Names (CNAMEs)&amp;rdquo; text area, enter your domain name e.g. example.com.&lt;/li&gt;
 &lt;li&gt;For SSL Certificate, choose &amp;ldquo;Custom SSL Certificate&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Wait&amp;hellip; it&#39;s grayed out!? 😱 We need an SSL certificate that we don&#39;t have. For that we&#39;ll use Amazon ACM. There is a convenient button that says Request or Import a Certificate with ACM. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
+&lt;p&gt;Wait&amp;hellip; it&#39;s grayed out!? 😱 We need an SSL certificate that we don&#39;t have. For that we&#39;ll use Amazon ACM. There is a convenient button that says &amp;ldquo;Request or Import a Certificate with ACM&amp;rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make sure that you are in the &lt;strong&gt;North Virginia&lt;/strong&gt; region. 🚨 &lt;strong&gt;THIS IS VERY IMPORTANT!!!!&lt;/strong&gt; 🚨 It&#39;s the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.&lt;/li&gt;
 &lt;li&gt;Enter your domain name e.g. example.com.&lt;/li&gt;
@@ -177,11 +177,11 @@
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-16.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Skip the next steps until you get to &amp;ldquo;Review&amp;rdquo; and click &amp;ldquo;Confirm and request&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;In the &amp;ldquo;Validation&amp;rdquo; step, click on the arrow next to your domain name to explan, and click on &amp;ldquo;Create record on Route 53&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;In the &amp;ldquo;Validation&amp;rdquo; step, click on the arrow next to your domain name to expand, and click on &amp;ldquo;Create record on Route 53&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In the pop-up window click &amp;ldquo;Create&amp;rdquo;. You&#39;ll see a warning message that saying that it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&#39;ll see that a new CNAME entry has been created.&lt;/li&gt;
+&lt;li&gt;In the pop-up window click on &amp;ldquo;Create&amp;rdquo;. You&#39;ll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&#39;ll see that a new CNAME entry has been created.&lt;/li&gt;
 &lt;li&gt;Grab a cup of your favourite beverage and wait ☕️&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &amp;ldquo;Custom SSL Certificate&amp;rdquo;. Refresh the page if it&#39;s not the case, you might need to re-enter the information in the form.&lt;/p&gt;
