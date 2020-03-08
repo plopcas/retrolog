@@ -5,10 +5,147 @@
     <description>Recent content in Blog on Retrolog.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 09 Feb 2020 18:55:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 16:41:21 +0000</lastBuildDate>
     
         <atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mastering Pair Programming in 5 Minutes</title>
+      <link>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</link>
+      <pubDate>Sun, 08 Mar 2020 16:41:21 +0000</pubDate>
+      
+      <guid>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/mastering-pair-programming-in-5-minutes.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This post is heavily based on &lt;a href=&#34;https://martinfowler.com/articles/on-pair-programming.html&#34;&gt;https://martinfowler.com/articles/on-pair-programming.html&lt;/a&gt; (38 min read). That is, however, a very long (yet very good) article. For those of us that can&#39;t or don&#39;t want to afford spending that long, I collated its main points and added a few twists of my own. I hope it&#39;s useful.&lt;/p&gt;
+&lt;h4 id=&#34;why-bother&#34;&gt;Why bother?&lt;/h4&gt;
+&lt;p&gt;According to some studies e.g. &lt;a href=&#34;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&#34;&gt;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&lt;/a&gt; some of the most significant benefits of pair programming are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many mistakes get caught as they are being typed in rather than in QA test or in the field (continuous code reviews)&lt;/li&gt;
+&lt;li&gt;The end defect content is statistically lower (continuous code reviews)&lt;/li&gt;
+&lt;li&gt;The designs are better and code length shorter (ongoing brainstorming and pair relaying)&lt;/li&gt;
+&lt;li&gt;The team solves problems faster (pair relaying)&lt;/li&gt;
+&lt;li&gt;People learn significantly more, about the system and about software development (line-of-sight learning)&lt;/li&gt;
+&lt;li&gt;The project ends up with multiple people understanding each piece of the system&lt;/li&gt;
+&lt;li&gt;People learn to work together and talk more often together, giving better information flow and team dynamics&lt;/li&gt;
+&lt;li&gt;People enjoy their work more&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The development cost for these benefits is not the 100% that might be expected, but approximately 15%. This is repaid in shorter and less expensive testing, quality assurance, and field support.&lt;/p&gt;
+&lt;h4 id=&#34;how-to-pair&#34;&gt;How to pair&lt;/h4&gt;
+&lt;p&gt;When the task involves coding, three options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Driver and Navigator&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Driver is the person with the keyboard focused on completing the immediate goal at hand, temporarily ignoring larger issues. Should talk through what they are doing while doing it.&lt;/li&gt;
+&lt;li&gt;Navigator is the observer while the driver types, reviews the code on-the-go, gives directions and shares thoughts. Keeps an eye on the larger issues, potential bugs and makes notes for next steps and obstacles.&lt;/li&gt;
+&lt;li&gt;Driver thinks &lt;strong&gt;tactically&lt;/strong&gt; and is detail-oriented while the Navigator thinks &lt;strong&gt;strategically&lt;/strong&gt; and has the bigger picture in mind.&lt;/li&gt;
+&lt;li&gt;Tips:
+&lt;ul&gt;
+&lt;li&gt;Start with a reasonably well-defined task&lt;/li&gt;
+&lt;li&gt;Agree on one tiny goal at a time e.g. defined by a unit test or a commit message&lt;/li&gt;
+&lt;li&gt;Switch roles regularly&lt;/li&gt;
+&lt;li&gt;As Navigator, avoid tactical thinking, you&#39;ll be tempted! Make notes on potential obstacles and ideas and discuss after the tiny goal is done, so the Driver can stay in the flow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ping Pong&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TDD&lt;/strong&gt; oriented&lt;/li&gt;
+&lt;li&gt;Ping - Person A writes a failing test&lt;/li&gt;
+&lt;li&gt;Pong - Person B writes the implementation to make the test pass&lt;/li&gt;
+&lt;li&gt;Ping - Person B writes a failing test&lt;/li&gt;
+&lt;li&gt;Pong - Person A writes the implementation to make the test pass&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Tips:
+&lt;ul&gt;
+&lt;li&gt;Start with a clearly defined task&lt;/li&gt;
+&lt;li&gt;Each Pong can be followed by a code refactoring step done together by both (Red - Green - Refactor)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong-Style&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;For an idea to go from your head into the computer, it MUST go through someone else&#39;s hands&lt;/li&gt;
+&lt;li&gt;Particularly useful for &lt;strong&gt;knowledge transfer&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Driver is a novice&lt;/li&gt;
+&lt;li&gt;Navigator is much more experienced with the task at hand&lt;/li&gt;
+&lt;li&gt;Participants &lt;strong&gt;do not switch positions&lt;/strong&gt; throughout the session&lt;/li&gt;
+&lt;li&gt;Tips:
+&lt;ul&gt;
+&lt;li&gt;Driver totally trusts the Navigator and should be comfortable with incomplete understanding&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Why&amp;rdquo; questions and challenging the solution should be discussed after the implementation session&lt;/li&gt;
+&lt;li&gt;Don&#39;t overuse this technique&lt;/li&gt;
+&lt;li&gt;Great for initial knowledge transfer but the goal is to transition to the other styles after a while&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When the task does not involve coding.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; - what&#39;s our goal?
+&lt;ul&gt;
+&lt;li&gt;E.g. pairing on Epic Ownership or aspects that overlap multiple epics&lt;/li&gt;
+&lt;li&gt;Understand the problem, read through the story and play back to each other how you understand it to make sure there is alignment&lt;/li&gt;
+&lt;li&gt;Clear up any questions or potential misunderstandings with the Produc Owner / Engineering Manager / Epic Owner&lt;/li&gt;
+&lt;li&gt;Double check your Definition of Ready to make sure you have everything to get started&lt;/li&gt;
+&lt;li&gt;Brainstorm a potential solution, together or individually and then present ideas to each other. If one is more familiar with the domain or technology, take some time to share context.&lt;/li&gt;
+&lt;li&gt;Plan your approach, list out the steps to get to the solution you chose and how you will test it. Write them down! so that we can track progress (e.g. in JIRA as subtasks)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spikes&lt;/strong&gt; - research and explore
+&lt;ul&gt;
+&lt;li&gt;Define a list of questions that you need to answer&lt;/li&gt;
+&lt;li&gt;Split up, divide and conquer. Alternatively, try to find answers for the same questions separately.&lt;/li&gt;
+&lt;li&gt;Search your company&#39;s intranet and messaging system, and any other resources you can find&lt;/li&gt;
+&lt;li&gt;Read up on concepts that are new to both of you&lt;/li&gt;
+&lt;li&gt;Get back together after a previously agreed upon time-box, share and discuss&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Reflect together if any documentation is necessary for what you&#39;ve done&lt;/li&gt;
+&lt;li&gt;Create a document together. Alternatively, one person creates it, then the other reviews it and &amp;ldquo;wordsmiths&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Pairing reduces the chance of skipping documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For time management you can use the pomodoro technique, small breaks after 25min and longer breaks after 2h.&lt;/p&gt;
+&lt;p&gt;Pair rotations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Don&#39;t stay in the same pair for more than 2-3 days&lt;/li&gt;
+&lt;li&gt;This avoids silos, increase collective code ownership, and favours more code review on-the-go&lt;/li&gt;
+&lt;li&gt;It also keeps things fresh, particularly when you are working on something tedious and energy-draining&lt;/li&gt;
+&lt;li&gt;The person who stays is called the Anchor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plan the day:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pairing requires a certain level of scheduling and calendar coordination&lt;/li&gt;
+&lt;li&gt;Start the day by agreeing on how many hours you are going to pair, and whether you need to plan around meetings or other commitments&lt;/li&gt;
+&lt;li&gt;If someone is off-sick or on leave, rotate the pair&lt;/li&gt;
+&lt;li&gt;Consider leaving some time at the beginning/end of the day for other activities e.g. checking your email or self-studying&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Physical setup:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure both have enough space, chairs included, clear up the desk if necessary&lt;/li&gt;
+&lt;li&gt;Decide if you want to use one keyboard or two, same for the mouse. No hard rule, whatever works. Some other factors into play are hygiene and how much space is actually available.&lt;/li&gt;
+&lt;li&gt;Consider using screen share on Zoom so that each one can use their own laptop&lt;/li&gt;
+&lt;li&gt;Agree on a default the first time, so that you don&#39;t have to discuss this every time&lt;/li&gt;
+&lt;li&gt;Remote pairing is ok as long as the internet connection is good enough, there is no background noise (use mute otherwise), and both of you agree to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Celebrate when you have accomplished a task together, you earned it!&lt;/p&gt;
+&lt;p&gt;Things to avoid:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Drifting apart during the pairing session e.g. reading emails or using your phone. These can come across as disrespectful and distracts you from the task at hand. If you really need to check something, make it transparent, say what you are doing and why&lt;/li&gt;
+&lt;li&gt;Micro-managing e.g. &amp;ldquo;Now type this&amp;hellip;&amp;quot;, &amp;ldquo;Now we need to create a class called&amp;hellip;&amp;quot;, &amp;ldquo;Press Cmd + Shift O&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Impatience, apply the 5-seconds-rule instead (when the Navigator sees something &amp;ldquo;wrong&amp;rdquo; and wants to comment, wait at least 5 seconds in case the driver already has it in mind, so that you don&#39;t interrupt their flow unnecessarily)&lt;/li&gt;
+&lt;li&gt;Keyboard hogging, are you controlling the keyboard all the time? Sharing is caring ❤&lt;/li&gt;
+&lt;li&gt;Pairing 8 hours per day, it&#39;s not sustainable, it&#39;s too exhausting and in practice there are other things you need to do other than coding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is not &amp;ldquo;THE&amp;rdquo; right way, try different approaches and find what works for you and your team.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Deploying a Static Website with S3, Route 53 and CloudFront</title>
