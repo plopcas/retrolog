@@ -1,6 +1,6 @@
 ---
-title: "A Saint Patricks Themed Retrospective"
-date: 2020-03-14T08:00:00Z
+title: "A Saint Patrick's Inspired Retrospective"
+date: 2020-03-10T08:00:00Z
 tags: ["tools", "techniques", "retrospectives"]
 draft: false
 ---
