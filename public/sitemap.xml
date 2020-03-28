@@ -4,26 +4,46 @@
   
   <url>
     <loc>https://retrolog.io/blog/</loc>
-    <lastmod>2020-03-08T16:41:21+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</loc>
-    <lastmod>2020-03-08T16:41:21+00:00</lastmod>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/</loc>
-    <lastmod>2020-03-08T16:41:21+00:00</lastmod>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/retrospectives/</loc>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/tags/</loc>
-    <lastmod>2020-03-08T16:41:21+00:00</lastmod>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/tags/techniques/</loc>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/the-covid-19-retrospective/</loc>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/tools/</loc>
+    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/a-saint-patricks-day-inspired-retrospective/</loc>
+    <lastmod>2020-03-10T08:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</loc>
     <lastmod>2020-03-08T16:41:21+00:00</lastmod>
   </url>
   
@@ -34,11 +54,6 @@
   
   <url>
     <loc>https://retrolog.io/tags/software/</loc>
-    <lastmod>2020-02-09T18:55:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/tools/</loc>
     <lastmod>2020-02-09T18:55:52+00:00</lastmod>
   </url>
   

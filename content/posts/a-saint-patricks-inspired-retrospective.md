@@ -1,8 +1,9 @@
 ---
-title: "A Saint Patrick's Inspired Retrospective"
+title: "A Saint Patrick's Day Inspired Retrospective"
 date: 2020-03-10T08:00:00Z
 tags: ["tools", "techniques", "retrospectives"]
 draft: false
+author: "Pedro Lopez"
 ---
 
 ![image](/images/a-saint-patricks-themed-retrospective.jpg)
