@@ -14,7 +14,7 @@ In an attempt to lighten the mood a bit during this difficult time, I put togeth
 
 Like in previous posts, I use [miro](https://miro.com) as a virtual whiteboard. This is now more important than ever given the lockdown restrictions in most countries around the world, so chances are that your team is working fully remotely at the minute.
 
-#### Prepare the stage
+#### Set the stage
 
 Divide the board in 6 sections like in the image below.
 
