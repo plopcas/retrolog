@@ -8,7 +8,7 @@ author: "Pedro Lopez"
 
 ![image](/images/the-covid-19-retrospective.jpg)
 
-In an attempt to lighten the mood a bit during this difficult times, I put together a new retrospective technique inspired by the latest development on COVID-19 and what we know about how to fight it. Keep reading if you want to know more.
+In an attempt to lighten the mood a bit during this difficult time, I put together a new retrospective technique inspired by the latest developments on COVID-19 and what we know about how to fight it. Keep reading if you want to know more.
 
 <!--more-->
 
