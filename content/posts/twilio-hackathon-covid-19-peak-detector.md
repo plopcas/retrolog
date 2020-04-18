@@ -7,7 +7,7 @@ draft: false
 
 ![image](/images/twilio-hackathon-covid-19-peak-detector.png)
 
-I'm taking part in the Twilio x DEV.to Hackathon and this in my application. I'll show here how I built it and how it works. Keep reading if you want to know more.
+I'm taking part in the Twilio x DEV.to Hackathon and this is my project. I'll show here how I built it and how it works. Keep reading if you want to know more.
 
 <!--more-->
 
@@ -162,7 +162,7 @@ alertRepository.save(alert);
 
 #### The scheduled peak detector
 
-In order to detect peaks we use a very naive approach. Is a hack project, please bear with me. We check if the number of cases today, is lower than yesterday and lower than the day before yesterday.
+In order to detect peaks we use a very naive approach. It's a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.
 
 If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.
 
@@ -211,11 +211,11 @@ To get the tokens, I created a dedicated TokenService that uses the API key and 
 
 #### The Chat
 
-The idea behind the chat is to have a forum for people to talk about the situations, ramble and share. I created a very simple UI, and the using Twilio Javascript SDK, I crate a channel, and sychronise all the messages between all the users.
+The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.
 
-In addition to this, to spices things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.
+In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.
 
-Keepings state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it's fairly simple and it's all explained in their documentation.
+Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it's fairly simple and it's all explained in their documentation.
 
 #### That's it!
 

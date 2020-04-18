@@ -99,7 +99,7 @@
     <a href="https://twitter.com/share?url=https%3a%2f%2fretrolog.io%2fblog%2ftwilio-hackathon-covid-19-peak-detector%2f&text=Twilio%20Hackathon%20-%20Covid%2019%20Peak%20Detector&via=Retrologio"
         class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on Twitter">
         <i class="feather-16" data-feather="twitter"></i></a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fblog%2ftwilio-hackathon-covid-19-peak-detector%2f&summary=I%27m%20taking%20part%20in%20the%20Twilio%20x%20DEV.to%20Hackathon%20and%20this%20in%20my%20application.%20I%27ll%20show%20here%20how%20I%20built%20it%20and%20how%20it%20works.%20Keep%20reading%20if%20you%20want%20to%20know%20more.%0a&source=Retrolog.io"
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fretrolog.io%2fblog%2ftwilio-hackathon-covid-19-peak-detector%2f&summary=I%27m%20taking%20part%20in%20the%20Twilio%20x%20DEV.to%20Hackathon%20and%20this%20is%20my%20project.%20I%27ll%20show%20here%20how%20I%20built%20it%20and%20how%20it%20works.%20Keep%20reading%20if%20you%20want%20to%20know%20more.%0a&source=Retrolog.io"
         class="btn btn-sm btn-outline-dark share-btn" data-show-count="false" aria-label="Share on LinkedIn">
         <i class="feather-16" data-feather="linkedin"></i></a>
 </span>
@@ -115,7 +115,7 @@
 
 <br><br>
 <p><img src="/images/twilio-hackathon-covid-19-peak-detector.png" alt="image"></p>
-<p>I'm taking part in the Twilio x DEV.to Hackathon and this in my application. I'll show here how I built it and how it works. Keep reading if you want to know more.</p>
+<p>I'm taking part in the Twilio x DEV.to Hackathon and this is my project. I'll show here how I built it and how it works. Keep reading if you want to know more.</p>
 <h4 id="the-application">The application</h4>
 <p>COVID-19 Peak Detector is a Java Spring Boot application with a DynamoDB store that displays graph information with stats about COVID-19. You can select the country you are interested in and you can create an alert by entering your phone number.</p>
 <p>A scheduled process will check the data periodically and will send the alert when a peak is detected.</p>
@@ -223,7 +223,7 @@ public class Alert {
 <pre><code>Alert alert = new Alert(country, phone);
 alertRepository.save(alert);
 </code></pre><h4 id="the-scheduled-peak-detector">The scheduled peak detector</h4>
-<p>In order to detect peaks we use a very naive approach. Is a hack project, please bear with me. We check if the number of cases today, is lower than yesterday and lower than the day before yesterday.</p>
+<p>In order to detect peaks we use a very naive approach. It's a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.</p>
 <p>If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.</p>
 <p>In order to run the process periodically, we use the <code>@Scheduled</code> annotation with a fixedRate of 12 hours.</p>
 <pre><code>@Scheduled(fixedRate = 12 * 60 * 60 * 1000)
@@ -259,9 +259,9 @@ public class SmsService {
 }
 </code></pre><p>To get the tokens, I created a dedicated TokenService that uses the API key and API secrect to generate tokens with the necessary grants depending on the service. In my case I need two types of tokens, one for the Chat service and one for the Sync service.</p>
 <h4 id="the-chat">The Chat</h4>
-<p>The idea behind the chat is to have a forum for people to talk about the situations, ramble and share. I created a very simple UI, and the using Twilio Javascript SDK, I crate a channel, and sychronise all the messages between all the users.</p>
-<p>In addition to this, to spices things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.</p>
-<p>Keepings state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it's fairly simple and it's all explained in their documentation.</p>
+<p>The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.</p>
+<p>In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.</p>
+<p>Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it's fairly simple and it's all explained in their documentation.</p>
 <h4 id="thats-it">That's it!</h4>
 <p>I hope you enjoyed this post. All the code is publicly available in GitHub here</p>
 <p><a href="https://github.com/plopcas/covid19-peak-detector">https://github.com/plopcas/covid19-peak-detector</a></p>

@@ -17,7 +17,7 @@
       
       <guid>https://retrolog.io/blog/twilio-hackathon-covid-19-peak-detector/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/twilio-hackathon-covid-19-peak-detector.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m taking part in the Twilio x DEV.to Hackathon and this in my application. I&#39;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
+&lt;p&gt;I&#39;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&#39;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
 &lt;h4 id=&#34;the-application&#34;&gt;The application&lt;/h4&gt;
 &lt;p&gt;COVID-19 Peak Detector is a Java Spring Boot application with a DynamoDB store that displays graph information with stats about COVID-19. You can select the country you are interested in and you can create an alert by entering your phone number.&lt;/p&gt;
 &lt;p&gt;A scheduled process will check the data periodically and will send the alert when a peak is detected.&lt;/p&gt;
@@ -125,7 +125,7 @@ public class Alert {
 &lt;pre&gt;&lt;code&gt;Alert alert = new Alert(country, phone);
 alertRepository.save(alert);
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-scheduled-peak-detector&#34;&gt;The scheduled peak detector&lt;/h4&gt;
-&lt;p&gt;In order to detect peaks we use a very naive approach. Is a hack project, please bear with me. We check if the number of cases today, is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
+&lt;p&gt;In order to detect peaks we use a very naive approach. It&#39;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
 &lt;p&gt;If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.&lt;/p&gt;
 &lt;p&gt;In order to run the process periodically, we use the &lt;code&gt;@Scheduled&lt;/code&gt; annotation with a fixedRate of 12 hours.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Scheduled(fixedRate = 12 * 60 * 60 * 1000)
@@ -161,9 +161,9 @@ public class SmsService {
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To get the tokens, I created a dedicated TokenService that uses the API key and API secrect to generate tokens with the necessary grants depending on the service. In my case I need two types of tokens, one for the Chat service and one for the Sync service.&lt;/p&gt;
 &lt;h4 id=&#34;the-chat&#34;&gt;The Chat&lt;/h4&gt;
-&lt;p&gt;The idea behind the chat is to have a forum for people to talk about the situations, ramble and share. I created a very simple UI, and the using Twilio Javascript SDK, I crate a channel, and sychronise all the messages between all the users.&lt;/p&gt;
-&lt;p&gt;In addition to this, to spices things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.&lt;/p&gt;
-&lt;p&gt;Keepings state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&#39;s fairly simple and it&#39;s all explained in their documentation.&lt;/p&gt;
+&lt;p&gt;The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.&lt;/p&gt;
+&lt;p&gt;In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.&lt;/p&gt;
+&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&#39;s fairly simple and it&#39;s all explained in their documentation.&lt;/p&gt;
 &lt;h4 id=&#34;thats-it&#34;&gt;That&#39;s it!&lt;/h4&gt;
 &lt;p&gt;I hope you enjoyed this post. All the code is publicly available in GitHub here&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/plopcas/covid19-peak-detector&#34;&gt;https://github.com/plopcas/covid19-peak-detector&lt;/a&gt;&lt;/p&gt;
