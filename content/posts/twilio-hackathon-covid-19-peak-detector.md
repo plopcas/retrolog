@@ -1,5 +1,5 @@
 ---
-title: "Twilio Hackathon - Covid 19 Peak Detector"
+title: "Twilio Hackathon - COVID-19 Peak Detector"
 date: 2020-04-18T17:00:00+01:00
 tags: ["hackathon", "software"]
 draft: false
