@@ -4,21 +4,36 @@
   
   <url>
     <loc>https://retrolog.io/blog/</loc>
-    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/hackathon/</loc>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/</loc>
-    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://retrolog.io/tags/retrospectives/</loc>
-    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
+    <loc>https://retrolog.io/tags/software/</loc>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/tags/</loc>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/twilio-hackathon-covid-19-peak-detector/</loc>
+    <lastmod>2020-04-18T17:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/retrospectives/</loc>
     <lastmod>2020-03-28T17:26:26+00:00</lastmod>
   </url>
   
@@ -49,11 +64,6 @@
   
   <url>
     <loc>https://retrolog.io/blog/deploying-a-static-website-with-s3-route-53-and-cloudfront/</loc>
-    <lastmod>2020-02-09T18:55:52+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/software/</loc>
     <lastmod>2020-02-09T18:55:52+00:00</lastmod>
   </url>
   
