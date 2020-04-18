@@ -207,7 +207,7 @@ public class SmsService {
 }
 ```
 
-To get the tokens, I created a dedicated TokenService that uses the API key and API secrect to generate tokens with the necessary grants depending on the service. In my case I need two types of tokens, one for the Chat service and one for the Sync service.
+To get the tokens, I created a dedicated TokenService that uses the API key and API secret to generate tokens with the necessary grants depending on the service. In my case I need two types of tokens, one for the Chat service and one for the Sync service.
 
 #### The Chat
 
