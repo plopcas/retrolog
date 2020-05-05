@@ -9,11 +9,6 @@
     <p>{{ $elem_val.Summary }}</p>
   </a>
 </p>
-{{ if eq $elem_index 0 }}
-{{ if .Site.Params.amazonAffiliates }}
-{{ partial "affiliates.html" . }}
-{{ end }}
-{{ end }}
 {{ end }}
 
 {{ end }}

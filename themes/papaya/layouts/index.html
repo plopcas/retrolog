@@ -5,18 +5,4 @@
   <p class="font-125">by <a class="black-link" href="/pages/about">{{ .Site.Params.authorName | markdownify }}</a></p>
 </div>
 
-{{ with .Site.Params.amazonAffiliatesRecommendationUrl }}
-{{ $book := index (shuffle .) 0 }}
-<div id="recommendation">
-  <div class="book-single">
-    <span>Hand-picked book of the day!</span>
-    <br><br>
-    <a target="_blank" href="{{ $book.link }}">
-      <img src="{{ $book.image }}">
-    </a>
-    <img src="{{ $book.pixel }}" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" />
-  </div>
-</div>
-{{ end }}
-
 {{ end }}
