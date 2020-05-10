@@ -5,10 +5,76 @@
     <description>Recent content in Blog on Retrolog.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 18 Apr 2020 17:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 18:30:50 +0100</lastBuildDate>
     
         <atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Continuous Performance Assessment</title>
+      <link>https://retrolog.io/blog/continuous-performance-assessment/</link>
+      <pubDate>Sun, 10 May 2020 18:30:50 +0100</pubDate>
+      
+      <guid>https://retrolog.io/blog/continuous-performance-assessment/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Have you ever struggled evaluating the performace of your direct reports? Or have you been surprised in your performance evaluation meeting with your manager? In this post I&#39;ll explain a different approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
+&lt;h4 id=&#34;is-this-1-pager-worth-your-time&#34;&gt;Is this 1-pager worth your time?&lt;/h4&gt;
+&lt;p&gt;As managers, it is important to provide support and guidance in regards to performance so that people continue to improve and grow. And this should be happening regardless of the performance assessment cycle.&lt;/p&gt;
+&lt;p&gt;Let me start by trying to show you why I think this technique is for you, and also why Continuous Performance Assessment matters regardless of whether you are manager or a managee. This is for everyone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How long do you spend on average preparing your performance notes?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Something between too long, and &amp;ldquo;please don’t ask me about that painful time of my life&amp;rdquo; → keep reading&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How often do you discuss performance with your direct reports / manager?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Not often enough → keep reading&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How do you track wins and misses?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I don&#39;t do it → keep reading&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How do you know everyone in your team has the same understanding of the competency framework?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I don&#39;t know it, and just mentioning competency frameworks makes me feel goosebumps and a cold sweat on the back of my neck → keep reading&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How confident are you that there will be no surprises when discussing the results of the performance evaluation with your direct report / manager?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Anything less than 100% → keep reading&lt;/p&gt;
+&lt;p&gt;I practice Continuous Performance Assessment with my team, and have been doing it for some time now. In this post I&#39;ll explain the benefits of this approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
+&lt;h4 id=&#34;avoiding-the-big-rush-at-the-end&#34;&gt;Avoiding the big rush at the end&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-2.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Being consistent at writing notes about performance is hard.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It requires a lot of discipline.&lt;/li&gt;
+&lt;li&gt;You need to know enough detail about the items you are capturing.&lt;/li&gt;
+&lt;li&gt;It doesn&#39;t scale - In fact, it becomes exponentially harder as the number of direct reports grow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Managers (me included) know this, and build mental barriers to avoid a process that is unpleasant to their eyes. As a result, it is often left to the very last minute, when there is no other choice but to sit down and write.&lt;/p&gt;
+&lt;p&gt;But what if this was part of your regular 121 conversations? You already have time booked for this.&lt;/p&gt;
+&lt;p&gt;Remind yourself of the benefits. At the end of the cycle you will have notes covering the whole period. This will help you remember details that you would have forgotten otherwise, so your notes will be much more thorough. And fairer. Recency bias will be less relevant, because you will have been capturing information more evenly.&lt;/p&gt;
+&lt;h4 id=&#34;choosing-a-frequency&#34;&gt;Choosing a frequency&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-3.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Should you update your notes every week? once a month? once a quarter? Only you know what works for you and your team.&lt;/p&gt;
+&lt;p&gt;Personally, every two weeks is the cadence I find more useful, which also maps to the frequency of my 121s. So if you can afford doing this every single 121, do it. If not, do it as frequently as you can. Seriously, this is important. Having a chat about performance should be as easy and comfortable as talking about the weather or asking about the weekend.&lt;/p&gt;
+&lt;p&gt;There are pre-requisites, of course. You&#39;ll need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Trust&lt;/li&gt;
+&lt;li&gt;Transparency about the process&lt;/li&gt;
+&lt;li&gt;Engagement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&#39;s a self-reinforcing cycle, you need transparency to generate trust, when you have trust and people see the benefit of having an open discussion about performance, there comes engagement. With engagement, there comes more feedback and proactivity, and more data. And with more data, there are even more reasons to be transparent and give clarity about how that data will be used.&lt;/p&gt;
+&lt;h4 id=&#34;creating-structure&#34;&gt;Creating structure&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-4.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Keep it simple. Use a table (or a nested list but I prefer a table). Define categories that are relevant to your environment, typically areas of your competency framework. Bias in favour of outcomes and impact, instead of actions. And use the same structure with everyone.&lt;/p&gt;
+&lt;p&gt;If you have an official structure for your performance assessment notes, you are half way there, use the same one. You don&#39;t want to reinvent the wheel and then have to spend time mapping between different formats. Equally, from the manager&#39;s perspective, you want to have meaningful discussion with other managers about the performance of your reports and their reports, and having a common framework makes it easier and more efficient.&lt;/p&gt;
+&lt;p&gt;Make sure competencies are fully understood by everyone in your team. Spend 121 time going through each competency and share examples of bad/good/great behaviours in each one. Consider having a refresher session every 6 months or when competencies get an update.&lt;/p&gt;
+&lt;p&gt;Don&#39;t forget to include misses. Discuss impact, foreseeability and response. It is paramount for your reports to understand what they should&#39;ve done instead of what they did, and this will help them grow much faster. Also, it will give them the chance to turn the tables and come out stronger if you have these conversations early.&lt;/p&gt;
+&lt;h4 id=&#34;avoiding-surprises&#34;&gt;Avoiding surprises&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-5.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is the absolute key. If you are the manager, after you prepared the table, explained the competency framework, got alignment and common understanding, and started the process with some notes of your own, there is one last thing for you to do.&lt;/p&gt;
+&lt;p&gt;Let go.&lt;/p&gt;
+&lt;p&gt;That document is no longer yours. It&#39;s your report&#39;s. From this point on, most of the updates in the performance assessment will have to be done by them. It&#39;s no longer your performance assessment, it&#39;s a self-assessment now, with your input.&lt;/p&gt;
+&lt;p&gt;As a result, you will have frequent conversations about wins and misses. Performance will not be something to be evaluated at the end of the cycle, it will be a way to assess how I&#39;m doing against my own career path in real time. And equally as important, It will become a framework to have meaningful discussions about what&#39;s next and how to get there.&lt;/p&gt;
+&lt;h4 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h4&gt;
+&lt;p&gt;If you want to try Continuous Performance Assessment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Avoid the big rush at the end by capturing performance on a regular basis.&lt;/li&gt;
+&lt;li&gt;Choose a frequency that works for you and your team, but the more frequent the better.&lt;/li&gt;
+&lt;li&gt;Use a structure that is compatible with your official performance evaluation notes.&lt;/li&gt;
+&lt;li&gt;Avoid surprises at the end by making it a collaborative effort, and letting go.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Twilio Hackathon - COVID-19 Peak Detector</title>
