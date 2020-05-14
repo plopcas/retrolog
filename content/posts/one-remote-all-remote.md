@@ -69,6 +69,6 @@ You can't see people as clearly when everyone is joining remotely and crammed in
 
 👔 VPN etiquette still applies
 
-If you have a coorporate VPN, disconnect from it when joining a remote meeting. Otherwise you will be using precious bandwidth and likely affecting others that need it.
+If you have a corporate VPN, disconnect from it when joining a remote meeting. Otherwise you will be using precious bandwidth and likely affecting others that need it.
 
 Kudos to my teammates Grace, Leandro and Stuart, who helped to put this together. Thanks!
