@@ -11,7 +11,7 @@ This post was originally intended as a compilation of suggestions to promote a "
 
 During COVID-19 lockdown, I've confirmed with my team that all of these apply to a full remote setup as well.
 
-Also, as we start going back to "normality", some people will return to the office from day one, while others will stay home for a bit longer. As a result, hybrid team configurations, like the one this post was originally inteded to address, will be very common for a while. Now more than ever, these tips might be relevant to you too.
+Also, as we start going back to "normality", some people will return to the office from day one, while others will stay home for a bit longer. As a result, hybrid team configurations, like the one this post was originally intended to address, will be very common for a while. Now more than ever, these tips might be relevant to you too.
 
 <!--more-->
 
