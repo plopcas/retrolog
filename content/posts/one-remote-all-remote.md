@@ -7,7 +7,7 @@ draft: false
 
 ![image](/images/one-remote-all-remote.png)
 
-This post was originally intended as a compilation of suggestions to promote a "one remote, all remote" approach to meetings. That is, instead of using room equipment that can make the experience less than ideal for remote attendees, if one person joins remotely, every one does.
+This post was originally intended as a compilation of suggestions to promote a "one remote, all remote" approach to meetings. That is, instead of using room equipment that can make the experience less than ideal for remote attendees, if one person joins remotely, everyone does.
 
 During COVID-19 lockdown, I've confirmed with my team that all of these apply to a full remote setup as well.
 
