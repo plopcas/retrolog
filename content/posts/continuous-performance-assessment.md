@@ -6,7 +6,7 @@ draft: false
 ---
 ![image](/images/continuous-performance-assessment.png)
 
-Have you ever struggled evaluating the performace of your direct reports? Or have you been surprised in your performance evaluation meeting with your manager? In this post I'll explain a different approach and will give you some tips and guidelines to implement it yourself.
+Have you ever struggled evaluating the performance of your direct reports? Or have you been surprised in your performance evaluation meeting with your manager? In this post I'll explain a different approach and will give you some tips and guidelines to implement it yourself.
 
 <!--more-->
 
