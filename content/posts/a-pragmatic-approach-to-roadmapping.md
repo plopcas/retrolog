@@ -1,6 +1,6 @@
 ---
 title: "A Pragmatic Approach to Roadmapping"
-date: 2020-06-28T18:30:00+00:00
+date: 2020-06-28T17:30:00+00:00
 tags: ["leadership", "management", "techniques"]
 draft: false
 ---
