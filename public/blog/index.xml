@@ -5,10 +5,84 @@
     <description>Recent content in Blog on Retrolog.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 14 May 2020 20:45:52 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2020 17:30:00 +0000</lastBuildDate>
     
         <atom:link href="https://retrolog.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Pragmatic Approach to Roadmapping</title>
+      <link>https://retrolog.io/blog/a-pragmatic-approach-to-roadmapping/</link>
+      <pubDate>Sun, 28 Jun 2020 17:30:00 +0000</pubDate>
+      
+      <guid>https://retrolog.io/blog/a-pragmatic-approach-to-roadmapping/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Creating a roadmap can be a challenging task. I can&#39;t really say I am an expert on the matter, but have done it a couple of times. The most recent one, I put together a workshop that got fairly positive feedback and so I&#39;m sharing it for the benefit of anyone interested.&lt;/p&gt;
+&lt;p&gt;This post describes a pragmatic approach to creating a roadmap for half a year, but can be extrapolated to cover whatever time period you need. Just be aware that the longest the period, the fuzziest it will be after the first 6 months, particularly in an agile environment with quarterly OKRs.&lt;/p&gt;
+&lt;h4 id=&#34;1-plan-out-the-session&#34;&gt;1. Plan out the session&lt;/h4&gt;
+&lt;p&gt;I used a Miro board as the canvas for the workshop. Having a tool that allows for realtime remote collaboration is essential.&lt;/p&gt;
+&lt;p&gt;Lay out the different steps (which I cover below) and add a time estimate, so that everyone can check if each part is overrunning.&lt;/p&gt;
+&lt;p&gt;You don&#39;t need to cover absolutely everything in one session. Do it if you can, but this can be quite challenging, as there is a lot to cover, and probably people will be tired after max two hours.&lt;/p&gt;
+&lt;p&gt;A high level overview of the board we used looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping-1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-ice-breaker&#34;&gt;2. Ice-breaker&lt;/h4&gt;
+&lt;p&gt;It&#39;s usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.&lt;/p&gt;
+&lt;p&gt;You can use classic exercises from your retrospectives, like guessing everyone&#39;s favourite food or describing your current mood with an emoji. The sky is the limit.&lt;/p&gt;
+&lt;h4 id=&#34;3-set-out-expectations&#34;&gt;3. Set out expectations&lt;/h4&gt;
+&lt;p&gt;It is worth spending 5-10 minutes clarifying the expectations for the workshop. What are we trying to achieve, what&#39;s in scope and what&#39;s not?&lt;/p&gt;
+&lt;p&gt;As the facilitator, come prepared with a proposal. Read through it during the meeting and get agreement or make amendments.&lt;/p&gt;
+&lt;p&gt;Some of the categories we covered last time were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What we should do if we had unlimited time&lt;/li&gt;
+&lt;li&gt;What we are actually doing today&lt;/li&gt;
+&lt;li&gt;What we are not doing today&lt;/li&gt;
+&lt;li&gt;What we should follow up on&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are just examples, feel free to come up with your own version.&lt;/p&gt;
+&lt;h4 id=&#34;4-build-individual-roadmaps&#34;&gt;4. Build individual roadmaps&lt;/h4&gt;
+&lt;p&gt;Here you will start the actual roadmapping exercise. It has a few steps.&lt;/p&gt;
+&lt;h5 id=&#34;41-list-all-the-projects-you-can-think-of&#34;&gt;4.1. List all the projects you can think of&lt;/h5&gt;
+&lt;p&gt;In a column, list all the projects/epics in your area. Doesn&#39;t matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.&lt;/p&gt;
+&lt;p&gt;As a facilitator, it is a good idea to pre-populate the list with the projects you know of already. This will save time and will serve as an example for others to contribute.&lt;/p&gt;
+&lt;p&gt;Remember you are listing projects, not tasks nor programs.&lt;/p&gt;
+&lt;p&gt;Give people time to add projects to the list. You can use different techniques for this e.g. round robin, silent brainstorming, 1-2-4-all, free for all.&lt;/p&gt;
+&lt;p&gt;At the end of this stage, you will have an unestimated, unordered and unowned list of projects that contains everything everyone in the room knows about the work you need to do in your area.&lt;/p&gt;
+&lt;h5 id=&#34;42-estimate-using-t-shirt-sizes&#34;&gt;4.2 Estimate using t-shirt sizes&lt;/h5&gt;
+&lt;p&gt;Estimates are context dependent. What is big for one team, might be medium for another. Here, use whatever makes more sense to your team/area. For example, if you always work on one single thing at a time vs you usually parallelise two or three things, your estimates might differ. These are just ballpark figures, so don&#39;t worry too much.&lt;/p&gt;
+&lt;p&gt;The sizes we used were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Small = 1/3 of the quarter&lt;/li&gt;
+&lt;li&gt;Medium = 2/3 of the quarter&lt;/li&gt;
+&lt;li&gt;Large = 1 quater&lt;/li&gt;
+&lt;li&gt;Extra large = more than 1 quarter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Miro, it is easy to resize rectangles (projects) to match the reference sizes at the top of the list (see the template).&lt;/p&gt;
+&lt;p&gt;Go through the projects from the top and estimate all of them. On a second pass, try to break down the biggest ones into smaller chunks.&lt;/p&gt;
+&lt;h5 id=&#34;43-order-projects-using-a-naive-approach&#34;&gt;4.3 Order projects using a naive approach&lt;/h5&gt;
+&lt;p&gt;A simple bubble-sort will do. Starting from the top decide wether the next project should be done before or after the previous one. Very quickly we started moving things up or down, and ended up with a reasonably well sorted list. Doesn&#39;t have to be perfect, but it should help to group things that need to be done roughly at the same time, and identify things that can probably wait.&lt;/p&gt;
+&lt;h5 id=&#34;44-roughly-define-which-team-should-own-each-project&#34;&gt;4.4 Roughly define which team should own each project&lt;/h5&gt;
+&lt;p&gt;If you are building a roadmap for more than one team, at this point is useful to colour-code the projects to highlight which team will be the official owner of the project. In practice, this means the team that will provide an Epic Owner for the project. If you are unfamiliar with the concept of Epic Owner, it&#39;s the person in charge of an epic acting like the project manager (plus other things, but that&#39;s a topic for a different time).&lt;/p&gt;
+&lt;p&gt;Sometimes ownership is shared, and sometimes you just don&#39;t know. This is absolutely fine at this point, especially for things that will happen 2+ quarters away from now.&lt;/p&gt;
+&lt;h5 id=&#34;45-build-roadmaps-individually&#34;&gt;4.5 Build roadmaps individually&lt;/h5&gt;
+&lt;p&gt;Give people 10-15 minutes to build their own roadmaps with the projects on the list. The goal is to prioritise and parallelise things. Think about dependencies and respect the order as much as possible. But don&#39;t feel constrained by the order that came out of 4.3. It was ordered naively after all.&lt;/p&gt;
+&lt;h4 id=&#34;5-build-a-straw-man-roadmap-together&#34;&gt;5. Build a straw-man roadmap together&lt;/h4&gt;
+&lt;p&gt;At this point, everyone should be pretty familiar with the items in the roadmap, the non-controversial topics, and the trickiest ones.&lt;/p&gt;
+&lt;p&gt;As a group, try to put together a final version. Use arrows to explicitly flag dependencies between projects.&lt;/p&gt;
+&lt;p&gt;It&#39;s very important to remember that this is just a straw-man roadmap, meaning it&#39;s an advanced draft. Not something to be publicly shared, as it needs more work still. But a helpful internal tool nonetheless.&lt;/p&gt;
+&lt;p&gt;The output will be useful in deciding what to do next, and for OKR planning. But things can, and most certainly will, change.&lt;/p&gt;
+&lt;h4 id=&#34;6-reconcile-with-okrs&#34;&gt;6. Reconcile with OKRs&lt;/h4&gt;
+&lt;p&gt;Let&#39;s think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know whose best placed to own each of the work streams.&lt;/p&gt;
+&lt;p&gt;The are two missing pieces still.&lt;/p&gt;
+&lt;h5 id=&#34;strategy&#34;&gt;Strategy&lt;/h5&gt;
+&lt;p&gt;Ideally you should write your strategy briefs first. We had some drafts, but we made a conscious decision to invert the order. Our aim was to gain clarity about the future and prepare ourselves for the imminent OKR planning.&lt;/p&gt;
+&lt;p&gt;If you have already written a formal strategy, for the most part, your projects will come directly from it.&lt;/p&gt;
+&lt;h5 id=&#34;okrs&#34;&gt;OKRs&lt;/h5&gt;
+&lt;p&gt;Company-driven goals might clash somehow with your roadmap. You wouldn&#39;t know until close to the beginning of next quarter, when company OKRs are refreshed (this might be different in your case, depending on the cadence of your organisation).&lt;/p&gt;
+&lt;p&gt;Even though adjustments might be necessary, company OKRs don&#39;t invalidate your roadmap, but you might want to reserve certain capacity to make sure you can accommodate unexpected needs. Typically this will be in the form of OKRs that require enabling others to deliver their goals, or to contribute to pushing metrics in reaction to a market change (like during COVID).&lt;/p&gt;
+&lt;p&gt;Having a roadmap will prepare you better with the tools you need to accomplish company OKRs. It&#39;ll be much easier to find something in your roadmap that supports one of those company goals, than having to come up with an entirely new project on the spot. So you are increasing the chances of having something ready, that is aligned with both the company goals and your long term vision for your area.&lt;/p&gt;
+&lt;h4 id=&#34;7-share-with-the-teams-and-keep-iterating&#34;&gt;7. Share with the teams and keep iterating&lt;/h4&gt;
+&lt;p&gt;It&#39;s important to get buy-in from the team that will actually work on the projects. You want to give everyone a chance to contribute and provide input if they have anything to add. Share your roadmap, ask for feedback, learn and iterate. Do that a few times and you will have a solid and always up-to-date roadmap, ready for any planning cycle.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>One Remote, All Remote</title>

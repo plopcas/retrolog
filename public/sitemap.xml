@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://retrolog.io/blog/a-pragmatic-approach-to-roadmapping/</loc>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://retrolog.io/blog/</loc>
-    <lastmod>2020-05-14T20:45:52+01:00</lastmod>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/leadership/</loc>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/tags/management/</loc>
-    <lastmod>2020-05-14T20:45:52+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/blog/one-remote-all-remote/</loc>
-    <lastmod>2020-05-14T20:45:52+01:00</lastmod>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/</loc>
-    <lastmod>2020-05-14T20:45:52+01:00</lastmod>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://retrolog.io/tags/</loc>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/tags/techniques/</loc>
+    <lastmod>2020-06-28T17:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://retrolog.io/blog/one-remote-all-remote/</loc>
     <lastmod>2020-05-14T20:45:52+01:00</lastmod>
   </url>
   
@@ -49,11 +64,6 @@
   
   <url>
     <loc>https://retrolog.io/tags/retrospectives/</loc>
-    <lastmod>2020-03-28T17:26:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/techniques/</loc>
     <lastmod>2020-03-28T17:26:26+00:00</lastmod>
   </url>
   
@@ -124,11 +134,6 @@
   
   <url>
     <loc>https://retrolog.io/blog/developing-your-critical-thinking/</loc>
-    <lastmod>2018-08-09T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://retrolog.io/tags/leadership/</loc>
     <lastmod>2018-08-09T20:00:00+00:00</lastmod>
   </url>
   
