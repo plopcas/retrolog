@@ -52,7 +52,7 @@ Here you will start the actual roadmapping exercise. It has a few steps.
 
 ##### 4.1. List all the projects you can think of
 
-In a column, list all the projects/epics in your area. Doesn't matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.
+In a column, list all the projects/epics in your area. It doesn't matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.
 
 As a facilitator, it is a good idea to pre-populate the list with the projects you know of already. This will save time and will serve as an example for others to contribute.
 
@@ -103,7 +103,7 @@ The output will be useful in deciding what to do next, and for OKR planning. But
 
 #### 6. Reconcile with OKRs
 
-Let's think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know whose best placed to own each of the work streams.
+Let's think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know who is best placed to own each of the work streams.
 
 The are two missing pieces still.
 
