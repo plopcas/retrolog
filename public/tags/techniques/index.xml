@@ -17,19 +17,19 @@
       
       <guid>https://retrolog.io/blog/a-pragmatic-approach-to-roadmapping/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Creating a roadmap can be a challenging task. I can&#39;t really say I am an expert on the matter, but have done it a couple of times. The most recent one, I put together a workshop that got fairly positive feedback and so I&#39;m sharing it for the benefit of anyone interested.&lt;/p&gt;
+&lt;p&gt;Creating a roadmap can be a challenging task. I can&amp;rsquo;t really say I am an expert on the matter, but have done it a couple of times. The most recent one, I put together a workshop that got fairly positive feedback and so I&amp;rsquo;m sharing it for the benefit of anyone interested.&lt;/p&gt;
 &lt;p&gt;This post describes a pragmatic approach to creating a roadmap for half a year, but can be extrapolated to cover whatever time period you need. Just be aware that the longest the period, the fuzziest it will be after the first 6 months, particularly in an agile environment with quarterly OKRs.&lt;/p&gt;
 &lt;h4 id=&#34;1-plan-out-the-session&#34;&gt;1. Plan out the session&lt;/h4&gt;
 &lt;p&gt;I used a Miro board as the canvas for the workshop. Having a tool that allows for realtime remote collaboration is essential.&lt;/p&gt;
 &lt;p&gt;Lay out the different steps (which I cover below) and add a time estimate, so that everyone can check if each part is overrunning.&lt;/p&gt;
-&lt;p&gt;You don&#39;t need to cover absolutely everything in one session. Do it if you can, but this can be quite challenging, as there is a lot to cover, and probably people will be tired after max two hours.&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need to cover absolutely everything in one session. Do it if you can, but this can be quite challenging, as there is a lot to cover, and probably people will be tired after max two hours.&lt;/p&gt;
 &lt;p&gt;A high level overview of the board we used looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping-1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2-ice-breaker&#34;&gt;2. Ice-breaker&lt;/h4&gt;
-&lt;p&gt;It&#39;s usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.&lt;/p&gt;
-&lt;p&gt;You can use classic exercises from your retrospectives, like guessing everyone&#39;s favourite food or describing your current mood with an emoji. The sky is the limit.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.&lt;/p&gt;
+&lt;p&gt;You can use classic exercises from your retrospectives, like guessing everyone&amp;rsquo;s favourite food or describing your current mood with an emoji. The sky is the limit.&lt;/p&gt;
 &lt;h4 id=&#34;3-set-out-expectations&#34;&gt;3. Set out expectations&lt;/h4&gt;
-&lt;p&gt;It is worth spending 5-10 minutes clarifying the expectations for the workshop. What are we trying to achieve, what&#39;s in scope and what&#39;s not?&lt;/p&gt;
+&lt;p&gt;It is worth spending 5-10 minutes clarifying the expectations for the workshop. What are we trying to achieve, what&amp;rsquo;s in scope and what&amp;rsquo;s not?&lt;/p&gt;
 &lt;p&gt;As the facilitator, come prepared with a proposal. Read through it during the meeting and get agreement or make amendments.&lt;/p&gt;
 &lt;p&gt;Some of the categories we covered last time were:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,13 +42,13 @@
 &lt;h4 id=&#34;4-build-individual-roadmaps&#34;&gt;4. Build individual roadmaps&lt;/h4&gt;
 &lt;p&gt;Here you will start the actual roadmapping exercise. It has a few steps.&lt;/p&gt;
 &lt;h5 id=&#34;41-list-all-the-projects-you-can-think-of&#34;&gt;4.1. List all the projects you can think of&lt;/h5&gt;
-&lt;p&gt;In a column, list all the projects/epics in your area. It doesn&#39;t matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.&lt;/p&gt;
+&lt;p&gt;In a column, list all the projects/epics in your area. It doesn&amp;rsquo;t matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.&lt;/p&gt;
 &lt;p&gt;As a facilitator, it is a good idea to pre-populate the list with the projects you know of already. This will save time and will serve as an example for others to contribute.&lt;/p&gt;
 &lt;p&gt;Remember you are listing projects, not tasks nor programs.&lt;/p&gt;
 &lt;p&gt;Give people time to add projects to the list. You can use different techniques for this e.g. round robin, silent brainstorming, 1-2-4-all, free for all.&lt;/p&gt;
 &lt;p&gt;At the end of this stage, you will have an unestimated, unordered and unowned list of projects that contains everything everyone in the room knows about the work you need to do in your area.&lt;/p&gt;
 &lt;h5 id=&#34;42-estimate-using-t-shirt-sizes&#34;&gt;4.2 Estimate using t-shirt sizes&lt;/h5&gt;
-&lt;p&gt;Estimates are context dependent. What is big for one team, might be medium for another. Here, use whatever makes more sense to your team/area. For example, if you always work on one single thing at a time vs you usually parallelise two or three things, your estimates might differ. These are just ballpark figures, so don&#39;t worry too much.&lt;/p&gt;
+&lt;p&gt;Estimates are context dependent. What is big for one team, might be medium for another. Here, use whatever makes more sense to your team/area. For example, if you always work on one single thing at a time vs you usually parallelise two or three things, your estimates might differ. These are just ballpark figures, so don&amp;rsquo;t worry too much.&lt;/p&gt;
 &lt;p&gt;The sizes we used were:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Small = 1/3 of the quarter&lt;/li&gt;
@@ -59,29 +59,29 @@
 &lt;p&gt;In Miro, it is easy to resize rectangles (projects) to match the reference sizes at the top of the list (see the template).&lt;/p&gt;
 &lt;p&gt;Go through the projects from the top and estimate all of them. On a second pass, try to break down the biggest ones into smaller chunks.&lt;/p&gt;
 &lt;h5 id=&#34;43-order-projects-using-a-naive-approach&#34;&gt;4.3 Order projects using a naive approach&lt;/h5&gt;
-&lt;p&gt;A simple bubble-sort will do. Starting from the top decide wether the next project should be done before or after the previous one. Very quickly we started moving things up or down, and ended up with a reasonably well sorted list. Doesn&#39;t have to be perfect, but it should help to group things that need to be done roughly at the same time, and identify things that can probably wait.&lt;/p&gt;
+&lt;p&gt;A simple bubble-sort will do. Starting from the top decide wether the next project should be done before or after the previous one. Very quickly we started moving things up or down, and ended up with a reasonably well sorted list. Doesn&amp;rsquo;t have to be perfect, but it should help to group things that need to be done roughly at the same time, and identify things that can probably wait.&lt;/p&gt;
 &lt;h5 id=&#34;44-roughly-define-which-team-should-own-each-project&#34;&gt;4.4 Roughly define which team should own each project&lt;/h5&gt;
-&lt;p&gt;If you are building a roadmap for more than one team, at this point is useful to colour-code the projects to highlight which team will be the official owner of the project. In practice, this means the team that will provide an Epic Owner for the project. If you are unfamiliar with the concept of Epic Owner, it&#39;s the person in charge of an epic acting like the project manager (plus other things, but that&#39;s a topic for a different time).&lt;/p&gt;
-&lt;p&gt;Sometimes ownership is shared, and sometimes you just don&#39;t know. This is absolutely fine at this point, especially for things that will happen 2+ quarters away from now.&lt;/p&gt;
+&lt;p&gt;If you are building a roadmap for more than one team, at this point is useful to colour-code the projects to highlight which team will be the official owner of the project. In practice, this means the team that will provide an Epic Owner for the project. If you are unfamiliar with the concept of Epic Owner, it&amp;rsquo;s the person in charge of an epic acting like the project manager (plus other things, but that&amp;rsquo;s a topic for a different time).&lt;/p&gt;
+&lt;p&gt;Sometimes ownership is shared, and sometimes you just don&amp;rsquo;t know. This is absolutely fine at this point, especially for things that will happen 2+ quarters away from now.&lt;/p&gt;
 &lt;h5 id=&#34;45-build-roadmaps-individually&#34;&gt;4.5 Build roadmaps individually&lt;/h5&gt;
-&lt;p&gt;Give people 10-15 minutes to build their own roadmaps with the projects on the list. The goal is to prioritise and parallelise things. Think about dependencies and respect the order as much as possible. But don&#39;t feel constrained by the order that came out of 4.3. It was ordered naively after all.&lt;/p&gt;
+&lt;p&gt;Give people 10-15 minutes to build their own roadmaps with the projects on the list. The goal is to prioritise and parallelise things. Think about dependencies and respect the order as much as possible. But don&amp;rsquo;t feel constrained by the order that came out of 4.3. It was ordered naively after all.&lt;/p&gt;
 &lt;h4 id=&#34;5-build-a-straw-man-roadmap-together&#34;&gt;5. Build a straw-man roadmap together&lt;/h4&gt;
 &lt;p&gt;At this point, everyone should be pretty familiar with the items in the roadmap, the non-controversial topics, and the trickiest ones.&lt;/p&gt;
 &lt;p&gt;As a group, try to put together a final version. Use arrows to explicitly flag dependencies between projects.&lt;/p&gt;
-&lt;p&gt;It&#39;s very important to remember that this is just a straw-man roadmap, meaning it&#39;s an advanced draft. Not something to be publicly shared, as it needs more work still. But a helpful internal tool nonetheless.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s very important to remember that this is just a straw-man roadmap, meaning it&amp;rsquo;s an advanced draft. Not something to be publicly shared, as it needs more work still. But a helpful internal tool nonetheless.&lt;/p&gt;
 &lt;p&gt;The output will be useful in deciding what to do next, and for OKR planning. But things can, and most certainly will, change.&lt;/p&gt;
 &lt;h4 id=&#34;6-reconcile-with-okrs&#34;&gt;6. Reconcile with OKRs&lt;/h4&gt;
-&lt;p&gt;Let&#39;s think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know who is best placed to own each of the work streams.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know who is best placed to own each of the work streams.&lt;/p&gt;
 &lt;p&gt;The are two missing pieces still.&lt;/p&gt;
 &lt;h5 id=&#34;strategy&#34;&gt;Strategy&lt;/h5&gt;
 &lt;p&gt;Ideally you should write your strategy briefs first. We had some drafts, but we made a conscious decision to invert the order. Our aim was to gain clarity about the future and prepare ourselves for the imminent OKR planning.&lt;/p&gt;
 &lt;p&gt;If you have already written a formal strategy, for the most part, your projects will come directly from it.&lt;/p&gt;
 &lt;h5 id=&#34;okrs&#34;&gt;OKRs&lt;/h5&gt;
-&lt;p&gt;Company-driven goals might clash somehow with your roadmap. You wouldn&#39;t know until close to the beginning of next quarter, when company OKRs are refreshed (this might be different in your case, depending on the cadence of your organisation).&lt;/p&gt;
-&lt;p&gt;Even though adjustments might be necessary, company OKRs don&#39;t invalidate your roadmap, but you might want to reserve certain capacity to make sure you can accommodate unexpected needs. Typically this will be in the form of OKRs that require enabling others to deliver their goals, or to contribute to pushing metrics in reaction to a market change (like during COVID).&lt;/p&gt;
-&lt;p&gt;Having a roadmap will prepare you better with the tools you need to accomplish company OKRs. It&#39;ll be much easier to find something in your roadmap that supports one of those company goals, than having to come up with an entirely new project on the spot. So you are increasing the chances of having something ready, that is aligned with both the company goals and your long term vision for your area.&lt;/p&gt;
+&lt;p&gt;Company-driven goals might clash somehow with your roadmap. You wouldn&amp;rsquo;t know until close to the beginning of next quarter, when company OKRs are refreshed (this might be different in your case, depending on the cadence of your organisation).&lt;/p&gt;
+&lt;p&gt;Even though adjustments might be necessary, company OKRs don&amp;rsquo;t invalidate your roadmap, but you might want to reserve certain capacity to make sure you can accommodate unexpected needs. Typically this will be in the form of OKRs that require enabling others to deliver their goals, or to contribute to pushing metrics in reaction to a market change (like during COVID).&lt;/p&gt;
+&lt;p&gt;Having a roadmap will prepare you better with the tools you need to accomplish company OKRs. It&amp;rsquo;ll be much easier to find something in your roadmap that supports one of those company goals, than having to come up with an entirely new project on the spot. So you are increasing the chances of having something ready, that is aligned with both the company goals and your long term vision for your area.&lt;/p&gt;
 &lt;h4 id=&#34;7-share-with-the-teams-and-keep-iterating&#34;&gt;7. Share with the teams and keep iterating&lt;/h4&gt;
-&lt;p&gt;It&#39;s important to get buy-in from the team that will actually work on the projects. You want to give everyone a chance to contribute and provide input if they have anything to add. Share your roadmap, ask for feedback, learn and iterate. Do that a few times and you will have a solid and always up-to-date roadmap, ready for any planning cycle.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s important to get buy-in from the team that will actually work on the projects. You want to give everyone a chance to contribute and provide input if they have anything to add. Share your roadmap, ask for feedback, learn and iterate. Do that a few times and you will have a solid and always up-to-date roadmap, ready for any planning cycle.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -103,16 +103,16 @@
 &lt;li&gt;&lt;strong&gt;What are our biggest challenges?&lt;/strong&gt; Like with Coronavirus, teams face difficult challenges that need to be explicitely called out and discussed to ensure alignment and enable continuous improvement.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;What are our main pain points?&lt;/strong&gt; Like staying at home for a few weeks to fight a virus that spreads easily, teams suffer from technical debt, processes that require more than they should or organisational issues that get in the way. Use this section to write down all those things that are keeping you awake at night. Note that this section differs from the one above in that challenges are things we need to achieve in order to move forward, whereas pain points are typically a consequence of past decisions or contextual circumstances, but based on things that have happened already.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;What quick wins will make us succeed?&lt;/strong&gt; Small things like washing your hands can have a huge impact if done right. Think of all the short term things you can do now that will take you closer to your long term goals further down the line. Focus on low hanging fruits here.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What will make us succeed in the long run?&lt;/strong&gt; For what we know, even at record breaking speed, a vaccine for Coronavirus is not likely to be available for at least another 18 months. Yet, we need to start working on it now because it&#39;s the right thing to do and it will had the biggest long term impact. Similarly, what things does your team need to start working on now that will pay off in a few months.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What should we avoid?&lt;/strong&gt; At the moment, you should only travel if your journey is absolutely essential. Anything else will mean you are increasing the risk of spreading the virus and affecting key workers like healthcare professionals, that are trying to get to their workplaces. Similarly, what things does your team need to avoid as you move forward? These are not pain points from the past, and not necessarily challenges that you know you&#39;ll have to overcome, but rather things that you know already will get in the way if they materialise. Include here risks that you are aware of.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What will make us succeed in the long run?&lt;/strong&gt; For what we know, even at record breaking speed, a vaccine for Coronavirus is not likely to be available for at least another 18 months. Yet, we need to start working on it now because it&amp;rsquo;s the right thing to do and it will had the biggest long term impact. Similarly, what things does your team need to start working on now that will pay off in a few months.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What should we avoid?&lt;/strong&gt; At the moment, you should only travel if your journey is absolutely essential. Anything else will mean you are increasing the risk of spreading the virus and affecting key workers like healthcare professionals, that are trying to get to their workplaces. Similarly, what things does your team need to avoid as you move forward? These are not pain points from the past, and not necessarily challenges that you know you&amp;rsquo;ll have to overcome, but rather things that you know already will get in the way if they materialise. Include here risks that you are aware of.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;generate-insights-30-min&#34;&gt;Generate insights (30 min)&lt;/h4&gt;
-&lt;p&gt;It&#39;s time to brainstorm and generate lots of ideas, but in the interest of time, filter first so that you can focus on the most relevant ones.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s time to brainstorm and generate lots of ideas, but in the interest of time, filter first so that you can focus on the most relevant ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go through the notes and cluster similar topics.&lt;/li&gt;
 &lt;li&gt;Give participants 5 votes each and set a 3 minute timer.&lt;/li&gt;
 &lt;li&gt;Start discussing from the most voted idea.&lt;/li&gt;
-&lt;li&gt;Ask questions to trigger conversations if they don&#39;t flow naturally e.g. why did you vote this note? what did you mean by X when you wrote it down? Is this related to a particular event that happened recently? How have you seen this apply in previous experiences? If you had unlimited resources, how would you tackle it?&lt;/li&gt;
+&lt;li&gt;Ask questions to trigger conversations if they don&amp;rsquo;t flow naturally e.g. why did you vote this note? what did you mean by X when you wrote it down? Is this related to a particular event that happened recently? How have you seen this apply in previous experiences? If you had unlimited resources, how would you tackle it?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;decide-what-to-do-10-min&#34;&gt;Decide what to do (10 min)&lt;/h4&gt;
 &lt;p&gt;For each discussion, make sure that you identify potential actions for the team to work on in the next iteration. &lt;strong&gt;Each action must have an owner&lt;/strong&gt;. You can do this as you generate insights in the previous step, no need to wait.&lt;/p&gt;
@@ -128,15 +128,15 @@
       
       <guid>https://retrolog.io/blog/a-saint-patricks-day-inspired-retrospective/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-saint-patricks-themed-retrospective.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Saint Patrick&#39;s Day is around the corner. The 17th of March is celebrated in green and gold all around the world. I thought it might be fun to design a retrospective based on this festivity.&lt;/p&gt;
-&lt;p&gt;I use &lt;a href=&#34;https://miro.com&#34;&gt;miro&lt;/a&gt; as a virtual whiteboard. It&#39;s a visual collaboration tool that makes it very easy for remote teams to share and organise ideas. Perfect for retrospectives!&lt;/p&gt;
+&lt;p&gt;Saint Patrick&amp;rsquo;s Day is around the corner. The 17th of March is celebrated in green and gold all around the world. I thought it might be fun to design a retrospective based on this festivity.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://miro.com&#34;&gt;miro&lt;/a&gt; as a virtual whiteboard. It&amp;rsquo;s a visual collaboration tool that makes it very easy for remote teams to share and organise ideas. Perfect for retrospectives!&lt;/p&gt;
 &lt;p&gt;If this is not your first retrospective, take 5 minutes to review actions for previous ones.&lt;/p&gt;
 &lt;h4 id=&#34;the-layout&#34;&gt;The layout&lt;/h4&gt;
 &lt;p&gt;Divide the board in three sections like in the image below.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-saint-patricks-themed-retrospective-2.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Trinity and the Shamrock&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The first legend of Saint Patrick says he used a shamrock to explain the Holy Trinity to the Irish back in the 5th century.&lt;/p&gt;
-&lt;p&gt;Let&#39;s use that analogy to discuss three fundamental areas that need to be considered by high performing teams, Technology, Processes and People.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s use that analogy to discuss three fundamental areas that need to be considered by high performing teams, Technology, Processes and People.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Technology: which technologies are we using at the moment that help us achieve our goals? which tools and patterns?&lt;/li&gt;
 &lt;li&gt;Process: which processes help us be efficient and keep us on our toes?&lt;/li&gt;
@@ -155,10 +155,10 @@
 &lt;p&gt;&lt;strong&gt;Voting and discussion&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Run a poll to identify the most relevant clusters. Discuss focusing on two aspects:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Situation: what&#39;s the reason behind the notes? what is the context?&lt;/li&gt;
+&lt;li&gt;Situation: what&amp;rsquo;s the reason behind the notes? what is the context?&lt;/li&gt;
 &lt;li&gt;Action: what can we do to leverage a strength even more or mitigate a recurring issue? How can we improve our tools and processes?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;End the meeting by making sure each action has an owner. And if it&#39;s the end of the day, maybe go to the pub and grab a traditional Irish beverage. Cheers! 🍻&lt;/p&gt;</description>
+&lt;p&gt;End the meeting by making sure each action has an owner. And if it&amp;rsquo;s the end of the day, maybe go to the pub and grab a traditional Irish beverage. Cheers! 🍻&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,7 +168,7 @@
       
       <guid>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/mastering-pair-programming-in-5-minutes.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This post is heavily based on &lt;a href=&#34;https://martinfowler.com/articles/on-pair-programming.html&#34;&gt;https://martinfowler.com/articles/on-pair-programming.html&lt;/a&gt; (38 min read). That is, however, a very long (yet very good) article. For those of us that can&#39;t or don&#39;t want to afford spending that long, I collated its main points and added a few twists of my own. I hope it&#39;s useful.&lt;/p&gt;
+&lt;p&gt;This post is heavily based on &lt;a href=&#34;https://martinfowler.com/articles/on-pair-programming.html&#34;&gt;https://martinfowler.com/articles/on-pair-programming.html&lt;/a&gt; (38 min read). That is, however, a very long (yet very good) article. For those of us that can&amp;rsquo;t or don&amp;rsquo;t want to afford spending that long, I collated its main points and added a few twists of my own. I hope it&amp;rsquo;s useful.&lt;/p&gt;
 &lt;h4 id=&#34;why-bother&#34;&gt;Why bother?&lt;/h4&gt;
 &lt;p&gt;According to some studies e.g. &lt;a href=&#34;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&#34;&gt;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&lt;/a&gt; some of the most significant benefits of pair programming are:&lt;/p&gt;
 &lt;ul&gt;
@@ -195,7 +195,7 @@
 &lt;li&gt;Start with a reasonably well-defined task&lt;/li&gt;
 &lt;li&gt;Agree on one tiny goal at a time e.g. defined by a unit test or a commit message&lt;/li&gt;
 &lt;li&gt;Switch roles regularly&lt;/li&gt;
-&lt;li&gt;As Navigator, avoid tactical thinking, you&#39;ll be tempted! Make notes on potential obstacles and ideas and discuss after the tiny goal is done, so the Driver can stay in the flow&lt;/li&gt;
+&lt;li&gt;As Navigator, avoid tactical thinking, you&amp;rsquo;ll be tempted! Make notes on potential obstacles and ideas and discuss after the tiny goal is done, so the Driver can stay in the flow&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -218,7 +218,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Strong-Style&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;For an idea to go from your head into the computer, it MUST go through someone else&#39;s hands&lt;/li&gt;
+&lt;li&gt;For an idea to go from your head into the computer, it MUST go through someone else&amp;rsquo;s hands&lt;/li&gt;
 &lt;li&gt;Particularly useful for &lt;strong&gt;knowledge transfer&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Driver is a novice&lt;/li&gt;
 &lt;li&gt;Navigator is much more experienced with the task at hand&lt;/li&gt;
@@ -227,7 +227,7 @@
 &lt;ul&gt;
 &lt;li&gt;Driver totally trusts the Navigator and should be comfortable with incomplete understanding&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;Why&amp;rdquo; questions and challenging the solution should be discussed after the implementation session&lt;/li&gt;
-&lt;li&gt;Don&#39;t overuse this technique&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t overuse this technique&lt;/li&gt;
 &lt;li&gt;Great for initial knowledge transfer but the goal is to transition to the other styles after a while&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -236,7 +236,7 @@
 &lt;/ul&gt;
 &lt;p&gt;When the task does not involve coding.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; - what&#39;s our goal?
+&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; - what&amp;rsquo;s our goal?
 &lt;ul&gt;
 &lt;li&gt;E.g. pairing on Epic Ownership or aspects that overlap multiple epics&lt;/li&gt;
 &lt;li&gt;Understand the problem, read through the story and play back to each other how you understand it to make sure there is alignment&lt;/li&gt;
@@ -250,14 +250,14 @@
 &lt;ul&gt;
 &lt;li&gt;Define a list of questions that you need to answer&lt;/li&gt;
 &lt;li&gt;Split up, divide and conquer. Alternatively, try to find answers for the same questions separately.&lt;/li&gt;
-&lt;li&gt;Search your company&#39;s intranet and messaging system, and any other resources you can find&lt;/li&gt;
+&lt;li&gt;Search your company&amp;rsquo;s intranet and messaging system, and any other resources you can find&lt;/li&gt;
 &lt;li&gt;Read up on concepts that are new to both of you&lt;/li&gt;
 &lt;li&gt;Get back together after a previously agreed upon time-box, share and discuss&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Reflect together if any documentation is necessary for what you&#39;ve done&lt;/li&gt;
+&lt;li&gt;Reflect together if any documentation is necessary for what you&amp;rsquo;ve done&lt;/li&gt;
 &lt;li&gt;Create a document together. Alternatively, one person creates it, then the other reviews it and &amp;ldquo;wordsmiths&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Pairing reduces the chance of skipping documentation&lt;/li&gt;
 &lt;/ul&gt;
@@ -266,7 +266,7 @@
 &lt;p&gt;For time management you can use the pomodoro technique, small breaks after 25min and longer breaks after 2h.&lt;/p&gt;
 &lt;p&gt;Pair rotations:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Don&#39;t stay in the same pair for more than 2-3 days&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t stay in the same pair for more than 2-3 days&lt;/li&gt;
 &lt;li&gt;This avoids silos, increase collective code ownership, and favours more code review on-the-go&lt;/li&gt;
 &lt;li&gt;It also keeps things fresh, particularly when you are working on something tedious and energy-draining&lt;/li&gt;
 &lt;li&gt;The person who stays is called the Anchor&lt;/li&gt;
@@ -283,17 +283,17 @@
 &lt;li&gt;Make sure both have enough space, chairs included, clear up the desk if necessary&lt;/li&gt;
 &lt;li&gt;Decide if you want to use one keyboard or two, same for the mouse. No hard rule, whatever works. Some other factors into play are hygiene and how much space is actually available.&lt;/li&gt;
 &lt;li&gt;Consider using screen share on Zoom so that each one can use their own laptop&lt;/li&gt;
-&lt;li&gt;Agree on a default the first time, so that you don&#39;t have to discuss this every time&lt;/li&gt;
+&lt;li&gt;Agree on a default the first time, so that you don&amp;rsquo;t have to discuss this every time&lt;/li&gt;
 &lt;li&gt;Remote pairing is ok as long as the internet connection is good enough, there is no background noise (use mute otherwise), and both of you agree to it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Celebrate when you have accomplished a task together, you earned it!&lt;/p&gt;
 &lt;p&gt;Things to avoid:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Drifting apart during the pairing session e.g. reading emails or using your phone. These can come across as disrespectful and distracts you from the task at hand. If you really need to check something, make it transparent, say what you are doing and why&lt;/li&gt;
-&lt;li&gt;Micro-managing e.g. &amp;ldquo;Now type this&amp;hellip;&amp;quot;, &amp;ldquo;Now we need to create a class called&amp;hellip;&amp;quot;, &amp;ldquo;Press Cmd + Shift O&amp;hellip;&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Impatience, apply the 5-seconds-rule instead (when the Navigator sees something &amp;ldquo;wrong&amp;rdquo; and wants to comment, wait at least 5 seconds in case the driver already has it in mind, so that you don&#39;t interrupt their flow unnecessarily)&lt;/li&gt;
+&lt;li&gt;Micro-managing e.g. &amp;ldquo;Now type this&amp;hellip;&amp;rdquo;, &amp;ldquo;Now we need to create a class called&amp;hellip;&amp;rdquo;, &amp;ldquo;Press Cmd + Shift O&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Impatience, apply the 5-seconds-rule instead (when the Navigator sees something &amp;ldquo;wrong&amp;rdquo; and wants to comment, wait at least 5 seconds in case the driver already has it in mind, so that you don&amp;rsquo;t interrupt their flow unnecessarily)&lt;/li&gt;
 &lt;li&gt;Keyboard hogging, are you controlling the keyboard all the time? Sharing is caring ❤&lt;/li&gt;
-&lt;li&gt;Pairing 8 hours per day, it&#39;s not sustainable, it&#39;s too exhausting and in practice there are other things you need to do other than coding&lt;/li&gt;
+&lt;li&gt;Pairing 8 hours per day, it&amp;rsquo;s not sustainable, it&amp;rsquo;s too exhausting and in practice there are other things you need to do other than coding&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There is not &amp;ldquo;THE&amp;rdquo; right way, try different approaches and find what works for you and your team.&lt;/p&gt;</description>
     </item>

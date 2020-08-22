@@ -35,16 +35,16 @@
 &lt;/ol&gt;
 &lt;p&gt;Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.&lt;/p&gt;
 &lt;h4 id=&#34;2-capacity&#34;&gt;2. Capacity&lt;/h4&gt;
-&lt;p&gt;How many users does your system have? How much data do you need? Now it&#39;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
+&lt;p&gt;How many users does your system have? How much data do you need? Now it&amp;rsquo;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
 &lt;p&gt;Number of users, requests per second, gigabytes of memory&amp;hellip; those are things that you are typically looking for here.&lt;/p&gt;
 &lt;h4 id=&#34;3-application-layers&#34;&gt;3. Application layers&lt;/h4&gt;
 &lt;p&gt;There will be three layers to consider in any system.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Data layer: if you have a database, which type? SQL/NoSQL/Graph&amp;hellip; Do you need tables? Design the schema now if you need one.&lt;/li&gt;
 &lt;li&gt;API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.&lt;/li&gt;
-&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&#39;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
+&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&amp;rsquo;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&#39;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
+&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&amp;rsquo;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
 &lt;h4 id=&#34;4-optimisation&#34;&gt;4. Optimisation&lt;/h4&gt;
 &lt;p&gt;There are at least four things to consider:&lt;/p&gt;
 &lt;ol&gt;
@@ -57,9 +57,9 @@
 &lt;p&gt;If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.&lt;/p&gt;
 &lt;p&gt;Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.&lt;/p&gt;
 &lt;p&gt;Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.&lt;/p&gt;
-&lt;p&gt;It&#39;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
-&lt;p&gt;Don&#39;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
-&lt;p&gt;And remember to share your design with other people! It&#39;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And remember to share your design with other people! It&amp;rsquo;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       
       <guid>https://retrolog.io/blog/twilio-hackathon-covid-19-peak-detector/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/twilio-hackathon-covid-19-peak-detector.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&#39;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&amp;rsquo;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
 &lt;h4 id=&#34;the-application&#34;&gt;The application&lt;/h4&gt;
 &lt;p&gt;COVID-19 Peak Detector is a Java Spring Boot application with a DynamoDB store that displays graph information with stats about COVID-19. You can select the country you are interested in and you can create an alert by entering your phone number.&lt;/p&gt;
 &lt;p&gt;A scheduled process will check the data periodically and will send the alert when a peak is detected.&lt;/p&gt;
@@ -36,14 +36,14 @@
 &lt;li&gt;Twilio Sync for news&lt;/li&gt;
 &lt;li&gt;Gradle as the build tool&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the COVID-19 data and the news, I&#39;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the COVID-19 data and the news, I&amp;rsquo;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The demo application was deployed in AWS using Elastic Beanstalk.&lt;/p&gt;
-&lt;p&gt;I&#39;ll explain some of the most interesting pieces.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll explain some of the most interesting pieces.&lt;/p&gt;
 &lt;h4 id=&#34;the-welcome-controller&#34;&gt;The Welcome controller&lt;/h4&gt;
 &lt;p&gt;This is where everything starts. The controller is in charge of calling the different services to fetch the necessary data to populate the view.&lt;/p&gt;
 &lt;p&gt;From here, we call the DataService to fetch the historical data, and we use Faker, a Java library to generate random data sets, to assign a random username to the user landing the page. This username will be important for the chat widget.&lt;/p&gt;
 &lt;p&gt;Fun fact, all the usernames are characters from Game of Thrones 🤓&lt;/p&gt;
-&lt;p&gt;It is important to mention that the data about COVID-19 doesn&#39;t change very frequently. Therefore, I&#39;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
+&lt;p&gt;It is important to mention that the data about COVID-19 doesn&amp;rsquo;t change very frequently. Therefore, I&amp;rsquo;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
 &lt;p&gt;This is a small optimisation, because those APIs are not very flexible, and they force you to fetch all the historical data in every call. This way, we minimise the amount of data transfered over the wire in exchange for a bit of up-to-dateness.&lt;/p&gt;
 &lt;h4 id=&#34;the-data-api&#34;&gt;The Data API&lt;/h4&gt;
 &lt;p&gt;We expose our data in an endpoint available at &lt;code&gt;/countries/{countryAndProvince}&lt;/code&gt;. This endpoint is called using AJAX from the browser everytime the user selects a different country from the dropdown.&lt;/p&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;This is a monolithic application, so typically we render the views on the server-side using Thymeleaf. However, it is useful to also call the back-end from Javascript and render changes without refreshing the page. This provides a better user experience.&lt;/p&gt;
 &lt;h4 id=&#34;creating-an-alert&#34;&gt;Creating an alert&lt;/h4&gt;
 &lt;p&gt;Another thing we can do here is to create an SMS alert for a given country. When the user signs up, a confirmation SMS will be sent. When a peak is detected, a second SMS will be sent and the phone number will be deleted from the DynamoDB.&lt;/p&gt;
-&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&#39;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
+&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&amp;rsquo;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
 &lt;p&gt;The key components here are the DyanmoDBConfiguration class, the model and the repository.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Configuration
 @EnableDynamoDBRepositories(basePackages = &amp;quot;com.plopcas.twiliohackathon.cpd.repository&amp;quot;)
@@ -117,20 +117,20 @@ public class Alert {
     @EnableScan
     public List&amp;lt;Alert&amp;gt; findAll();
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&#39;t exist already.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&amp;rsquo;t exist already.&lt;/p&gt;
 &lt;p&gt;Of course, all the sensitive information is externalised as environment variables.&lt;/p&gt;
-&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&#39;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
+&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&amp;rsquo;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
 &lt;p&gt;More information can be found &lt;a href=&#34;https://www.baeldung.com/spring-data-dynamodb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&#39;s not there, it&#39;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
+&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&amp;rsquo;s not there, it&amp;rsquo;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Alert alert = new Alert(country, phone);
 alertRepository.save(alert);
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-scheduled-peak-detector&#34;&gt;The scheduled peak detector&lt;/h4&gt;
-&lt;p&gt;In order to detect peaks we use a very naive approach. It&#39;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
+&lt;p&gt;In order to detect peaks we use a very naive approach. It&amp;rsquo;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
 &lt;p&gt;If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.&lt;/p&gt;
 &lt;p&gt;In order to run the process periodically, we use the &lt;code&gt;@Scheduled&lt;/code&gt; annotation with a fixedRate of 12 hours.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Scheduled(fixedRate = 12 * 60 * 60 * 1000)
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-sms-service&#34;&gt;The SMS service&lt;/h4&gt;
-&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&#39;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
+&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&amp;rsquo;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class SmsService {
     private String fromPhone;
@@ -163,8 +163,8 @@ public class SmsService {
 &lt;h4 id=&#34;the-chat&#34;&gt;The Chat&lt;/h4&gt;
 &lt;p&gt;The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.&lt;/p&gt;
 &lt;p&gt;In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.&lt;/p&gt;
-&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&#39;s fairly simple and it&#39;s all explained in their documentation.&lt;/p&gt;
-&lt;h4 id=&#34;thats-it&#34;&gt;That&#39;s it!&lt;/h4&gt;
+&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&amp;rsquo;s fairly simple and it&amp;rsquo;s all explained in their documentation.&lt;/p&gt;
+&lt;h4 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h4&gt;
 &lt;p&gt;I hope you enjoyed this post. All the code is publicly available in GitHub here&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/plopcas/covid19-peak-detector&#34;&gt;https://github.com/plopcas/covid19-peak-detector&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;and the demo application (at least for a few days) is available here&lt;/p&gt;
@@ -179,7 +179,7 @@ public class SmsService {
       
       <guid>https://retrolog.io/blog/deploying-a-static-website-with-s3-route-53-and-cloudfront/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Today I&#39;ll show you how to deploy your static website to S3, and how you can configure a custom domain with Route 53 and enable HTTPS (why wouldn&#39;t you) with CloudFront. Keep reading to find out more!&lt;/p&gt;
+&lt;p&gt;Today I&amp;rsquo;ll show you how to deploy your static website to S3, and how you can configure a custom domain with Route 53 and enable HTTPS (why wouldn&amp;rsquo;t you) with CloudFront. Keep reading to find out more!&lt;/p&gt;
 &lt;p&gt;Even though this information is available in the AWS documentation, I ran into different problems when setting it up for my own website. Hopefully this runbook will help someone else as well.&lt;/p&gt;
 &lt;h4 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h4&gt;
 &lt;ol&gt;
@@ -189,10 +189,10 @@ public class SmsService {
 &lt;p&gt;Please note that Route 53 is not a free service. S3 and CloudFront are included in the AWS Free Tier within certain conditions. Check &lt;a href=&#34;https://aws.amazon.com/free&#34;&gt;https://aws.amazon.com/free&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;Estimated costs for running a small static website are $12/year for the domain and $0.60/month for the running costs.&lt;/p&gt;
 &lt;h4 id=&#34;getting-a-custom-domain-with-route-53&#34;&gt;Getting a custom domain with Route 53&lt;/h4&gt;
-&lt;p&gt;The first step is to get a new domain for our website. We&#39;ll do that with Route 53.&lt;/p&gt;
+&lt;p&gt;The first step is to get a new domain for our website. We&amp;rsquo;ll do that with Route 53.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to Route 53 &lt;a href=&#34;https://console.aws.amazon.com/route53&#34;&gt;https://console.aws.amazon.com/route53&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;If it&#39;s your first domain, choose &amp;ldquo;Get Started Now&amp;rdquo; under &amp;ldquo;Domain Registration&amp;rdquo;. If you already have another domain, in the navigation pane, choose &amp;ldquo;Registered Domains&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s your first domain, choose &amp;ldquo;Get Started Now&amp;rdquo; under &amp;ldquo;Domain Registration&amp;rdquo;. If you already have another domain, in the navigation pane, choose &amp;ldquo;Registered Domains&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-0.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -206,11 +206,11 @@ public class SmsService {
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-3.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Please note that the process can take up to a few days to complete.&lt;/li&gt;
-&lt;li&gt;Once it&#39;s done, we can see a &lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html&#34;&gt;Hosted Zone&lt;/a&gt; has been automatically created for us. We will use this later on to configure our DNS records.&lt;/li&gt;
+&lt;li&gt;Once it&amp;rsquo;s done, we can see a &lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html&#34;&gt;Hosted Zone&lt;/a&gt; has been automatically created for us. We will use this later on to configure our DNS records.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;setting-up-s3-to-serve-static-content&#34;&gt;Setting up S3 to serve static content&lt;/h4&gt;
 &lt;p&gt;We will use the AWS console, but everything could also be done via CLI or CloudFormation.&lt;/p&gt;
-&lt;p&gt;Let&#39;s create the bucket first using the wizard.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s create the bucket first using the wizard.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a new S3 bucket &lt;a href=&#34;https://console.aws.amazon.com/s3&#34;&gt;https://console.aws.amazon.com/s3&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Give it a name that matches your domain name from the previous step e.g. example.com.&lt;/li&gt;
@@ -219,13 +219,13 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Choose a region that is close to you and your potential users e.g. EU (Ireland). This is to minimise latency, however, because we will be using CloudFront to serve our content, this is not really an issue. Another reason is to comply with relevant regulations for your country.&lt;/li&gt;
 &lt;li&gt;Everything in the next step is optional, so you can skip it.&lt;/li&gt;
-&lt;li&gt;Disable the &amp;ldquo;Block all public access&amp;rdquo; checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven&#39;t made the bucket public yet, we just removed the blocker that prevented us from doing so.&lt;/li&gt;
+&lt;li&gt;Disable the &amp;ldquo;Block all public access&amp;rdquo; checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven&amp;rsquo;t made the bucket public yet, we just removed the blocker that prevented us from doing so.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-5.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Review and accept.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Next, let&#39;s configure the bucket for static website hosting.&lt;/p&gt;
+&lt;p&gt;Next, let&amp;rsquo;s configure the bucket for static website hosting.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to &amp;ldquo;Properties&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Click on &amp;ldquo;Static website hosting&amp;rdquo;.&lt;/li&gt;
@@ -238,7 +238,7 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Make a note of the &amp;ldquo;Endpoint&amp;rdquo; URL at the top e.g. &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt; and click &amp;ldquo;Save&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let&#39;s test things by uploading an &lt;code&gt;index.html&lt;/code&gt; file to the bucket.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s test things by uploading an &lt;code&gt;index.html&lt;/code&gt; file to the bucket.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a file named &lt;code&gt;index.html&lt;/code&gt; with your favourite text editor or IDE and paste the following.&lt;/li&gt;
 &lt;/ul&gt;
@@ -255,7 +255,7 @@ public class SmsService {
 &lt;li&gt;Click on the &amp;ldquo;Upload&amp;rdquo; button at the bottom to skip all the additional steps and leave the defaults.&lt;/li&gt;
 &lt;li&gt;Open the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A &lt;strong&gt;403 Forbidden&lt;/strong&gt; error!? 😱 What&#39;s going on?&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;403 Forbidden&lt;/strong&gt; error!? 😱 What&amp;rsquo;s going on?&lt;/p&gt;
 &lt;p&gt;What happened is that the file itself is not public yet. We can fix this!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go back to the &amp;ldquo;Overview&amp;rdquo; tab and click on the &lt;code&gt;index.html&lt;/code&gt; file.&lt;/li&gt;
@@ -271,7 +271,7 @@ public class SmsService {
 &lt;li&gt;Open again the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser (or refresh the tab).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉&lt;/p&gt;
-&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&#39;s configure the bucket so that all its objects are public at once. For that, we&#39;ll use a policy.&lt;/p&gt;
+&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&amp;rsquo;s configure the bucket so that all its objects are public at once. For that, we&amp;rsquo;ll use a policy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go back to the bucket itself using the breadcrumb menu at the top.&lt;/li&gt;
 &lt;li&gt;Go to the &amp;ldquo;Permissions&amp;rdquo; tab.&lt;/li&gt;
@@ -296,7 +296,7 @@ public class SmsService {
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉💃🕺🎉&lt;/p&gt;
 &lt;h4 id=&#34;setting-up-a-custom-domain&#34;&gt;Setting up a custom domain&lt;/h4&gt;
-&lt;p&gt;At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt;. We don&#39;t want that, we want to use &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt;. We don&amp;rsquo;t want that, we want to use &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to Route 53 &lt;a href=&#34;https://console.aws.amazon.com/route53&#34;&gt;https://console.aws.amazon.com/route53&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Click on &amp;ldquo;Hosted Zones&amp;rdquo; and select the one that matches your domain name.&lt;/li&gt;
@@ -309,7 +309,7 @@ public class SmsService {
 &lt;li&gt;Open your domain e.g. &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉💃🕺💃🕺💃🕺💃🕺🎉&lt;/p&gt;
-&lt;p&gt;We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let&#39;s change that.&lt;/p&gt;
+&lt;p&gt;We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let&amp;rsquo;s change that.&lt;/p&gt;
 &lt;h4 id=&#34;setting-up-https-with-cloudfront&#34;&gt;Setting up HTTPS with CloudFront&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to CloudFront &lt;a href=&#34;https://console.aws.amazon.com/cloudfront&#34;&gt;https://console.aws.amazon.com/cloudfront&lt;/a&gt;&lt;/li&gt;
@@ -327,9 +327,9 @@ public class SmsService {
 &lt;li&gt;Inside the &amp;ldquo;Alternate Domain Names (CNAMEs)&amp;rdquo; text area, enter your domain name e.g. example.com.&lt;/li&gt;
 &lt;li&gt;For SSL Certificate, choose &amp;ldquo;Custom SSL Certificate&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Wait&amp;hellip; it&#39;s grayed out!? 😱 We need an SSL certificate that we don&#39;t have. For that we&#39;ll use Amazon ACM. There is a convenient button that says &amp;ldquo;Request or Import a Certificate with ACM&amp;rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
+&lt;p&gt;Wait&amp;hellip; it&amp;rsquo;s grayed out!? 😱 We need an SSL certificate that we don&amp;rsquo;t have. For that we&amp;rsquo;ll use Amazon ACM. There is a convenient button that says &amp;ldquo;Request or Import a Certificate with ACM&amp;rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Make sure that you are in the &lt;strong&gt;North Virginia&lt;/strong&gt; region. 🚨 &lt;strong&gt;THIS IS VERY IMPORTANT!!!!&lt;/strong&gt; 🚨 It&#39;s the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.&lt;/li&gt;
+&lt;li&gt;Make sure that you are in the &lt;strong&gt;North Virginia&lt;/strong&gt; region. 🚨 &lt;strong&gt;THIS IS VERY IMPORTANT!!!!&lt;/strong&gt; 🚨 It&amp;rsquo;s the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.&lt;/li&gt;
 &lt;li&gt;Enter your domain name e.g. example.com.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-15.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
@@ -343,10 +343,10 @@ public class SmsService {
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In the pop-up window click on &amp;ldquo;Create&amp;rdquo;. You&#39;ll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&#39;ll see that a new CNAME entry has been created.&lt;/li&gt;
+&lt;li&gt;In the pop-up window click on &amp;ldquo;Create&amp;rdquo;. You&amp;rsquo;ll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&amp;rsquo;ll see that a new CNAME entry has been created.&lt;/li&gt;
 &lt;li&gt;Grab a cup of your favourite beverage and wait ☕️&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &amp;ldquo;Custom SSL Certificate&amp;rdquo;. Refresh the page if it&#39;s not the case, you might need to re-enter the information in the form.&lt;/p&gt;
+&lt;p&gt;Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &amp;ldquo;Custom SSL Certificate&amp;rdquo;. Refresh the page if it&amp;rsquo;s not the case, you might need to re-enter the information in the form.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Back to CloudFront, select the recently created SSL certificate.&lt;/li&gt;
 &lt;/ul&gt;
@@ -370,7 +370,7 @@ public class SmsService {
 🎉Hello world! 🎉
 🎉🎉🎉🎉🎉🎉🎉🎉
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;read-more&#34;&gt;Read more&lt;/h4&gt;
-&lt;p&gt;There is official documentation that covers this use case, however it&#39;s split between a few documents. Hopefully I&#39;ve summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.&lt;/p&gt;
+&lt;p&gt;There is official documentation that covers this use case, however it&amp;rsquo;s split between a few documents. Hopefully I&amp;rsquo;ve summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html&#34;&gt;Domain register&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html&#34;&gt;Website hosting custom domain walkthrough&lt;/a&gt;&lt;/li&gt;
@@ -477,7 +477,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
     &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;{{ $title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;Here we are specifying the charset that our document will use, &lt;code&gt;utf-8&lt;/code&gt; in this case, the viewport information and couple of stylesheets&lt;/li&gt;
-&lt;li&gt;Let&#39;s go ahead and add the missing CSS files&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s go ahead and add the missing CSS files&lt;/li&gt;
 &lt;li&gt;Go to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt; and create a file called &lt;code&gt;style.css&lt;/code&gt;, we will place our custom CSS here later on&lt;/li&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;https://getbootstrap.com/&lt;/a&gt; and download the latest version of Bootstrap (v4.4.1 at the time of writing)&lt;/li&gt;
 &lt;li&gt;Extract the ZIP file and copy &lt;code&gt;bootstrap.min.css&lt;/code&gt; to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt;&lt;/li&gt;
@@ -495,7 +495,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &lt;/ul&gt;
 &lt;h5 id=&#34;header-and-footer&#34;&gt;Header and footer&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Let&#39;s add a nav to the header so that we can navigate between the different sections of our site&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s add a nav to the header so that we can navigate between the different sections of our site&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/partials/header.html&lt;/code&gt; and paste the following
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav-border&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
     &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav justify-content-center&amp;#34;&lt;/span&gt;&amp;gt;
@@ -513,7 +513,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;Here we are creating a nav menu that will be centred at the top of each page&lt;/li&gt;
 &lt;li&gt;Each menu item will have a link and also an icon if we configure it as a &lt;code&gt;pre&lt;/code&gt; property in &lt;code&gt;config.toml&lt;/code&gt;, more on that later&lt;/li&gt;
-&lt;li&gt;For the footer let&#39;s just add a basic copyright disclaimer
+&lt;li&gt;For the footer let&amp;rsquo;s just add a basic copyright disclaimer
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;footer text-center&amp;#34;&lt;/span&gt;&amp;gt;Copyright (c) {{ now.Format &amp;#34;2006&amp;#34;}} John Doe&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;You can replace &lt;code&gt;John Doe&lt;/code&gt; with your name&lt;/li&gt;
 &lt;li&gt;The current year will be displayed as well&lt;/li&gt;
@@ -521,7 +521,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &lt;/ul&gt;
 &lt;h5 id=&#34;metadata&#34;&gt;Metadata&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Let&#39;s create one more partial to display metadata about each post e.g. date and tags&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s create one more partial to display metadata about each post e.g. date and tags&lt;/li&gt;
 &lt;li&gt;Create a new file &lt;code&gt;example/themes/exampleTheme/layouts/partials/metadata.html&lt;/code&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ $dateTime := .PublishDate.Format &amp;#34;2006-01-02&amp;#34; }}
 {{ $dateFormat := .Site.Params.dateFormat | default &amp;#34;Jan 2, 2006&amp;#34; }}
@@ -569,7 +569,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
         {{- partial &amp;#34;footer.html&amp;#34; . -}}
     &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Let&#39;s also include the &lt;code&gt;script.html&lt;/code&gt; partial with our Feather icons
+&lt;li&gt;Let&amp;rsquo;s also include the &lt;code&gt;script.html&lt;/code&gt; partial with our Feather icons
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#007020&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;
     {{- partial &amp;#34;head.html&amp;#34; . -}}
@@ -582,7 +582,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
         {{- partial &amp;#34;script.html&amp;#34; . -}}
     &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;It&#39;s good practice to place our scripts at the end of the HTML code so that it doesn&#39;t block rendering the page&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s good practice to place our scripts at the end of the HTML code so that it doesn&amp;rsquo;t block rendering the page&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;list&#34;&gt;List&lt;/h5&gt;
 &lt;p&gt;This layout will be used to display the list of posts on our site.&lt;/p&gt;
@@ -608,7 +608,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;p&gt;This layout will be used to display a single post.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/_default/single.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Similarly to what we did above, let&#39;s define the &lt;code&gt;main&lt;/code&gt; section
+&lt;li&gt;Similarly to what we did above, let&amp;rsquo;s define the &lt;code&gt;main&lt;/code&gt; section
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ define &amp;#34;main&amp;#34; }}
 &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;
 {{ partial &amp;#34;metadata.html&amp;#34; . }}
@@ -630,14 +630,14 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 {{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;404&#34;&gt;404&lt;/h4&gt;
-&lt;p&gt;This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&#39;s delete it for now.&lt;/p&gt;
+&lt;p&gt;This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&amp;rsquo;s delete it for now.&lt;/p&gt;
 &lt;p&gt;Feel free to play with the contents of the file if you want to customise your error messages.&lt;/p&gt;
 &lt;h4 id=&#34;configuration&#34;&gt;Configuration&lt;/h4&gt;
 &lt;p&gt;We have created the template, now we need to tell Hugo to use it for our site.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open &lt;code&gt;example/config.toml&lt;/code&gt; and add a line to select the theme like this
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;theme = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;exampleTheme&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;We&#39;ll also need a menu to navigate to the different sections, let&#39;s add it
+&lt;li&gt;We&amp;rsquo;ll also need a menu to navigate to the different sections, let&amp;rsquo;s add it
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[menu]
   [[menu.main]]
     name = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;Home&amp;#34;&lt;/span&gt;
@@ -657,10 +657,10 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;li&gt;Here we are defining a menu, and referencing it with the name &lt;code&gt;main&lt;/code&gt; to match our header (&lt;code&gt;.Site.Menus.main&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;In Hugo there is another way to create a menu quickly, and that is by adding this line to your &lt;code&gt;config.toml&lt;/code&gt; file instead, more information &lt;a href=&#34;https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers&#34;&gt;here&lt;/a&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;sectionPagesMenu = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;However we want to be able to customise our nav menu and add icons, therefore we&#39;ll go with the manual approach&lt;/li&gt;
+&lt;li&gt;However we want to be able to customise our nav menu and add icons, therefore we&amp;rsquo;ll go with the manual approach&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;write-your-first-post&#34;&gt;Write your first post&lt;/h4&gt;
-&lt;p&gt;The real value of a website is its content. Let&#39;s create a post before we have a look at the final result.&lt;/p&gt;
+&lt;p&gt;The real value of a website is its content. Let&amp;rsquo;s create a post before we have a look at the final result.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open a terminal and use the following command from the root of your site to create a post
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new posts/my-first-post.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
@@ -670,7 +670,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;li&gt;Add some content under the front matter&lt;/li&gt;
 &lt;li&gt;Hugo automatically takes the first 70 words of your content as its summary and stores it into the &lt;code&gt;.Summary&lt;/code&gt; variable&lt;/li&gt;
 &lt;li&gt;Instead, you can manually define where the summary ends with a &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; divider&lt;/li&gt;
-&lt;li&gt;Alternatively, you can add a &lt;code&gt;summary&lt;/code&gt; to the front matter if you don&#39;t want your summary to be the beginning of your post&lt;/li&gt;
+&lt;li&gt;Alternatively, you can add a &lt;code&gt;summary&lt;/code&gt; to the front matter if you don&amp;rsquo;t want your summary to be the beginning of your post&lt;/li&gt;
 &lt;li&gt;The final result should look similar to this
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
 title: &amp;#34;My First Post&amp;#34;
@@ -687,7 +687,7 @@ velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
 ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id 
 semper risus in hendrerit gravida rutrum.
 
-&amp;lt;!--more--&amp;gt;
+&lt;span style=&#34;color:#60a0b0;font-style:italic&#34;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;
 
 Ac ut consequat semper viverra nam. Hac habitasse platea dictumst vestibulum 
 rhoncus. Amet porttitor eget dolor morbi non. Justo eget magna fermentum 
@@ -711,7 +711,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;img src=&#34;https://retrolog.io/images/creating-a-hugo-theme-from-scratch-result.jpg&#34; alt=&#34;image&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h4&gt;
-&lt;p&gt;In this post I&#39;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the &lt;code&gt;style.css&lt;/code&gt; file and modify the template to add more features.&lt;/p&gt;
+&lt;p&gt;In this post I&amp;rsquo;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the &lt;code&gt;style.css&lt;/code&gt; file and modify the template to add more features.&lt;/p&gt;
 &lt;p&gt;In future posts I will show how to add share buttons and analytics to our site.&lt;/p&gt;
 &lt;p&gt;If you want to jump ahead and see the final template that I use for my site, you can find it in GitHub &lt;a href=&#34;https://github.com/plopcas/papaya&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks for reading!&lt;/p&gt;
@@ -758,16 +758,16 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;/ol&gt;
 &lt;p&gt;Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.&lt;/p&gt;
 &lt;h4 id=&#34;2-capacity&#34;&gt;2. Capacity&lt;/h4&gt;
-&lt;p&gt;How many users does your system have? How much data do you need? Now it&#39;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
+&lt;p&gt;How many users does your system have? How much data do you need? Now it&amp;rsquo;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
 &lt;p&gt;Number of users, requests per second, gigabytes of memory&amp;hellip; those are things that you are typically looking for here.&lt;/p&gt;
 &lt;h4 id=&#34;3-application-layers&#34;&gt;3. Application layers&lt;/h4&gt;
 &lt;p&gt;There will be three layers to consider in any system.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Data layer: if you have a database, which type? SQL/NoSQL/Graph&amp;hellip; Do you need tables? Design the schema now if you need one.&lt;/li&gt;
 &lt;li&gt;API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.&lt;/li&gt;
-&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&#39;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
+&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&amp;rsquo;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&#39;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
+&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&amp;rsquo;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
 &lt;h4 id=&#34;4-optimisation&#34;&gt;4. Optimisation&lt;/h4&gt;
 &lt;p&gt;There are at least four things to consider:&lt;/p&gt;
 &lt;ol&gt;
@@ -780,9 +780,9 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.&lt;/p&gt;
 &lt;p&gt;Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.&lt;/p&gt;
 &lt;p&gt;Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.&lt;/p&gt;
-&lt;p&gt;It&#39;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
-&lt;p&gt;Don&#39;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
-&lt;p&gt;And remember to share your design with other people! It&#39;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And remember to share your design with other people! It&amp;rsquo;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
     </item>
     
   </channel>

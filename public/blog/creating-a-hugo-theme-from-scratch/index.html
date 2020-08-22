@@ -190,7 +190,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
     &lt;<span style="color:#062873;font-weight:bold">title</span>&gt;{{ $title }}&lt;/<span style="color:#062873;font-weight:bold">title</span>&gt;
 &lt;/<span style="color:#062873;font-weight:bold">head</span>&gt;</code></pre></div></li>
 <li>Here we are specifying the charset that our document will use, <code>utf-8</code> in this case, the viewport information and couple of stylesheets</li>
-<li>Let's go ahead and add the missing CSS files</li>
+<li>Let&rsquo;s go ahead and add the missing CSS files</li>
 <li>Go to <code>example/themes/exampleTheme/static/css</code> and create a file called <code>style.css</code>, we will place our custom CSS here later on</li>
 <li>Go to <a href="https://getbootstrap.com/">https://getbootstrap.com/</a> and download the latest version of Bootstrap (v4.4.1 at the time of writing)</li>
 <li>Extract the ZIP file and copy <code>bootstrap.min.css</code> to <code>example/themes/exampleTheme/static/css</code></li>
@@ -208,7 +208,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 </ul>
 <h5 id="header-and-footer">Header and footer</h5>
 <ul>
-<li>Let's add a nav to the header so that we can navigate between the different sections of our site</li>
+<li>Let&rsquo;s add a nav to the header so that we can navigate between the different sections of our site</li>
 <li>Open <code>example/themes/exampleTheme/layouts/partials/header.html</code> and paste the following
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">div</span> <span style="color:#4070a0">id</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;nav-border&#34;</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;container&#34;</span>&gt;
     &lt;<span style="color:#062873;font-weight:bold">nav</span> <span style="color:#4070a0">id</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;nav&#34;</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;nav justify-content-center&#34;</span>&gt;
@@ -226,7 +226,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 &lt;/<span style="color:#062873;font-weight:bold">div</span>&gt;</code></pre></div></li>
 <li>Here we are creating a nav menu that will be centred at the top of each page</li>
 <li>Each menu item will have a link and also an icon if we configure it as a <code>pre</code> property in <code>config.toml</code>, more on that later</li>
-<li>For the footer let's just add a basic copyright disclaimer
+<li>For the footer let&rsquo;s just add a basic copyright disclaimer
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">&lt;<span style="color:#062873;font-weight:bold">p</span> <span style="color:#4070a0">class</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;footer text-center&#34;</span>&gt;Copyright (c) {{ now.Format &#34;2006&#34;}} John Doe&lt;/<span style="color:#062873;font-weight:bold">p</span>&gt;</code></pre></div></li>
 <li>You can replace <code>John Doe</code> with your name</li>
 <li>The current year will be displayed as well</li>
@@ -234,7 +234,7 @@ title = &#34;My New Hugo Site&#34;</code></pre></div></li>
 </ul>
 <h5 id="metadata">Metadata</h5>
 <ul>
-<li>Let's create one more partial to display metadata about each post e.g. date and tags</li>
+<li>Let&rsquo;s create one more partial to display metadata about each post e.g. date and tags</li>
 <li>Create a new file <code>example/themes/exampleTheme/layouts/partials/metadata.html</code>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">{{ $dateTime := .PublishDate.Format &#34;2006-01-02&#34; }}
 {{ $dateFormat := .Site.Params.dateFormat | default &#34;Jan 2, 2006&#34; }}
@@ -282,7 +282,7 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
         {{- partial &#34;footer.html&#34; . -}}
     &lt;/<span style="color:#062873;font-weight:bold">body</span>&gt;
 &lt;/<span style="color:#062873;font-weight:bold">html</span>&gt;</code></pre></div></li>
-<li>Let's also include the <code>script.html</code> partial with our Feather icons
+<li>Let&rsquo;s also include the <code>script.html</code> partial with our Feather icons
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html"><span style="color:#007020">&lt;!DOCTYPE html&gt;</span>
 &lt;<span style="color:#062873;font-weight:bold">html</span>&gt;
     {{- partial &#34;head.html&#34; . -}}
@@ -295,7 +295,7 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
         {{- partial &#34;script.html&#34; . -}}
     &lt;/<span style="color:#062873;font-weight:bold">body</span>&gt;
 &lt;/<span style="color:#062873;font-weight:bold">html</span>&gt;</code></pre></div></li>
-<li>It's good practice to place our scripts at the end of the HTML code so that it doesn't block rendering the page</li>
+<li>It&rsquo;s good practice to place our scripts at the end of the HTML code so that it doesn&rsquo;t block rendering the page</li>
 </ul>
 <h5 id="list">List</h5>
 <p>This layout will be used to display the list of posts on our site.</p>
@@ -321,7 +321,7 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
 <p>This layout will be used to display a single post.</p>
 <ul>
 <li>Open <code>example/themes/exampleTheme/layouts/_default/single.html</code></li>
-<li>Similarly to what we did above, let's define the <code>main</code> section
+<li>Similarly to what we did above, let&rsquo;s define the <code>main</code> section
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-html" data-lang="html">{{ define &#34;main&#34; }}
 &lt;<span style="color:#062873;font-weight:bold">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#062873;font-weight:bold">h1</span>&gt;
 {{ partial &#34;metadata.html&#34; . }}
@@ -343,14 +343,14 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
 {{ end }}</code></pre></div></li>
 </ul>
 <h4 id="404">404</h4>
-<p>This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let's delete it for now.</p>
+<p>This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&rsquo;s delete it for now.</p>
 <p>Feel free to play with the contents of the file if you want to customise your error messages.</p>
 <h4 id="configuration">Configuration</h4>
 <p>We have created the template, now we need to tell Hugo to use it for our site.</p>
 <ul>
 <li>Open <code>example/config.toml</code> and add a line to select the theme like this
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml">theme = <span style="color:#4070a0">&#34;exampleTheme&#34;</span></code></pre></div></li>
-<li>We'll also need a menu to navigate to the different sections, let's add it
+<li>We&rsquo;ll also need a menu to navigate to the different sections, let&rsquo;s add it
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml">[menu]
   [[menu.main]]
     name = <span style="color:#4070a0">&#34;Home&#34;</span>
@@ -370,10 +370,10 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
 <li>Here we are defining a menu, and referencing it with the name <code>main</code> to match our header (<code>.Site.Menus.main</code>)</li>
 <li>In Hugo there is another way to create a menu quickly, and that is by adding this line to your <code>config.toml</code> file instead, more information <a href="https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers">here</a>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-toml" data-lang="toml">sectionPagesMenu = <span style="color:#4070a0">&#34;main&#34;</span></code></pre></div></li>
-<li>However we want to be able to customise our nav menu and add icons, therefore we'll go with the manual approach</li>
+<li>However we want to be able to customise our nav menu and add icons, therefore we&rsquo;ll go with the manual approach</li>
 </ul>
 <h4 id="write-your-first-post">Write your first post</h4>
-<p>The real value of a website is its content. Let's create a post before we have a look at the final result.</p>
+<p>The real value of a website is its content. Let&rsquo;s create a post before we have a look at the final result.</p>
 <ul>
 <li>Open a terminal and use the following command from the root of your site to create a post
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-bash" data-lang="bash">hugo new posts/my-first-post.md</code></pre></div></li>
@@ -383,7 +383,7 @@ tags: [&#34;foo&#34;, &#34;bar&#34;]
 <li>Add some content under the front matter</li>
 <li>Hugo automatically takes the first 70 words of your content as its summary and stores it into the <code>.Summary</code> variable</li>
 <li>Instead, you can manually define where the summary ends with a <code>&lt;!--more--&gt;</code> divider</li>
-<li>Alternatively, you can add a <code>summary</code> to the front matter if you don't want your summary to be the beginning of your post</li>
+<li>Alternatively, you can add a <code>summary</code> to the front matter if you don&rsquo;t want your summary to be the beginning of your post</li>
 <li>The final result should look similar to this
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">---
 title: &#34;My First Post&#34;
@@ -400,7 +400,7 @@ velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
 ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id 
 semper risus in hendrerit gravida rutrum.
 
-&lt;!--more--&gt;
+<span style="color:#60a0b0;font-style:italic">&lt;!--more--&gt;</span>
 
 Ac ut consequat semper viverra nam. Hac habitasse platea dictumst vestibulum 
 rhoncus. Amet porttitor eget dolor morbi non. Justo eget magna fermentum 
@@ -424,7 +424,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.<
 <img src="/images/creating-a-hugo-theme-from-scratch-result.jpg" alt="image"></li>
 </ul>
 <h4 id="final-thoughts">Final thoughts</h4>
-<p>In this post I've showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the <code>style.css</code> file and modify the template to add more features.</p>
+<p>In this post I&rsquo;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the <code>style.css</code> file and modify the template to add more features.</p>
 <p>In future posts I will show how to add share buttons and analytics to our site.</p>
 <p>If you want to jump ahead and see the final template that I use for my site, you can find it in GitHub <a href="https://github.com/plopcas/papaya">here</a>.</p>
 <p>Thanks for reading!</p>

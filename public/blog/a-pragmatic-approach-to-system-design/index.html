@@ -134,16 +134,16 @@
 </ol>
 <p>Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.</p>
 <h4 id="2-capacity">2. Capacity</h4>
-<p>How many users does your system have? How much data do you need? Now it's the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.</p>
+<p>How many users does your system have? How much data do you need? Now it&rsquo;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.</p>
 <p>Number of users, requests per second, gigabytes of memory&hellip; those are things that you are typically looking for here.</p>
 <h4 id="3-application-layers">3. Application layers</h4>
 <p>There will be three layers to consider in any system.</p>
 <ol>
 <li>Data layer: if you have a database, which type? SQL/NoSQL/Graph&hellip; Do you need tables? Design the schema now if you need one.</li>
 <li>API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.</li>
-<li>Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don't know where to start, try first a naive approach and optimise later.</li>
+<li>Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&rsquo;t know where to start, try first a naive approach and optimise later.</li>
 </ol>
-<p>At this point you should be able to draw a basic block diagram of your system. Don't worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.</p>
+<p>At this point you should be able to draw a basic block diagram of your system. Don&rsquo;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.</p>
 <h4 id="4-optimisation">4. Optimisation</h4>
 <p>There are at least four things to consider:</p>
 <ol>
@@ -156,9 +156,9 @@
 <p>If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.</p>
 <p>Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.</p>
 <p>Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.</p>
-<p>It's worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.</p>
-<p>Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&hellip;</p>
-<p>And remember to share your design with other people! It's very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.</p>
+<p>It&rsquo;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.</p>
+<p>Don&rsquo;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&hellip;</p>
+<p>And remember to share your design with other people! It&rsquo;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.</p>
 
 
             </main>

@@ -17,19 +17,19 @@
       
       <guid>https://retrolog.io/blog/a-pragmatic-approach-to-roadmapping/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Creating a roadmap can be a challenging task. I can&#39;t really say I am an expert on the matter, but have done it a couple of times. The most recent one, I put together a workshop that got fairly positive feedback and so I&#39;m sharing it for the benefit of anyone interested.&lt;/p&gt;
+&lt;p&gt;Creating a roadmap can be a challenging task. I can&amp;rsquo;t really say I am an expert on the matter, but have done it a couple of times. The most recent one, I put together a workshop that got fairly positive feedback and so I&amp;rsquo;m sharing it for the benefit of anyone interested.&lt;/p&gt;
 &lt;p&gt;This post describes a pragmatic approach to creating a roadmap for half a year, but can be extrapolated to cover whatever time period you need. Just be aware that the longest the period, the fuzziest it will be after the first 6 months, particularly in an agile environment with quarterly OKRs.&lt;/p&gt;
 &lt;h4 id=&#34;1-plan-out-the-session&#34;&gt;1. Plan out the session&lt;/h4&gt;
 &lt;p&gt;I used a Miro board as the canvas for the workshop. Having a tool that allows for realtime remote collaboration is essential.&lt;/p&gt;
 &lt;p&gt;Lay out the different steps (which I cover below) and add a time estimate, so that everyone can check if each part is overrunning.&lt;/p&gt;
-&lt;p&gt;You don&#39;t need to cover absolutely everything in one session. Do it if you can, but this can be quite challenging, as there is a lot to cover, and probably people will be tired after max two hours.&lt;/p&gt;
+&lt;p&gt;You don&amp;rsquo;t need to cover absolutely everything in one session. Do it if you can, but this can be quite challenging, as there is a lot to cover, and probably people will be tired after max two hours.&lt;/p&gt;
 &lt;p&gt;A high level overview of the board we used looks like this:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-pragmatic-approach-to-roadmapping-1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;2-ice-breaker&#34;&gt;2. Ice-breaker&lt;/h4&gt;
-&lt;p&gt;It&#39;s usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.&lt;/p&gt;
-&lt;p&gt;You can use classic exercises from your retrospectives, like guessing everyone&#39;s favourite food or describing your current mood with an emoji. The sky is the limit.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.&lt;/p&gt;
+&lt;p&gt;You can use classic exercises from your retrospectives, like guessing everyone&amp;rsquo;s favourite food or describing your current mood with an emoji. The sky is the limit.&lt;/p&gt;
 &lt;h4 id=&#34;3-set-out-expectations&#34;&gt;3. Set out expectations&lt;/h4&gt;
-&lt;p&gt;It is worth spending 5-10 minutes clarifying the expectations for the workshop. What are we trying to achieve, what&#39;s in scope and what&#39;s not?&lt;/p&gt;
+&lt;p&gt;It is worth spending 5-10 minutes clarifying the expectations for the workshop. What are we trying to achieve, what&amp;rsquo;s in scope and what&amp;rsquo;s not?&lt;/p&gt;
 &lt;p&gt;As the facilitator, come prepared with a proposal. Read through it during the meeting and get agreement or make amendments.&lt;/p&gt;
 &lt;p&gt;Some of the categories we covered last time were:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,13 +42,13 @@
 &lt;h4 id=&#34;4-build-individual-roadmaps&#34;&gt;4. Build individual roadmaps&lt;/h4&gt;
 &lt;p&gt;Here you will start the actual roadmapping exercise. It has a few steps.&lt;/p&gt;
 &lt;h5 id=&#34;41-list-all-the-projects-you-can-think-of&#34;&gt;4.1. List all the projects you can think of&lt;/h5&gt;
-&lt;p&gt;In a column, list all the projects/epics in your area. It doesn&#39;t matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.&lt;/p&gt;
+&lt;p&gt;In a column, list all the projects/epics in your area. It doesn&amp;rsquo;t matter if they have been discussed previously or not, and you are encouraged to think out-of-the-box.&lt;/p&gt;
 &lt;p&gt;As a facilitator, it is a good idea to pre-populate the list with the projects you know of already. This will save time and will serve as an example for others to contribute.&lt;/p&gt;
 &lt;p&gt;Remember you are listing projects, not tasks nor programs.&lt;/p&gt;
 &lt;p&gt;Give people time to add projects to the list. You can use different techniques for this e.g. round robin, silent brainstorming, 1-2-4-all, free for all.&lt;/p&gt;
 &lt;p&gt;At the end of this stage, you will have an unestimated, unordered and unowned list of projects that contains everything everyone in the room knows about the work you need to do in your area.&lt;/p&gt;
 &lt;h5 id=&#34;42-estimate-using-t-shirt-sizes&#34;&gt;4.2 Estimate using t-shirt sizes&lt;/h5&gt;
-&lt;p&gt;Estimates are context dependent. What is big for one team, might be medium for another. Here, use whatever makes more sense to your team/area. For example, if you always work on one single thing at a time vs you usually parallelise two or three things, your estimates might differ. These are just ballpark figures, so don&#39;t worry too much.&lt;/p&gt;
+&lt;p&gt;Estimates are context dependent. What is big for one team, might be medium for another. Here, use whatever makes more sense to your team/area. For example, if you always work on one single thing at a time vs you usually parallelise two or three things, your estimates might differ. These are just ballpark figures, so don&amp;rsquo;t worry too much.&lt;/p&gt;
 &lt;p&gt;The sizes we used were:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Small = 1/3 of the quarter&lt;/li&gt;
@@ -59,29 +59,29 @@
 &lt;p&gt;In Miro, it is easy to resize rectangles (projects) to match the reference sizes at the top of the list (see the template).&lt;/p&gt;
 &lt;p&gt;Go through the projects from the top and estimate all of them. On a second pass, try to break down the biggest ones into smaller chunks.&lt;/p&gt;
 &lt;h5 id=&#34;43-order-projects-using-a-naive-approach&#34;&gt;4.3 Order projects using a naive approach&lt;/h5&gt;
-&lt;p&gt;A simple bubble-sort will do. Starting from the top decide wether the next project should be done before or after the previous one. Very quickly we started moving things up or down, and ended up with a reasonably well sorted list. Doesn&#39;t have to be perfect, but it should help to group things that need to be done roughly at the same time, and identify things that can probably wait.&lt;/p&gt;
+&lt;p&gt;A simple bubble-sort will do. Starting from the top decide wether the next project should be done before or after the previous one. Very quickly we started moving things up or down, and ended up with a reasonably well sorted list. Doesn&amp;rsquo;t have to be perfect, but it should help to group things that need to be done roughly at the same time, and identify things that can probably wait.&lt;/p&gt;
 &lt;h5 id=&#34;44-roughly-define-which-team-should-own-each-project&#34;&gt;4.4 Roughly define which team should own each project&lt;/h5&gt;
-&lt;p&gt;If you are building a roadmap for more than one team, at this point is useful to colour-code the projects to highlight which team will be the official owner of the project. In practice, this means the team that will provide an Epic Owner for the project. If you are unfamiliar with the concept of Epic Owner, it&#39;s the person in charge of an epic acting like the project manager (plus other things, but that&#39;s a topic for a different time).&lt;/p&gt;
-&lt;p&gt;Sometimes ownership is shared, and sometimes you just don&#39;t know. This is absolutely fine at this point, especially for things that will happen 2+ quarters away from now.&lt;/p&gt;
+&lt;p&gt;If you are building a roadmap for more than one team, at this point is useful to colour-code the projects to highlight which team will be the official owner of the project. In practice, this means the team that will provide an Epic Owner for the project. If you are unfamiliar with the concept of Epic Owner, it&amp;rsquo;s the person in charge of an epic acting like the project manager (plus other things, but that&amp;rsquo;s a topic for a different time).&lt;/p&gt;
+&lt;p&gt;Sometimes ownership is shared, and sometimes you just don&amp;rsquo;t know. This is absolutely fine at this point, especially for things that will happen 2+ quarters away from now.&lt;/p&gt;
 &lt;h5 id=&#34;45-build-roadmaps-individually&#34;&gt;4.5 Build roadmaps individually&lt;/h5&gt;
-&lt;p&gt;Give people 10-15 minutes to build their own roadmaps with the projects on the list. The goal is to prioritise and parallelise things. Think about dependencies and respect the order as much as possible. But don&#39;t feel constrained by the order that came out of 4.3. It was ordered naively after all.&lt;/p&gt;
+&lt;p&gt;Give people 10-15 minutes to build their own roadmaps with the projects on the list. The goal is to prioritise and parallelise things. Think about dependencies and respect the order as much as possible. But don&amp;rsquo;t feel constrained by the order that came out of 4.3. It was ordered naively after all.&lt;/p&gt;
 &lt;h4 id=&#34;5-build-a-straw-man-roadmap-together&#34;&gt;5. Build a straw-man roadmap together&lt;/h4&gt;
 &lt;p&gt;At this point, everyone should be pretty familiar with the items in the roadmap, the non-controversial topics, and the trickiest ones.&lt;/p&gt;
 &lt;p&gt;As a group, try to put together a final version. Use arrows to explicitly flag dependencies between projects.&lt;/p&gt;
-&lt;p&gt;It&#39;s very important to remember that this is just a straw-man roadmap, meaning it&#39;s an advanced draft. Not something to be publicly shared, as it needs more work still. But a helpful internal tool nonetheless.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s very important to remember that this is just a straw-man roadmap, meaning it&amp;rsquo;s an advanced draft. Not something to be publicly shared, as it needs more work still. But a helpful internal tool nonetheless.&lt;/p&gt;
 &lt;p&gt;The output will be useful in deciding what to do next, and for OKR planning. But things can, and most certainly will, change.&lt;/p&gt;
 &lt;h4 id=&#34;6-reconcile-with-okrs&#34;&gt;6. Reconcile with OKRs&lt;/h4&gt;
-&lt;p&gt;Let&#39;s think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know who is best placed to own each of the work streams.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s think for a minute about what we have. We have a list of things that we want to build as an area (area meaning the part of the business you are roadmapping for, made out of a subset of the total of teams in the organisation). We know how those different things relate to each other in terms of dependencies. And we roughly know who is best placed to own each of the work streams.&lt;/p&gt;
 &lt;p&gt;The are two missing pieces still.&lt;/p&gt;
 &lt;h5 id=&#34;strategy&#34;&gt;Strategy&lt;/h5&gt;
 &lt;p&gt;Ideally you should write your strategy briefs first. We had some drafts, but we made a conscious decision to invert the order. Our aim was to gain clarity about the future and prepare ourselves for the imminent OKR planning.&lt;/p&gt;
 &lt;p&gt;If you have already written a formal strategy, for the most part, your projects will come directly from it.&lt;/p&gt;
 &lt;h5 id=&#34;okrs&#34;&gt;OKRs&lt;/h5&gt;
-&lt;p&gt;Company-driven goals might clash somehow with your roadmap. You wouldn&#39;t know until close to the beginning of next quarter, when company OKRs are refreshed (this might be different in your case, depending on the cadence of your organisation).&lt;/p&gt;
-&lt;p&gt;Even though adjustments might be necessary, company OKRs don&#39;t invalidate your roadmap, but you might want to reserve certain capacity to make sure you can accommodate unexpected needs. Typically this will be in the form of OKRs that require enabling others to deliver their goals, or to contribute to pushing metrics in reaction to a market change (like during COVID).&lt;/p&gt;
-&lt;p&gt;Having a roadmap will prepare you better with the tools you need to accomplish company OKRs. It&#39;ll be much easier to find something in your roadmap that supports one of those company goals, than having to come up with an entirely new project on the spot. So you are increasing the chances of having something ready, that is aligned with both the company goals and your long term vision for your area.&lt;/p&gt;
+&lt;p&gt;Company-driven goals might clash somehow with your roadmap. You wouldn&amp;rsquo;t know until close to the beginning of next quarter, when company OKRs are refreshed (this might be different in your case, depending on the cadence of your organisation).&lt;/p&gt;
+&lt;p&gt;Even though adjustments might be necessary, company OKRs don&amp;rsquo;t invalidate your roadmap, but you might want to reserve certain capacity to make sure you can accommodate unexpected needs. Typically this will be in the form of OKRs that require enabling others to deliver their goals, or to contribute to pushing metrics in reaction to a market change (like during COVID).&lt;/p&gt;
+&lt;p&gt;Having a roadmap will prepare you better with the tools you need to accomplish company OKRs. It&amp;rsquo;ll be much easier to find something in your roadmap that supports one of those company goals, than having to come up with an entirely new project on the spot. So you are increasing the chances of having something ready, that is aligned with both the company goals and your long term vision for your area.&lt;/p&gt;
 &lt;h4 id=&#34;7-share-with-the-teams-and-keep-iterating&#34;&gt;7. Share with the teams and keep iterating&lt;/h4&gt;
-&lt;p&gt;It&#39;s important to get buy-in from the team that will actually work on the projects. You want to give everyone a chance to contribute and provide input if they have anything to add. Share your roadmap, ask for feedback, learn and iterate. Do that a few times and you will have a solid and always up-to-date roadmap, ready for any planning cycle.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s important to get buy-in from the team that will actually work on the projects. You want to give everyone a chance to contribute and provide input if they have anything to add. Share your roadmap, ask for feedback, learn and iterate. Do that a few times and you will have a solid and always up-to-date roadmap, ready for any planning cycle.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -92,24 +92,24 @@
       <guid>https://retrolog.io/blog/one-remote-all-remote/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/one-remote-all-remote.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This post was originally intended as a compilation of suggestions to promote a &amp;ldquo;one remote, all remote&amp;rdquo; approach to meetings. That is, instead of using room equipment that can make the experience less than ideal for remote attendees, if one person joins remotely, everyone does.&lt;/p&gt;
-&lt;p&gt;During COVID-19 lockdown, I&#39;ve confirmed with my team that all of these apply to a full remote setup as well.&lt;/p&gt;
+&lt;p&gt;During COVID-19 lockdown, I&amp;rsquo;ve confirmed with my team that all of these apply to a full remote setup as well.&lt;/p&gt;
 &lt;p&gt;Also, as we start going back to &amp;ldquo;normality&amp;rdquo;, some people will return to the office from day one, while others will stay home for a bit longer. As a result, hybrid team configurations, like the one this post was originally intended to address, will be very common for a while. Now more than ever, these tips might be relevant to you too.&lt;/p&gt;
 &lt;p&gt;NOTE: these tips mention Zoom specifically, just replace with you video conferencing software of choice.&lt;/p&gt;
 &lt;p&gt;🎧 &lt;strong&gt;Use headphones&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Any type is fine, but noise cancelling ones work best because they provide with a higher level of sound isolation. If there is more than one attendee in the same room, because of the lag, you might want to set the volume high enough so that is not distracting to hear the other person speaking at the same time. But not too high, you&#39;ll still need your ears after the meeting, safety first.&lt;/p&gt;
+&lt;p&gt;Any type is fine, but noise cancelling ones work best because they provide with a higher level of sound isolation. If there is more than one attendee in the same room, because of the lag, you might want to set the volume high enough so that is not distracting to hear the other person speaking at the same time. But not too high, you&amp;rsquo;ll still need your ears after the meeting, safety first.&lt;/p&gt;
 &lt;p&gt;There is an exception. If you are in a phone booth, or you are the only person in the room, feel free to use your laptop internal microphone and speakers (or equivalent). Consider double checking that there is no undesired echo for everyone else in the call.&lt;/p&gt;
 &lt;p&gt;🎥 &lt;strong&gt;Use a camera&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;General rules for remote meetings still apply, and it&#39;s generally better to see the person speaking. Please make sure you either have an external webcam or you keep your laptop lid open during the call so that you can use the laptop camera. Consider enabling your camera by default or turn it on right after joining the call. Feel free to disconnect video temporarily, though, if you are not speaking or if the signal is bad.&lt;/p&gt;
+&lt;p&gt;General rules for remote meetings still apply, and it&amp;rsquo;s generally better to see the person speaking. Please make sure you either have an external webcam or you keep your laptop lid open during the call so that you can use the laptop camera. Consider enabling your camera by default or turn it on right after joining the call. Feel free to disconnect video temporarily, though, if you are not speaking or if the signal is bad.&lt;/p&gt;
 &lt;p&gt;🙊 &lt;strong&gt;If you are not speaking, mute yourself&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is paramount in a set up where multiple people is in the same room joining the same call, otherwise the audio experience will be bad due to unwanted echo. Depending on the configuration of the meeting, the host can also mute all participants if needed.&lt;/p&gt;
 &lt;p&gt;Extra tip: Use the &amp;ldquo;Mute microphone when joining a meeting&amp;rdquo; setting that you can find in Preferences → Audio.&lt;/p&gt;
 &lt;p&gt;✋ &lt;strong&gt;Consider using the raise hand functionality to indicate that you want to talk&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In a remote setup it&#39;s hard to see when someone has the intention to speak, particularly when the screen is shared. You might be hidden in the gallery if many people is in the call. One effective way to tackle this is to use the raise hand functionality in Zoom. If the number of people is small (typically less than 5) this might not be necessary.&lt;/p&gt;
-&lt;p&gt;NOTE: with recent versions of Zoom, the host can enable Nonverbal feedback. Click on the participants tab and you&#39;ll see icons for things like &amp;ldquo;go faster&amp;rdquo;, &amp;ldquo;thumbs up&amp;rdquo; or &amp;ldquo;need a break&amp;rdquo; that will be seen by the meeting host.&lt;/p&gt;
-&lt;p&gt;🙋 &lt;strong&gt;Every meeting needs a facilitator (and if you don&#39;t know who that is, it&#39;s probably you)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You need someone to tell others to mute themselves if they don&#39;t realise, and to coordinate who speaks when the conversation doesn&#39;t flow naturally. The facilitator in this particular case could just be the meeting host, but in large meetings it might make sense to get some help. As a rule of thumb, if there is no clearly designated facilitator, please jump in and help.&lt;/p&gt;
+&lt;p&gt;In a remote setup it&amp;rsquo;s hard to see when someone has the intention to speak, particularly when the screen is shared. You might be hidden in the gallery if many people is in the call. One effective way to tackle this is to use the raise hand functionality in Zoom. If the number of people is small (typically less than 5) this might not be necessary.&lt;/p&gt;
+&lt;p&gt;NOTE: with recent versions of Zoom, the host can enable Nonverbal feedback. Click on the participants tab and you&amp;rsquo;ll see icons for things like &amp;ldquo;go faster&amp;rdquo;, &amp;ldquo;thumbs up&amp;rdquo; or &amp;ldquo;need a break&amp;rdquo; that will be seen by the meeting host.&lt;/p&gt;
+&lt;p&gt;🙋 &lt;strong&gt;Every meeting needs a facilitator (and if you don&amp;rsquo;t know who that is, it&amp;rsquo;s probably you)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You need someone to tell others to mute themselves if they don&amp;rsquo;t realise, and to coordinate who speaks when the conversation doesn&amp;rsquo;t flow naturally. The facilitator in this particular case could just be the meeting host, but in large meetings it might make sense to get some help. As a rule of thumb, if there is no clearly designated facilitator, please jump in and help.&lt;/p&gt;
 &lt;p&gt;🔍 &lt;strong&gt;Font size matters&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You might have your laptop connected to a high resolution monitor, but most attendees probably won&#39;t. Some might even be using a room monitor and looking at the screen from a distance. Also the image will not be as crisp because of video compression. Be mindful of this and zoom in a little 🙏&lt;/p&gt;
+&lt;p&gt;You might have your laptop connected to a high resolution monitor, but most attendees probably won&amp;rsquo;t. Some might even be using a room monitor and looking at the screen from a distance. Also the image will not be as crisp because of video compression. Be mindful of this and zoom in a little 🙏&lt;/p&gt;
 &lt;p&gt;This applies to every tool or tab that you switch to, not just the first one.&lt;/p&gt;
 &lt;p&gt;➗ &lt;strong&gt;Divide and conquer using Zoom breakout rooms&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Useful for brainstorming topics that are too complex to discuss with a large audience. Break down the topic into questions, divide up people into groups to work on those questions, then re-group and share learnings.&lt;/p&gt;
@@ -119,7 +119,7 @@
 &lt;p&gt;💚 &lt;strong&gt;Zoom virtual backgrounds&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;As we recently learned, they are super cool! And for those that are working from home are worried about accidental photobombs by their housemates/partners/kids in the background, this offers a layer of privacy.&lt;/p&gt;
 &lt;p&gt;🔁 &lt;strong&gt;Ask for feedback&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;You can&#39;t see people as clearly when everyone is joining remotely and crammed in a small gallery of thumbnails, so there&#39;s less visual feedback. Pause during presentations to ask if anyone has questions. As participants, a big thumbs up/down or a verbal &amp;ldquo;yes/no&amp;rdquo; is much more noticeable than a nod/head-shake.&lt;/p&gt;
+&lt;p&gt;You can&amp;rsquo;t see people as clearly when everyone is joining remotely and crammed in a small gallery of thumbnails, so there&amp;rsquo;s less visual feedback. Pause during presentations to ask if anyone has questions. As participants, a big thumbs up/down or a verbal &amp;ldquo;yes/no&amp;rdquo; is much more noticeable than a nod/head-shake.&lt;/p&gt;
 &lt;p&gt;👔 &lt;strong&gt;VPN etiquette still applies&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If you have a corporate VPN, disconnect from it when joining a remote meeting. Otherwise you will be using precious bandwidth and likely affecting others that need it.&lt;/p&gt;
 &lt;p&gt;Kudos to my teammates Grace, Leandro and Stuart, who helped to put this together. Thanks!&lt;/p&gt;</description>
@@ -132,7 +132,7 @@
       
       <guid>https://retrolog.io/blog/continuous-performance-assessment/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Have you ever struggled evaluating the performance of your direct reports? Or have you been surprised in your performance evaluation meeting with your manager? In this post I&#39;ll explain a different approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
+&lt;p&gt;Have you ever struggled evaluating the performance of your direct reports? Or have you been surprised in your performance evaluation meeting with your manager? In this post I&amp;rsquo;ll explain a different approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
 &lt;h4 id=&#34;is-this-1-pager-worth-your-time&#34;&gt;Is this 1-pager worth your time?&lt;/h4&gt;
 &lt;p&gt;As managers, it is important to provide support and guidance in regards to performance so that people continue to improve and grow. And this should be happening regardless of the performance assessment cycle.&lt;/p&gt;
 &lt;p&gt;Let me start by trying to show you why I think this technique is for you, and also why Continuous Performance Assessment matters regardless of whether you are manager or a managee. This is for everyone.&lt;/p&gt;
@@ -141,19 +141,19 @@
 &lt;p&gt;&lt;strong&gt;How often do you discuss performance with your direct reports / manager?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Not often enough → keep reading&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How do you track wins and misses?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I don&#39;t do it → keep reading&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t do it → keep reading&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How do you know everyone in your team has the same understanding of the competency framework?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I don&#39;t know it, and just mentioning competency frameworks makes me feel goosebumps and a cold sweat on the back of my neck → keep reading&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know it, and just mentioning competency frameworks makes me feel goosebumps and a cold sweat on the back of my neck → keep reading&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;How confident are you that there will be no surprises when discussing the results of the performance evaluation with your direct report / manager?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Anything less than 100% → keep reading&lt;/p&gt;
-&lt;p&gt;I practice Continuous Performance Assessment with my team, and have been doing it for some time now. In this post I&#39;ll explain the benefits of this approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
+&lt;p&gt;I practice Continuous Performance Assessment with my team, and have been doing it for some time now. In this post I&amp;rsquo;ll explain the benefits of this approach and will give you some tips and guidelines to implement it yourself.&lt;/p&gt;
 &lt;h4 id=&#34;avoiding-the-big-rush-at-the-end&#34;&gt;Avoiding the big rush at the end&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-2.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Being consistent at writing notes about performance is hard.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;It requires a lot of discipline.&lt;/li&gt;
 &lt;li&gt;You need to know enough detail about the items you are capturing.&lt;/li&gt;
-&lt;li&gt;It doesn&#39;t scale - In fact, it becomes exponentially harder as the number of direct reports grow.&lt;/li&gt;
+&lt;li&gt;It doesn&amp;rsquo;t scale - In fact, it becomes exponentially harder as the number of direct reports grow.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Managers (me included) know this, and build mental barriers to avoid a process that is unpleasant to their eyes. As a result, it is often left to the very last minute, when there is no other choice but to sit down and write.&lt;/p&gt;
 &lt;p&gt;But what if this was part of your regular 121 conversations? You already have time booked for this.&lt;/p&gt;
@@ -162,25 +162,25 @@
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-3.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Should you update your notes every week? once a month? once a quarter? Only you know what works for you and your team.&lt;/p&gt;
 &lt;p&gt;Personally, every two weeks is the cadence I find more useful, which also maps to the frequency of my 121s. So if you can afford doing this every single 121, do it. If not, do it as frequently as you can. Seriously, this is important. Having a chat about performance should be as easy and comfortable as talking about the weather or asking about the weekend.&lt;/p&gt;
-&lt;p&gt;There are pre-requisites, of course. You&#39;ll need:&lt;/p&gt;
+&lt;p&gt;There are pre-requisites, of course. You&amp;rsquo;ll need:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Trust&lt;/li&gt;
 &lt;li&gt;Transparency about the process&lt;/li&gt;
 &lt;li&gt;Engagement&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;It&#39;s a self-reinforcing cycle, you need transparency to generate trust, when you have trust and people see the benefit of having an open discussion about performance, there comes engagement. With engagement, there comes more feedback and proactivity, and more data. And with more data, there are even more reasons to be transparent and give clarity about how that data will be used.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a self-reinforcing cycle, you need transparency to generate trust, when you have trust and people see the benefit of having an open discussion about performance, there comes engagement. With engagement, there comes more feedback and proactivity, and more data. And with more data, there are even more reasons to be transparent and give clarity about how that data will be used.&lt;/p&gt;
 &lt;h4 id=&#34;creating-structure&#34;&gt;Creating structure&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-4.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Keep it simple. Use a table (or a nested list but I prefer a table). Define categories that are relevant to your environment, typically areas of your competency framework. Bias in favour of outcomes and impact, instead of actions. And use the same structure with everyone.&lt;/p&gt;
-&lt;p&gt;If you have an official structure for your performance assessment notes, you are half way there, use the same one. You don&#39;t want to reinvent the wheel and then have to spend time mapping between different formats. Equally, from the manager&#39;s perspective, you want to have meaningful discussion with other managers about the performance of your reports and their reports, and having a common framework makes it easier and more efficient.&lt;/p&gt;
+&lt;p&gt;If you have an official structure for your performance assessment notes, you are half way there, use the same one. You don&amp;rsquo;t want to reinvent the wheel and then have to spend time mapping between different formats. Equally, from the manager&amp;rsquo;s perspective, you want to have meaningful discussion with other managers about the performance of your reports and their reports, and having a common framework makes it easier and more efficient.&lt;/p&gt;
 &lt;p&gt;Make sure competencies are fully understood by everyone in your team. Spend 121 time going through each competency and share examples of bad/good/great behaviours in each one. Consider having a refresher session every 6 months or when competencies get an update.&lt;/p&gt;
-&lt;p&gt;Don&#39;t forget to include misses. Discuss impact, foreseeability and response. It is paramount for your reports to understand what they should&#39;ve done instead of what they did, and this will help them grow much faster. Also, it will give them the chance to turn the tables and come out stronger if you have these conversations early.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to include misses. Discuss impact, foreseeability and response. It is paramount for your reports to understand what they should&amp;rsquo;ve done instead of what they did, and this will help them grow much faster. Also, it will give them the chance to turn the tables and come out stronger if you have these conversations early.&lt;/p&gt;
 &lt;h4 id=&#34;avoiding-surprises&#34;&gt;Avoiding surprises&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/continuous-performance-assessment-5.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This is the absolute key. If you are the manager, after you prepared the table, explained the competency framework, got alignment and common understanding, and started the process with some notes of your own, there is one last thing for you to do.&lt;/p&gt;
 &lt;p&gt;Let go.&lt;/p&gt;
-&lt;p&gt;That document is no longer yours. It&#39;s your report&#39;s. From this point on, most of the updates in the performance assessment will have to be done by them. It&#39;s no longer your performance assessment, it&#39;s a self-assessment now, with your input.&lt;/p&gt;
-&lt;p&gt;As a result, you will have frequent conversations about wins and misses. Performance will not be something to be evaluated at the end of the cycle, it will be a way to assess how I&#39;m doing against my own career path in real time. And equally as important, It will become a framework to have meaningful discussions about what&#39;s next and how to get there.&lt;/p&gt;
+&lt;p&gt;That document is no longer yours. It&amp;rsquo;s your report&amp;rsquo;s. From this point on, most of the updates in the performance assessment will have to be done by them. It&amp;rsquo;s no longer your performance assessment, it&amp;rsquo;s a self-assessment now, with your input.&lt;/p&gt;
+&lt;p&gt;As a result, you will have frequent conversations about wins and misses. Performance will not be something to be evaluated at the end of the cycle, it will be a way to assess how I&amp;rsquo;m doing against my own career path in real time. And equally as important, It will become a framework to have meaningful discussions about what&amp;rsquo;s next and how to get there.&lt;/p&gt;
 &lt;h4 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h4&gt;
 &lt;p&gt;If you want to try Continuous Performance Assessment:&lt;/p&gt;
 &lt;ul&gt;
@@ -198,7 +198,7 @@
       
       <guid>https://retrolog.io/blog/twilio-hackathon-covid-19-peak-detector/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/twilio-hackathon-covid-19-peak-detector.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&#39;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&amp;rsquo;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
 &lt;h4 id=&#34;the-application&#34;&gt;The application&lt;/h4&gt;
 &lt;p&gt;COVID-19 Peak Detector is a Java Spring Boot application with a DynamoDB store that displays graph information with stats about COVID-19. You can select the country you are interested in and you can create an alert by entering your phone number.&lt;/p&gt;
 &lt;p&gt;A scheduled process will check the data periodically and will send the alert when a peak is detected.&lt;/p&gt;
@@ -217,14 +217,14 @@
 &lt;li&gt;Twilio Sync for news&lt;/li&gt;
 &lt;li&gt;Gradle as the build tool&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the COVID-19 data and the news, I&#39;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the COVID-19 data and the news, I&amp;rsquo;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The demo application was deployed in AWS using Elastic Beanstalk.&lt;/p&gt;
-&lt;p&gt;I&#39;ll explain some of the most interesting pieces.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll explain some of the most interesting pieces.&lt;/p&gt;
 &lt;h4 id=&#34;the-welcome-controller&#34;&gt;The Welcome controller&lt;/h4&gt;
 &lt;p&gt;This is where everything starts. The controller is in charge of calling the different services to fetch the necessary data to populate the view.&lt;/p&gt;
 &lt;p&gt;From here, we call the DataService to fetch the historical data, and we use Faker, a Java library to generate random data sets, to assign a random username to the user landing the page. This username will be important for the chat widget.&lt;/p&gt;
 &lt;p&gt;Fun fact, all the usernames are characters from Game of Thrones 🤓&lt;/p&gt;
-&lt;p&gt;It is important to mention that the data about COVID-19 doesn&#39;t change very frequently. Therefore, I&#39;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
+&lt;p&gt;It is important to mention that the data about COVID-19 doesn&amp;rsquo;t change very frequently. Therefore, I&amp;rsquo;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
 &lt;p&gt;This is a small optimisation, because those APIs are not very flexible, and they force you to fetch all the historical data in every call. This way, we minimise the amount of data transfered over the wire in exchange for a bit of up-to-dateness.&lt;/p&gt;
 &lt;h4 id=&#34;the-data-api&#34;&gt;The Data API&lt;/h4&gt;
 &lt;p&gt;We expose our data in an endpoint available at &lt;code&gt;/countries/{countryAndProvince}&lt;/code&gt;. This endpoint is called using AJAX from the browser everytime the user selects a different country from the dropdown.&lt;/p&gt;
@@ -233,7 +233,7 @@
 &lt;p&gt;This is a monolithic application, so typically we render the views on the server-side using Thymeleaf. However, it is useful to also call the back-end from Javascript and render changes without refreshing the page. This provides a better user experience.&lt;/p&gt;
 &lt;h4 id=&#34;creating-an-alert&#34;&gt;Creating an alert&lt;/h4&gt;
 &lt;p&gt;Another thing we can do here is to create an SMS alert for a given country. When the user signs up, a confirmation SMS will be sent. When a peak is detected, a second SMS will be sent and the phone number will be deleted from the DynamoDB.&lt;/p&gt;
-&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&#39;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
+&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&amp;rsquo;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
 &lt;p&gt;The key components here are the DyanmoDBConfiguration class, the model and the repository.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Configuration
 @EnableDynamoDBRepositories(basePackages = &amp;quot;com.plopcas.twiliohackathon.cpd.repository&amp;quot;)
@@ -298,20 +298,20 @@ public class Alert {
     @EnableScan
     public List&amp;lt;Alert&amp;gt; findAll();
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&#39;t exist already.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&amp;rsquo;t exist already.&lt;/p&gt;
 &lt;p&gt;Of course, all the sensitive information is externalised as environment variables.&lt;/p&gt;
-&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&#39;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
+&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&amp;rsquo;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
 &lt;p&gt;More information can be found &lt;a href=&#34;https://www.baeldung.com/spring-data-dynamodb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&#39;s not there, it&#39;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
+&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&amp;rsquo;s not there, it&amp;rsquo;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Alert alert = new Alert(country, phone);
 alertRepository.save(alert);
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-scheduled-peak-detector&#34;&gt;The scheduled peak detector&lt;/h4&gt;
-&lt;p&gt;In order to detect peaks we use a very naive approach. It&#39;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
+&lt;p&gt;In order to detect peaks we use a very naive approach. It&amp;rsquo;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
 &lt;p&gt;If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.&lt;/p&gt;
 &lt;p&gt;In order to run the process periodically, we use the &lt;code&gt;@Scheduled&lt;/code&gt; annotation with a fixedRate of 12 hours.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Scheduled(fixedRate = 12 * 60 * 60 * 1000)
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-sms-service&#34;&gt;The SMS service&lt;/h4&gt;
-&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&#39;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
+&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&amp;rsquo;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class SmsService {
     private String fromPhone;
@@ -344,8 +344,8 @@ public class SmsService {
 &lt;h4 id=&#34;the-chat&#34;&gt;The Chat&lt;/h4&gt;
 &lt;p&gt;The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.&lt;/p&gt;
 &lt;p&gt;In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.&lt;/p&gt;
-&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&#39;s fairly simple and it&#39;s all explained in their documentation.&lt;/p&gt;
-&lt;h4 id=&#34;thats-it&#34;&gt;That&#39;s it!&lt;/h4&gt;
+&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&amp;rsquo;s fairly simple and it&amp;rsquo;s all explained in their documentation.&lt;/p&gt;
+&lt;h4 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h4&gt;
 &lt;p&gt;I hope you enjoyed this post. All the code is publicly available in GitHub here&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/plopcas/covid19-peak-detector&#34;&gt;https://github.com/plopcas/covid19-peak-detector&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;and the demo application (at least for a few days) is available here&lt;/p&gt;
@@ -372,16 +372,16 @@ public class SmsService {
 &lt;li&gt;&lt;strong&gt;What are our biggest challenges?&lt;/strong&gt; Like with Coronavirus, teams face difficult challenges that need to be explicitely called out and discussed to ensure alignment and enable continuous improvement.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;What are our main pain points?&lt;/strong&gt; Like staying at home for a few weeks to fight a virus that spreads easily, teams suffer from technical debt, processes that require more than they should or organisational issues that get in the way. Use this section to write down all those things that are keeping you awake at night. Note that this section differs from the one above in that challenges are things we need to achieve in order to move forward, whereas pain points are typically a consequence of past decisions or contextual circumstances, but based on things that have happened already.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;What quick wins will make us succeed?&lt;/strong&gt; Small things like washing your hands can have a huge impact if done right. Think of all the short term things you can do now that will take you closer to your long term goals further down the line. Focus on low hanging fruits here.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What will make us succeed in the long run?&lt;/strong&gt; For what we know, even at record breaking speed, a vaccine for Coronavirus is not likely to be available for at least another 18 months. Yet, we need to start working on it now because it&#39;s the right thing to do and it will had the biggest long term impact. Similarly, what things does your team need to start working on now that will pay off in a few months.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;What should we avoid?&lt;/strong&gt; At the moment, you should only travel if your journey is absolutely essential. Anything else will mean you are increasing the risk of spreading the virus and affecting key workers like healthcare professionals, that are trying to get to their workplaces. Similarly, what things does your team need to avoid as you move forward? These are not pain points from the past, and not necessarily challenges that you know you&#39;ll have to overcome, but rather things that you know already will get in the way if they materialise. Include here risks that you are aware of.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What will make us succeed in the long run?&lt;/strong&gt; For what we know, even at record breaking speed, a vaccine for Coronavirus is not likely to be available for at least another 18 months. Yet, we need to start working on it now because it&amp;rsquo;s the right thing to do and it will had the biggest long term impact. Similarly, what things does your team need to start working on now that will pay off in a few months.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What should we avoid?&lt;/strong&gt; At the moment, you should only travel if your journey is absolutely essential. Anything else will mean you are increasing the risk of spreading the virus and affecting key workers like healthcare professionals, that are trying to get to their workplaces. Similarly, what things does your team need to avoid as you move forward? These are not pain points from the past, and not necessarily challenges that you know you&amp;rsquo;ll have to overcome, but rather things that you know already will get in the way if they materialise. Include here risks that you are aware of.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;generate-insights-30-min&#34;&gt;Generate insights (30 min)&lt;/h4&gt;
-&lt;p&gt;It&#39;s time to brainstorm and generate lots of ideas, but in the interest of time, filter first so that you can focus on the most relevant ones.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s time to brainstorm and generate lots of ideas, but in the interest of time, filter first so that you can focus on the most relevant ones.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go through the notes and cluster similar topics.&lt;/li&gt;
 &lt;li&gt;Give participants 5 votes each and set a 3 minute timer.&lt;/li&gt;
 &lt;li&gt;Start discussing from the most voted idea.&lt;/li&gt;
-&lt;li&gt;Ask questions to trigger conversations if they don&#39;t flow naturally e.g. why did you vote this note? what did you mean by X when you wrote it down? Is this related to a particular event that happened recently? How have you seen this apply in previous experiences? If you had unlimited resources, how would you tackle it?&lt;/li&gt;
+&lt;li&gt;Ask questions to trigger conversations if they don&amp;rsquo;t flow naturally e.g. why did you vote this note? what did you mean by X when you wrote it down? Is this related to a particular event that happened recently? How have you seen this apply in previous experiences? If you had unlimited resources, how would you tackle it?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;decide-what-to-do-10-min&#34;&gt;Decide what to do (10 min)&lt;/h4&gt;
 &lt;p&gt;For each discussion, make sure that you identify potential actions for the team to work on in the next iteration. &lt;strong&gt;Each action must have an owner&lt;/strong&gt;. You can do this as you generate insights in the previous step, no need to wait.&lt;/p&gt;
@@ -397,15 +397,15 @@ public class SmsService {
       
       <guid>https://retrolog.io/blog/a-saint-patricks-day-inspired-retrospective/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-saint-patricks-themed-retrospective.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Saint Patrick&#39;s Day is around the corner. The 17th of March is celebrated in green and gold all around the world. I thought it might be fun to design a retrospective based on this festivity.&lt;/p&gt;
-&lt;p&gt;I use &lt;a href=&#34;https://miro.com&#34;&gt;miro&lt;/a&gt; as a virtual whiteboard. It&#39;s a visual collaboration tool that makes it very easy for remote teams to share and organise ideas. Perfect for retrospectives!&lt;/p&gt;
+&lt;p&gt;Saint Patrick&amp;rsquo;s Day is around the corner. The 17th of March is celebrated in green and gold all around the world. I thought it might be fun to design a retrospective based on this festivity.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://miro.com&#34;&gt;miro&lt;/a&gt; as a virtual whiteboard. It&amp;rsquo;s a visual collaboration tool that makes it very easy for remote teams to share and organise ideas. Perfect for retrospectives!&lt;/p&gt;
 &lt;p&gt;If this is not your first retrospective, take 5 minutes to review actions for previous ones.&lt;/p&gt;
 &lt;h4 id=&#34;the-layout&#34;&gt;The layout&lt;/h4&gt;
 &lt;p&gt;Divide the board in three sections like in the image below.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/a-saint-patricks-themed-retrospective-2.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Trinity and the Shamrock&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The first legend of Saint Patrick says he used a shamrock to explain the Holy Trinity to the Irish back in the 5th century.&lt;/p&gt;
-&lt;p&gt;Let&#39;s use that analogy to discuss three fundamental areas that need to be considered by high performing teams, Technology, Processes and People.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s use that analogy to discuss three fundamental areas that need to be considered by high performing teams, Technology, Processes and People.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Technology: which technologies are we using at the moment that help us achieve our goals? which tools and patterns?&lt;/li&gt;
 &lt;li&gt;Process: which processes help us be efficient and keep us on our toes?&lt;/li&gt;
@@ -424,10 +424,10 @@ public class SmsService {
 &lt;p&gt;&lt;strong&gt;Voting and discussion&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Run a poll to identify the most relevant clusters. Discuss focusing on two aspects:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Situation: what&#39;s the reason behind the notes? what is the context?&lt;/li&gt;
+&lt;li&gt;Situation: what&amp;rsquo;s the reason behind the notes? what is the context?&lt;/li&gt;
 &lt;li&gt;Action: what can we do to leverage a strength even more or mitigate a recurring issue? How can we improve our tools and processes?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;End the meeting by making sure each action has an owner. And if it&#39;s the end of the day, maybe go to the pub and grab a traditional Irish beverage. Cheers! 🍻&lt;/p&gt;</description>
+&lt;p&gt;End the meeting by making sure each action has an owner. And if it&amp;rsquo;s the end of the day, maybe go to the pub and grab a traditional Irish beverage. Cheers! 🍻&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -437,7 +437,7 @@ public class SmsService {
       
       <guid>https://retrolog.io/blog/mastering-pair-programming-in-5-minutes/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/mastering-pair-programming-in-5-minutes.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;This post is heavily based on &lt;a href=&#34;https://martinfowler.com/articles/on-pair-programming.html&#34;&gt;https://martinfowler.com/articles/on-pair-programming.html&lt;/a&gt; (38 min read). That is, however, a very long (yet very good) article. For those of us that can&#39;t or don&#39;t want to afford spending that long, I collated its main points and added a few twists of my own. I hope it&#39;s useful.&lt;/p&gt;
+&lt;p&gt;This post is heavily based on &lt;a href=&#34;https://martinfowler.com/articles/on-pair-programming.html&#34;&gt;https://martinfowler.com/articles/on-pair-programming.html&lt;/a&gt; (38 min read). That is, however, a very long (yet very good) article. For those of us that can&amp;rsquo;t or don&amp;rsquo;t want to afford spending that long, I collated its main points and added a few twists of my own. I hope it&amp;rsquo;s useful.&lt;/p&gt;
 &lt;h4 id=&#34;why-bother&#34;&gt;Why bother?&lt;/h4&gt;
 &lt;p&gt;According to some studies e.g. &lt;a href=&#34;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&#34;&gt;https://collaboration.csc.ncsu.edu/laurie/Papers/XPSardinia.PDF,&lt;/a&gt; some of the most significant benefits of pair programming are:&lt;/p&gt;
 &lt;ul&gt;
@@ -464,7 +464,7 @@ public class SmsService {
 &lt;li&gt;Start with a reasonably well-defined task&lt;/li&gt;
 &lt;li&gt;Agree on one tiny goal at a time e.g. defined by a unit test or a commit message&lt;/li&gt;
 &lt;li&gt;Switch roles regularly&lt;/li&gt;
-&lt;li&gt;As Navigator, avoid tactical thinking, you&#39;ll be tempted! Make notes on potential obstacles and ideas and discuss after the tiny goal is done, so the Driver can stay in the flow&lt;/li&gt;
+&lt;li&gt;As Navigator, avoid tactical thinking, you&amp;rsquo;ll be tempted! Make notes on potential obstacles and ideas and discuss after the tiny goal is done, so the Driver can stay in the flow&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -487,7 +487,7 @@ public class SmsService {
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Strong-Style&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;For an idea to go from your head into the computer, it MUST go through someone else&#39;s hands&lt;/li&gt;
+&lt;li&gt;For an idea to go from your head into the computer, it MUST go through someone else&amp;rsquo;s hands&lt;/li&gt;
 &lt;li&gt;Particularly useful for &lt;strong&gt;knowledge transfer&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Driver is a novice&lt;/li&gt;
 &lt;li&gt;Navigator is much more experienced with the task at hand&lt;/li&gt;
@@ -496,7 +496,7 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Driver totally trusts the Navigator and should be comfortable with incomplete understanding&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;Why&amp;rdquo; questions and challenging the solution should be discussed after the implementation session&lt;/li&gt;
-&lt;li&gt;Don&#39;t overuse this technique&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t overuse this technique&lt;/li&gt;
 &lt;li&gt;Great for initial knowledge transfer but the goal is to transition to the other styles after a while&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -505,7 +505,7 @@ public class SmsService {
 &lt;/ul&gt;
 &lt;p&gt;When the task does not involve coding.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; - what&#39;s our goal?
+&lt;li&gt;&lt;strong&gt;Planning&lt;/strong&gt; - what&amp;rsquo;s our goal?
 &lt;ul&gt;
 &lt;li&gt;E.g. pairing on Epic Ownership or aspects that overlap multiple epics&lt;/li&gt;
 &lt;li&gt;Understand the problem, read through the story and play back to each other how you understand it to make sure there is alignment&lt;/li&gt;
@@ -519,14 +519,14 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Define a list of questions that you need to answer&lt;/li&gt;
 &lt;li&gt;Split up, divide and conquer. Alternatively, try to find answers for the same questions separately.&lt;/li&gt;
-&lt;li&gt;Search your company&#39;s intranet and messaging system, and any other resources you can find&lt;/li&gt;
+&lt;li&gt;Search your company&amp;rsquo;s intranet and messaging system, and any other resources you can find&lt;/li&gt;
 &lt;li&gt;Read up on concepts that are new to both of you&lt;/li&gt;
 &lt;li&gt;Get back together after a previously agreed upon time-box, share and discuss&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Documentation&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;Reflect together if any documentation is necessary for what you&#39;ve done&lt;/li&gt;
+&lt;li&gt;Reflect together if any documentation is necessary for what you&amp;rsquo;ve done&lt;/li&gt;
 &lt;li&gt;Create a document together. Alternatively, one person creates it, then the other reviews it and &amp;ldquo;wordsmiths&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Pairing reduces the chance of skipping documentation&lt;/li&gt;
 &lt;/ul&gt;
@@ -535,7 +535,7 @@ public class SmsService {
 &lt;p&gt;For time management you can use the pomodoro technique, small breaks after 25min and longer breaks after 2h.&lt;/p&gt;
 &lt;p&gt;Pair rotations:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Don&#39;t stay in the same pair for more than 2-3 days&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t stay in the same pair for more than 2-3 days&lt;/li&gt;
 &lt;li&gt;This avoids silos, increase collective code ownership, and favours more code review on-the-go&lt;/li&gt;
 &lt;li&gt;It also keeps things fresh, particularly when you are working on something tedious and energy-draining&lt;/li&gt;
 &lt;li&gt;The person who stays is called the Anchor&lt;/li&gt;
@@ -552,17 +552,17 @@ public class SmsService {
 &lt;li&gt;Make sure both have enough space, chairs included, clear up the desk if necessary&lt;/li&gt;
 &lt;li&gt;Decide if you want to use one keyboard or two, same for the mouse. No hard rule, whatever works. Some other factors into play are hygiene and how much space is actually available.&lt;/li&gt;
 &lt;li&gt;Consider using screen share on Zoom so that each one can use their own laptop&lt;/li&gt;
-&lt;li&gt;Agree on a default the first time, so that you don&#39;t have to discuss this every time&lt;/li&gt;
+&lt;li&gt;Agree on a default the first time, so that you don&amp;rsquo;t have to discuss this every time&lt;/li&gt;
 &lt;li&gt;Remote pairing is ok as long as the internet connection is good enough, there is no background noise (use mute otherwise), and both of you agree to it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Celebrate when you have accomplished a task together, you earned it!&lt;/p&gt;
 &lt;p&gt;Things to avoid:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Drifting apart during the pairing session e.g. reading emails or using your phone. These can come across as disrespectful and distracts you from the task at hand. If you really need to check something, make it transparent, say what you are doing and why&lt;/li&gt;
-&lt;li&gt;Micro-managing e.g. &amp;ldquo;Now type this&amp;hellip;&amp;quot;, &amp;ldquo;Now we need to create a class called&amp;hellip;&amp;quot;, &amp;ldquo;Press Cmd + Shift O&amp;hellip;&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Impatience, apply the 5-seconds-rule instead (when the Navigator sees something &amp;ldquo;wrong&amp;rdquo; and wants to comment, wait at least 5 seconds in case the driver already has it in mind, so that you don&#39;t interrupt their flow unnecessarily)&lt;/li&gt;
+&lt;li&gt;Micro-managing e.g. &amp;ldquo;Now type this&amp;hellip;&amp;rdquo;, &amp;ldquo;Now we need to create a class called&amp;hellip;&amp;rdquo;, &amp;ldquo;Press Cmd + Shift O&amp;hellip;&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Impatience, apply the 5-seconds-rule instead (when the Navigator sees something &amp;ldquo;wrong&amp;rdquo; and wants to comment, wait at least 5 seconds in case the driver already has it in mind, so that you don&amp;rsquo;t interrupt their flow unnecessarily)&lt;/li&gt;
 &lt;li&gt;Keyboard hogging, are you controlling the keyboard all the time? Sharing is caring ❤&lt;/li&gt;
-&lt;li&gt;Pairing 8 hours per day, it&#39;s not sustainable, it&#39;s too exhausting and in practice there are other things you need to do other than coding&lt;/li&gt;
+&lt;li&gt;Pairing 8 hours per day, it&amp;rsquo;s not sustainable, it&amp;rsquo;s too exhausting and in practice there are other things you need to do other than coding&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;There is not &amp;ldquo;THE&amp;rdquo; right way, try different approaches and find what works for you and your team.&lt;/p&gt;</description>
     </item>
@@ -574,7 +574,7 @@ public class SmsService {
       
       <guid>https://retrolog.io/blog/deploying-a-static-website-with-s3-route-53-and-cloudfront/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Today I&#39;ll show you how to deploy your static website to S3, and how you can configure a custom domain with Route 53 and enable HTTPS (why wouldn&#39;t you) with CloudFront. Keep reading to find out more!&lt;/p&gt;
+&lt;p&gt;Today I&amp;rsquo;ll show you how to deploy your static website to S3, and how you can configure a custom domain with Route 53 and enable HTTPS (why wouldn&amp;rsquo;t you) with CloudFront. Keep reading to find out more!&lt;/p&gt;
 &lt;p&gt;Even though this information is available in the AWS documentation, I ran into different problems when setting it up for my own website. Hopefully this runbook will help someone else as well.&lt;/p&gt;
 &lt;h4 id=&#34;pre-requisites&#34;&gt;Pre-requisites&lt;/h4&gt;
 &lt;ol&gt;
@@ -584,10 +584,10 @@ public class SmsService {
 &lt;p&gt;Please note that Route 53 is not a free service. S3 and CloudFront are included in the AWS Free Tier within certain conditions. Check &lt;a href=&#34;https://aws.amazon.com/free&#34;&gt;https://aws.amazon.com/free&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;p&gt;Estimated costs for running a small static website are $12/year for the domain and $0.60/month for the running costs.&lt;/p&gt;
 &lt;h4 id=&#34;getting-a-custom-domain-with-route-53&#34;&gt;Getting a custom domain with Route 53&lt;/h4&gt;
-&lt;p&gt;The first step is to get a new domain for our website. We&#39;ll do that with Route 53.&lt;/p&gt;
+&lt;p&gt;The first step is to get a new domain for our website. We&amp;rsquo;ll do that with Route 53.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to Route 53 &lt;a href=&#34;https://console.aws.amazon.com/route53&#34;&gt;https://console.aws.amazon.com/route53&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;If it&#39;s your first domain, choose &amp;ldquo;Get Started Now&amp;rdquo; under &amp;ldquo;Domain Registration&amp;rdquo;. If you already have another domain, in the navigation pane, choose &amp;ldquo;Registered Domains&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;If it&amp;rsquo;s your first domain, choose &amp;ldquo;Get Started Now&amp;rdquo; under &amp;ldquo;Domain Registration&amp;rdquo;. If you already have another domain, in the navigation pane, choose &amp;ldquo;Registered Domains&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-0.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -601,11 +601,11 @@ public class SmsService {
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-3.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Please note that the process can take up to a few days to complete.&lt;/li&gt;
-&lt;li&gt;Once it&#39;s done, we can see a &lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html&#34;&gt;Hosted Zone&lt;/a&gt; has been automatically created for us. We will use this later on to configure our DNS records.&lt;/li&gt;
+&lt;li&gt;Once it&amp;rsquo;s done, we can see a &lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html&#34;&gt;Hosted Zone&lt;/a&gt; has been automatically created for us. We will use this later on to configure our DNS records.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;setting-up-s3-to-serve-static-content&#34;&gt;Setting up S3 to serve static content&lt;/h4&gt;
 &lt;p&gt;We will use the AWS console, but everything could also be done via CLI or CloudFormation.&lt;/p&gt;
-&lt;p&gt;Let&#39;s create the bucket first using the wizard.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s create the bucket first using the wizard.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a new S3 bucket &lt;a href=&#34;https://console.aws.amazon.com/s3&#34;&gt;https://console.aws.amazon.com/s3&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Give it a name that matches your domain name from the previous step e.g. example.com.&lt;/li&gt;
@@ -614,13 +614,13 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Choose a region that is close to you and your potential users e.g. EU (Ireland). This is to minimise latency, however, because we will be using CloudFront to serve our content, this is not really an issue. Another reason is to comply with relevant regulations for your country.&lt;/li&gt;
 &lt;li&gt;Everything in the next step is optional, so you can skip it.&lt;/li&gt;
-&lt;li&gt;Disable the &amp;ldquo;Block all public access&amp;rdquo; checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven&#39;t made the bucket public yet, we just removed the blocker that prevented us from doing so.&lt;/li&gt;
+&lt;li&gt;Disable the &amp;ldquo;Block all public access&amp;rdquo; checkbox. As this is a bucket for a static website, it needs to be public. Please note that we haven&amp;rsquo;t made the bucket public yet, we just removed the blocker that prevented us from doing so.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-5.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Review and accept.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Next, let&#39;s configure the bucket for static website hosting.&lt;/p&gt;
+&lt;p&gt;Next, let&amp;rsquo;s configure the bucket for static website hosting.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to &amp;ldquo;Properties&amp;rdquo;.&lt;/li&gt;
 &lt;li&gt;Click on &amp;ldquo;Static website hosting&amp;rdquo;.&lt;/li&gt;
@@ -633,7 +633,7 @@ public class SmsService {
 &lt;ul&gt;
 &lt;li&gt;Make a note of the &amp;ldquo;Endpoint&amp;rdquo; URL at the top e.g. &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt; and click &amp;ldquo;Save&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Let&#39;s test things by uploading an &lt;code&gt;index.html&lt;/code&gt; file to the bucket.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s test things by uploading an &lt;code&gt;index.html&lt;/code&gt; file to the bucket.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a file named &lt;code&gt;index.html&lt;/code&gt; with your favourite text editor or IDE and paste the following.&lt;/li&gt;
 &lt;/ul&gt;
@@ -650,7 +650,7 @@ public class SmsService {
 &lt;li&gt;Click on the &amp;ldquo;Upload&amp;rdquo; button at the bottom to skip all the additional steps and leave the defaults.&lt;/li&gt;
 &lt;li&gt;Open the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;A &lt;strong&gt;403 Forbidden&lt;/strong&gt; error!? 😱 What&#39;s going on?&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;403 Forbidden&lt;/strong&gt; error!? 😱 What&amp;rsquo;s going on?&lt;/p&gt;
 &lt;p&gt;What happened is that the file itself is not public yet. We can fix this!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go back to the &amp;ldquo;Overview&amp;rdquo; tab and click on the &lt;code&gt;index.html&lt;/code&gt; file.&lt;/li&gt;
@@ -666,7 +666,7 @@ public class SmsService {
 &lt;li&gt;Open again the &amp;ldquo;Endpoint&amp;rdquo; URL from the previous step in a browser (or refresh the tab).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉&lt;/p&gt;
-&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&#39;s configure the bucket so that all its objects are public at once. For that, we&#39;ll use a policy.&lt;/p&gt;
+&lt;p&gt;We could have made the object public when we uploaded it as well, but we skipped that step and left all the defaults to make a point. Either way, marking each object as public individually is not a very efficient way to manage permissions. Let&amp;rsquo;s configure the bucket so that all its objects are public at once. For that, we&amp;rsquo;ll use a policy.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go back to the bucket itself using the breadcrumb menu at the top.&lt;/li&gt;
 &lt;li&gt;Go to the &amp;ldquo;Permissions&amp;rdquo; tab.&lt;/li&gt;
@@ -691,7 +691,7 @@ public class SmsService {
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉💃🕺🎉&lt;/p&gt;
 &lt;h4 id=&#34;setting-up-a-custom-domain&#34;&gt;Setting up a custom domain&lt;/h4&gt;
-&lt;p&gt;At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt;. We don&#39;t want that, we want to use &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;At the beginning of this post, we bought a new custom domain e.g. example.com, but we are still accessing our website with a very long Amazon looking URL like &lt;code&gt;http://example.com.s3-website-eu-west-1.amazonaws.com/&lt;/code&gt;. We don&amp;rsquo;t want that, we want to use &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to Route 53 &lt;a href=&#34;https://console.aws.amazon.com/route53&#34;&gt;https://console.aws.amazon.com/route53&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Click on &amp;ldquo;Hosted Zones&amp;rdquo; and select the one that matches your domain name.&lt;/li&gt;
@@ -704,7 +704,7 @@ public class SmsService {
 &lt;li&gt;Open your domain e.g. &lt;code&gt;http://example.com&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Hello world!&lt;/strong&gt; 🎉💃🕺💃🕺💃🕺💃🕺🎉&lt;/p&gt;
-&lt;p&gt;We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let&#39;s change that.&lt;/p&gt;
+&lt;p&gt;We have our static (super simple) website running on a custom domain. However, we are still using http and not https, not good. Let&amp;rsquo;s change that.&lt;/p&gt;
 &lt;h4 id=&#34;setting-up-https-with-cloudfront&#34;&gt;Setting up HTTPS with CloudFront&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Go to CloudFront &lt;a href=&#34;https://console.aws.amazon.com/cloudfront&#34;&gt;https://console.aws.amazon.com/cloudfront&lt;/a&gt;&lt;/li&gt;
@@ -722,9 +722,9 @@ public class SmsService {
 &lt;li&gt;Inside the &amp;ldquo;Alternate Domain Names (CNAMEs)&amp;rdquo; text area, enter your domain name e.g. example.com.&lt;/li&gt;
 &lt;li&gt;For SSL Certificate, choose &amp;ldquo;Custom SSL Certificate&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Wait&amp;hellip; it&#39;s grayed out!? 😱 We need an SSL certificate that we don&#39;t have. For that we&#39;ll use Amazon ACM. There is a convenient button that says &amp;ldquo;Request or Import a Certificate with ACM&amp;rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
+&lt;p&gt;Wait&amp;hellip; it&amp;rsquo;s grayed out!? 😱 We need an SSL certificate that we don&amp;rsquo;t have. For that we&amp;rsquo;ll use Amazon ACM. There is a convenient button that says &amp;ldquo;Request or Import a Certificate with ACM&amp;rdquo;. This will open a new tab. Alternatively, you can navigate to ACM using the &amp;ldquo;Services&amp;rdquo; menu at the top of the AWS console as usual.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Make sure that you are in the &lt;strong&gt;North Virginia&lt;/strong&gt; region. 🚨 &lt;strong&gt;THIS IS VERY IMPORTANT!!!!&lt;/strong&gt; 🚨 It&#39;s the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.&lt;/li&gt;
+&lt;li&gt;Make sure that you are in the &lt;strong&gt;North Virginia&lt;/strong&gt; region. 🚨 &lt;strong&gt;THIS IS VERY IMPORTANT!!!!&lt;/strong&gt; 🚨 It&amp;rsquo;s the only region supported at the moment (2020), otherwise you will not be able to import the certificate in CloudFront.&lt;/li&gt;
 &lt;li&gt;Enter your domain name e.g. example.com.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-15.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
@@ -738,10 +738,10 @@ public class SmsService {
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/deploying-a-static-website-with-s3-route-53-and-cloudfront-17.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;In the pop-up window click on &amp;ldquo;Create&amp;rdquo;. You&#39;ll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&#39;ll see that a new CNAME entry has been created.&lt;/li&gt;
+&lt;li&gt;In the pop-up window click on &amp;ldquo;Create&amp;rdquo;. You&amp;rsquo;ll see a warning message saying it may take up to 30 minutes for the changes to propagate, and for AWS to validate the domain. If we go back to our Hosted Zone in Route 53 we&amp;rsquo;ll see that a new CNAME entry has been created.&lt;/li&gt;
 &lt;li&gt;Grab a cup of your favourite beverage and wait ☕️&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &amp;ldquo;Custom SSL Certificate&amp;rdquo;. Refresh the page if it&#39;s not the case, you might need to re-enter the information in the form.&lt;/p&gt;
+&lt;p&gt;Once the certificate is ready, we can go back to where we left in CloudFront. It should now be possible to choose a &amp;ldquo;Custom SSL Certificate&amp;rdquo;. Refresh the page if it&amp;rsquo;s not the case, you might need to re-enter the information in the form.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Back to CloudFront, select the recently created SSL certificate.&lt;/li&gt;
 &lt;/ul&gt;
@@ -765,7 +765,7 @@ public class SmsService {
 🎉Hello world! 🎉
 🎉🎉🎉🎉🎉🎉🎉🎉
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;read-more&#34;&gt;Read more&lt;/h4&gt;
-&lt;p&gt;There is official documentation that covers this use case, however it&#39;s split between a few documents. Hopefully I&#39;ve summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.&lt;/p&gt;
+&lt;p&gt;There is official documentation that covers this use case, however it&amp;rsquo;s split between a few documents. Hopefully I&amp;rsquo;ve summarised all the steps in this post, but if you want to know more, you can check the Amazon guidelines.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html&#34;&gt;Domain register&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html&#34;&gt;Website hosting custom domain walkthrough&lt;/a&gt;&lt;/li&gt;
@@ -872,7 +872,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
     &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;{{ $title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;title&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;Here we are specifying the charset that our document will use, &lt;code&gt;utf-8&lt;/code&gt; in this case, the viewport information and couple of stylesheets&lt;/li&gt;
-&lt;li&gt;Let&#39;s go ahead and add the missing CSS files&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s go ahead and add the missing CSS files&lt;/li&gt;
 &lt;li&gt;Go to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt; and create a file called &lt;code&gt;style.css&lt;/code&gt;, we will place our custom CSS here later on&lt;/li&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://getbootstrap.com/&#34;&gt;https://getbootstrap.com/&lt;/a&gt; and download the latest version of Bootstrap (v4.4.1 at the time of writing)&lt;/li&gt;
 &lt;li&gt;Extract the ZIP file and copy &lt;code&gt;bootstrap.min.css&lt;/code&gt; to &lt;code&gt;example/themes/exampleTheme/static/css&lt;/code&gt;&lt;/li&gt;
@@ -890,7 +890,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &lt;/ul&gt;
 &lt;h5 id=&#34;header-and-footer&#34;&gt;Header and footer&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Let&#39;s add a nav to the header so that we can navigate between the different sections of our site&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s add a nav to the header so that we can navigate between the different sections of our site&lt;/li&gt;
 &lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/partials/header.html&lt;/code&gt; and paste the following
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav-border&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;container&amp;#34;&lt;/span&gt;&amp;gt;
     &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;nav&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;nav justify-content-center&amp;#34;&lt;/span&gt;&amp;gt;
@@ -908,7 +908,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;Here we are creating a nav menu that will be centred at the top of each page&lt;/li&gt;
 &lt;li&gt;Each menu item will have a link and also an icon if we configure it as a &lt;code&gt;pre&lt;/code&gt; property in &lt;code&gt;config.toml&lt;/code&gt;, more on that later&lt;/li&gt;
-&lt;li&gt;For the footer let&#39;s just add a basic copyright disclaimer
+&lt;li&gt;For the footer let&amp;rsquo;s just add a basic copyright disclaimer
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#4070a0&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;footer text-center&amp;#34;&lt;/span&gt;&amp;gt;Copyright (c) {{ now.Format &amp;#34;2006&amp;#34;}} John Doe&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;p&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;You can replace &lt;code&gt;John Doe&lt;/code&gt; with your name&lt;/li&gt;
 &lt;li&gt;The current year will be displayed as well&lt;/li&gt;
@@ -916,7 +916,7 @@ title = &amp;#34;My New Hugo Site&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&
 &lt;/ul&gt;
 &lt;h5 id=&#34;metadata&#34;&gt;Metadata&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Let&#39;s create one more partial to display metadata about each post e.g. date and tags&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s create one more partial to display metadata about each post e.g. date and tags&lt;/li&gt;
 &lt;li&gt;Create a new file &lt;code&gt;example/themes/exampleTheme/layouts/partials/metadata.html&lt;/code&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ $dateTime := .PublishDate.Format &amp;#34;2006-01-02&amp;#34; }}
 {{ $dateFormat := .Site.Params.dateFormat | default &amp;#34;Jan 2, 2006&amp;#34; }}
@@ -964,7 +964,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
         {{- partial &amp;#34;footer.html&amp;#34; . -}}
     &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Let&#39;s also include the &lt;code&gt;script.html&lt;/code&gt; partial with our Feather icons
+&lt;li&gt;Let&amp;rsquo;s also include the &lt;code&gt;script.html&lt;/code&gt; partial with our Feather icons
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#007020&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;
     {{- partial &amp;#34;head.html&amp;#34; . -}}
@@ -977,7 +977,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
         {{- partial &amp;#34;script.html&amp;#34; . -}}
     &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;body&lt;/span&gt;&amp;gt;
 &amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;It&#39;s good practice to place our scripts at the end of the HTML code so that it doesn&#39;t block rendering the page&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s good practice to place our scripts at the end of the HTML code so that it doesn&amp;rsquo;t block rendering the page&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;list&#34;&gt;List&lt;/h5&gt;
 &lt;p&gt;This layout will be used to display the list of posts on our site.&lt;/p&gt;
@@ -1003,7 +1003,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;p&gt;This layout will be used to display a single post.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open &lt;code&gt;example/themes/exampleTheme/layouts/_default/single.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Similarly to what we did above, let&#39;s define the &lt;code&gt;main&lt;/code&gt; section
+&lt;li&gt;Similarly to what we did above, let&amp;rsquo;s define the &lt;code&gt;main&lt;/code&gt; section
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{ define &amp;#34;main&amp;#34; }}
 &amp;lt;&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;{{ .Title }}&amp;lt;/&lt;span style=&#34;color:#062873;font-weight:bold&#34;&gt;h1&lt;/span&gt;&amp;gt;
 {{ partial &amp;#34;metadata.html&amp;#34; . }}
@@ -1025,14 +1025,14 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 {{ end }}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;404&#34;&gt;404&lt;/h4&gt;
-&lt;p&gt;This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&#39;s delete it for now.&lt;/p&gt;
+&lt;p&gt;This is used to customise an error message for when a link is broken. However, Hugo comes with a default one, so let&amp;rsquo;s delete it for now.&lt;/p&gt;
 &lt;p&gt;Feel free to play with the contents of the file if you want to customise your error messages.&lt;/p&gt;
 &lt;h4 id=&#34;configuration&#34;&gt;Configuration&lt;/h4&gt;
 &lt;p&gt;We have created the template, now we need to tell Hugo to use it for our site.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open &lt;code&gt;example/config.toml&lt;/code&gt; and add a line to select the theme like this
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;theme = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;exampleTheme&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;We&#39;ll also need a menu to navigate to the different sections, let&#39;s add it
+&lt;li&gt;We&amp;rsquo;ll also need a menu to navigate to the different sections, let&amp;rsquo;s add it
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[menu]
   [[menu.main]]
     name = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;Home&amp;#34;&lt;/span&gt;
@@ -1052,10 +1052,10 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;li&gt;Here we are defining a menu, and referencing it with the name &lt;code&gt;main&lt;/code&gt; to match our header (&lt;code&gt;.Site.Menus.main&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;In Hugo there is another way to create a menu quickly, and that is by adding this line to your &lt;code&gt;config.toml&lt;/code&gt; file instead, more information &lt;a href=&#34;https://gohugo.io/templates/menu-templates/#section-menu-for-lazy-bloggers&#34;&gt;here&lt;/a&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;sectionPagesMenu = &lt;span style=&#34;color:#4070a0&#34;&gt;&amp;#34;main&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;However we want to be able to customise our nav menu and add icons, therefore we&#39;ll go with the manual approach&lt;/li&gt;
+&lt;li&gt;However we want to be able to customise our nav menu and add icons, therefore we&amp;rsquo;ll go with the manual approach&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;write-your-first-post&#34;&gt;Write your first post&lt;/h4&gt;
-&lt;p&gt;The real value of a website is its content. Let&#39;s create a post before we have a look at the final result.&lt;/p&gt;
+&lt;p&gt;The real value of a website is its content. Let&amp;rsquo;s create a post before we have a look at the final result.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Open a terminal and use the following command from the root of your site to create a post
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new posts/my-first-post.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
@@ -1065,7 +1065,7 @@ tags: [&amp;#34;foo&amp;#34;, &amp;#34;bar&amp;#34;]
 &lt;li&gt;Add some content under the front matter&lt;/li&gt;
 &lt;li&gt;Hugo automatically takes the first 70 words of your content as its summary and stores it into the &lt;code&gt;.Summary&lt;/code&gt; variable&lt;/li&gt;
 &lt;li&gt;Instead, you can manually define where the summary ends with a &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; divider&lt;/li&gt;
-&lt;li&gt;Alternatively, you can add a &lt;code&gt;summary&lt;/code&gt; to the front matter if you don&#39;t want your summary to be the beginning of your post&lt;/li&gt;
+&lt;li&gt;Alternatively, you can add a &lt;code&gt;summary&lt;/code&gt; to the front matter if you don&amp;rsquo;t want your summary to be the beginning of your post&lt;/li&gt;
 &lt;li&gt;The final result should look similar to this
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f0f0f0;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;---
 title: &amp;#34;My First Post&amp;#34;
@@ -1082,7 +1082,7 @@ velit aliquet sagittis id consectetur. Vulputate dignissim suspendisse in est
 ante in nibh mauris cursus. Morbi quis commodo odio aenean. Mollis nunc sed id 
 semper risus in hendrerit gravida rutrum.
 
-&amp;lt;!--more--&amp;gt;
+&lt;span style=&#34;color:#60a0b0;font-style:italic&#34;&gt;&amp;lt;!--more--&amp;gt;&lt;/span&gt;
 
 Ac ut consequat semper viverra nam. Hac habitasse platea dictumst vestibulum 
 rhoncus. Amet porttitor eget dolor morbi non. Justo eget magna fermentum 
@@ -1106,7 +1106,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;img src=&#34;https://retrolog.io/images/creating-a-hugo-theme-from-scratch-result.jpg&#34; alt=&#34;image&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;final-thoughts&#34;&gt;Final thoughts&lt;/h4&gt;
-&lt;p&gt;In this post I&#39;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the &lt;code&gt;style.css&lt;/code&gt; file and modify the template to add more features.&lt;/p&gt;
+&lt;p&gt;In this post I&amp;rsquo;ve showed how to create a simple template and apply it to a new Hugo site. From here, you can customise the look and feel with the &lt;code&gt;style.css&lt;/code&gt; file and modify the template to add more features.&lt;/p&gt;
 &lt;p&gt;In future posts I will show how to add share buttons and analytics to our site.&lt;/p&gt;
 &lt;p&gt;If you want to jump ahead and see the final template that I use for my site, you can find it in GitHub &lt;a href=&#34;https://github.com/plopcas/papaya&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks for reading!&lt;/p&gt;
@@ -1147,7 +1147,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;They care about &lt;strong&gt;growth&lt;/strong&gt;, always eager to &lt;strong&gt;learn&lt;/strong&gt; new skills and sharpen existing ones. They learn from mistakes too. As a result, they usually find innovative solutions to challenging problems, and are flexible and adaptable.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;They are &lt;strong&gt;problem solvers&lt;/strong&gt;, and &lt;strong&gt;get things done&lt;/strong&gt;. It&#39;s almost as if they lived to accomplish the most challenging tasks.&lt;/p&gt;
+&lt;p&gt;They are &lt;strong&gt;problem solvers&lt;/strong&gt;, and &lt;strong&gt;get things done&lt;/strong&gt;. It&amp;rsquo;s almost as if they lived to accomplish the most challenging tasks.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;They are &lt;strong&gt;self-driven&lt;/strong&gt;. With little or no external motivation they can and will deliver.&lt;/p&gt;
@@ -1158,18 +1158,18 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;High performers are always looking to improve, and getting constructive feedback on a regular basis is a key part of this process. Use your 1:1s to maximise the impact of your feedback, and avoid using them as status updates (remember that 1:1s should be mainly about removing blockers and aligning priorities).&lt;/p&gt;
 &lt;p&gt;They will expect you to help them identify areas for improvement more than anything else, although do not forget to add praise and thanks as well, even if they seem indifferent to it. Monthly is acceptable, but if you can do it more often, even better. Weekly would be ideal, and it will allow some flexibility in case you need to skip it once in a while.&lt;/p&gt;
 &lt;h4 id=&#34;help-them-learn-inside-and-outside-the-organisation&#34;&gt;Help them learn, inside and outside the organisation&lt;/h4&gt;
-&lt;p&gt;High performers seek feedback not only from you and their peers, but also outside the organisation. It&#39;s not uncommon for them to attend conferences and meetups, and be part of side project teams (e.g. open source projects). Help them by introducing them to some of these external groups, particularly if you are more experienced in the same field. You&#39;ll be able to help them separate the wheat from the chaff.&lt;/p&gt;
-&lt;p&gt;Support them with budget for training, conferences, online courses&amp;hellip; they are eager for knowledge and it&#39;s in your hand to find the resources.&lt;/p&gt;
+&lt;p&gt;High performers seek feedback not only from you and their peers, but also outside the organisation. It&amp;rsquo;s not uncommon for them to attend conferences and meetups, and be part of side project teams (e.g. open source projects). Help them by introducing them to some of these external groups, particularly if you are more experienced in the same field. You&amp;rsquo;ll be able to help them separate the wheat from the chaff.&lt;/p&gt;
+&lt;p&gt;Support them with budget for training, conferences, online courses&amp;hellip; they are eager for knowledge and it&amp;rsquo;s in your hand to find the resources.&lt;/p&gt;
 &lt;p&gt;And, why not? Go with them. Leading by example is paramount in order to build trust.&lt;/p&gt;
 &lt;h4 id=&#34;agree-on-clear-goals-and-align-expectations&#34;&gt;Agree on clear goals and align expectations&lt;/h4&gt;
 &lt;p&gt;Goals should be agreed by both parties. You will need to make these very clear. Small and measurable objectives that are time-bounded work like a charm. There are many frameworks about this topic e.g. SMART goals, OKRs&amp;hellip; Ultimately choose what works for you, your team and your organisation. A good goal has crystal clear deliverables, require a bit of &amp;ldquo;stretching&amp;rdquo; from the employee and are linked to high level initiatives.&lt;/p&gt;
 &lt;h4 id=&#34;give-them-the-tools-they-need&#34;&gt;Give them the tools they need&lt;/h4&gt;
-&lt;p&gt;As a manager, you should set the strategy, provide the direction and give your people the tools they need to succeed in terms of people, budget, training, software&amp;hellip; If you don&#39;t, you will be adding blockers instead of removing them.&lt;/p&gt;
+&lt;p&gt;As a manager, you should set the strategy, provide the direction and give your people the tools they need to succeed in terms of people, budget, training, software&amp;hellip; If you don&amp;rsquo;t, you will be adding blockers instead of removing them.&lt;/p&gt;
 &lt;h4 id=&#34;get-out-of-their-way&#34;&gt;Get out of their way&lt;/h4&gt;
 &lt;p&gt;One you set up goals and expectations, give them flexibility in how they work. Avoid micromanaging at all costs. On the contrary, give them autonomy with minimum interference.&lt;/p&gt;
-&lt;p&gt;Also, encourage them to decompress. Working long hours and sacrificing their own well-being, although it might make them meet a deadline, it will be detrimental to their productivity and performance in the long run. Those who manage high performers need to gently remind them to pace themselves and think about their contributions on a larger scale. They cannot work at an optimal level if they&#39;re perpetually burned out and exhausted.&lt;/p&gt;
+&lt;p&gt;Also, encourage them to decompress. Working long hours and sacrificing their own well-being, although it might make them meet a deadline, it will be detrimental to their productivity and performance in the long run. Those who manage high performers need to gently remind them to pace themselves and think about their contributions on a larger scale. They cannot work at an optimal level if they&amp;rsquo;re perpetually burned out and exhausted.&lt;/p&gt;
 &lt;h4 id=&#34;keep-it-interesting&#34;&gt;Keep It Interesting&lt;/h4&gt;
-&lt;p&gt;High achievers place a great importance on interesting and challenging work. I have noticed this in my own teams very often. If you want proof, use the Moving Motivators technique and you&#39;ll see how they crave for interesting things to do, tools to try and new problems to tackle.&lt;/p&gt;
+&lt;p&gt;High achievers place a great importance on interesting and challenging work. I have noticed this in my own teams very often. If you want proof, use the Moving Motivators technique and you&amp;rsquo;ll see how they crave for interesting things to do, tools to try and new problems to tackle.&lt;/p&gt;
 &lt;p&gt;This is especially important if there are limited opportunities for advancement in your organisation.&lt;/p&gt;
 &lt;p&gt;Another option to make it interesting it by identifying ways for them to expand their skillset, e.g. shadowing programs or a temporary reallocation to a different team.&lt;/p&gt;
 &lt;p&gt;Overall, make sure they are being challenged, but pay attention to the right balance between pressure and performance.&lt;/p&gt;
@@ -1183,13 +1183,13 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;h4 id=&#34;design-a-career-path-for-them&#34;&gt;Design a career path for them&lt;/h4&gt;
 &lt;p&gt;Create a career path within the organisation with different levels of seniority and multiple options for specialisation. Make them responsible when you feel they are ready and then reward them. Little by little they can have greater involvement in planning and decision making, gaining more exposure at a more senior level.&lt;/p&gt;
 &lt;h4 id=&#34;create-a-safe-environment-that-embraces-failure&#34;&gt;Create a safe environment that embraces failure&lt;/h4&gt;
-&lt;p&gt;Everybody makes mistakes, it&#39;s part of the human condition. You should account for it, and have the mechanisms in place that will make it acceptable to fail sometimes. Even if a deadline is missed, it shouldn&#39;t be the end of the world. Remind your employees that you are running a marathon, not a sprint.&lt;/p&gt;
-&lt;p&gt;Ironically, the more others celebrate a high achiever&#39;s successes, the more afraid they can become of making mistakes. This causes them to shy away from risky challenges. You should help high achievers overcome this fear of failure as well.&lt;/p&gt;
+&lt;p&gt;Everybody makes mistakes, it&amp;rsquo;s part of the human condition. You should account for it, and have the mechanisms in place that will make it acceptable to fail sometimes. Even if a deadline is missed, it shouldn&amp;rsquo;t be the end of the world. Remind your employees that you are running a marathon, not a sprint.&lt;/p&gt;
+&lt;p&gt;Ironically, the more others celebrate a high achiever&amp;rsquo;s successes, the more afraid they can become of making mistakes. This causes them to shy away from risky challenges. You should help high achievers overcome this fear of failure as well.&lt;/p&gt;
 &lt;h4 id=&#34;remember-your-other-employees&#34;&gt;Remember your other employees&lt;/h4&gt;
 &lt;p&gt;High performers can positively motivate others on your team but they can do quite the opposite as well. A good leader must defend the team, even if it means cutting a high performer.&lt;/p&gt;
 &lt;p&gt;Have in mind that high performers are usually perfectionists and quite independent, which means they could run out of patience if paired with other employees.&lt;/p&gt;
-&lt;p&gt;Also, sometimes they might think that results justify binding the rules a little, and this can cause friction and more issues. In some ways, it&#39;s understandable that their manager overlooks some of those shortcuts as long as they keep turning in record-breaking achievements, but it doesn&#39;t help them to be perceived as team players.&lt;/p&gt;
-&lt;p&gt;As a manager, help them understand that by embracing the protocol, they can send the message that they don&#39;t see themselves as exempt and privileged, and that ultimately, we are all on the same team.&lt;/p&gt;
+&lt;p&gt;Also, sometimes they might think that results justify binding the rules a little, and this can cause friction and more issues. In some ways, it&amp;rsquo;s understandable that their manager overlooks some of those shortcuts as long as they keep turning in record-breaking achievements, but it doesn&amp;rsquo;t help them to be perceived as team players.&lt;/p&gt;
+&lt;p&gt;As a manager, help them understand that by embracing the protocol, they can send the message that they don&amp;rsquo;t see themselves as exempt and privileged, and that ultimately, we are all on the same team.&lt;/p&gt;
 &lt;h4 id=&#34;accept-that-sooner-or-later-they-might-move-on&#34;&gt;Accept that sooner or later they might move on&lt;/h4&gt;
 &lt;p&gt;Finally, no matter how much growth opportunities you put in place, how engaging and interesting the work feels or how great the environment is, at some point they will most likely leave. This is normal and expected. Just remember not to put all your eggs in one basket. Avoid single points of failure (something is known by only one person), favour knowledge transfer and cross-functionality, design effective hand-over procedures and manage the expectations of the rest of the team once your rock star is gone.&lt;/p&gt;
 &lt;p&gt;If you follow these tips, you will have a great process in place that will help you find high performers and keep them in your team for quite a long time.&lt;/p&gt;
@@ -1220,19 +1220,19 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
       
       <guid>https://retrolog.io/blog/managing-low-performers/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/managing-low-performers.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;It&#39;s annual performance review time, and even though for most people this is a smooth and straightforward process, from time to time managers need to deal with some not so pleasant situations. Managing low performers is all but straightforward, so keep reading for some tips on how to deal with it and start the year off on the right foot.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s annual performance review time, and even though for most people this is a smooth and straightforward process, from time to time managers need to deal with some not so pleasant situations. Managing low performers is all but straightforward, so keep reading for some tips on how to deal with it and start the year off on the right foot.&lt;/p&gt;
 &lt;h4 id=&#34;performance-matters-all-the-time&#34;&gt;Performance matters all the time&lt;/h4&gt;
-&lt;p&gt;Even though most places have a formal performance review once or twice a year, you should keep an eye on performance all the time. Use your 1:1s to get an insight on problems or misalignments. Look for red flags and be proactive. Don&#39;t wait until the problem is too big, the sooner you address it, the easiest and fastest the solution will be.&lt;/p&gt;
+&lt;p&gt;Even though most places have a formal performance review once or twice a year, you should keep an eye on performance all the time. Use your 1:1s to get an insight on problems or misalignments. Look for red flags and be proactive. Don&amp;rsquo;t wait until the problem is too big, the sooner you address it, the easiest and fastest the solution will be.&lt;/p&gt;
 &lt;h4 id=&#34;data-data-and-data&#34;&gt;Data, data and data&lt;/h4&gt;
-&lt;p&gt;How do we know someone is not performing well? We are dealing with a delicate matter here, so we can&#39;t base our actions on a hunch or on someone&#39;s comment out of the blue. We need to gather data, and we need to do it all year round.&lt;/p&gt;
-&lt;p&gt;Ask your employees for regular self-assessments, use measurable performance metrics when possible (e.g. number of project iterations completed successfully) and use 360° feedback. It&#39;s important to keep notes of any relevant fact, achievement or complaint that has happened throughout the year. A single comment should be taken with a pinch of salt, but if you see a pattern, or similar comments coming from different sources, that might be a cue to action.&lt;/p&gt;
-&lt;p&gt;However, don&#39;t fall into the trap of trying to measure every single thing. Not all metrics are equally valuable. Some of them might even be harmful.&lt;/p&gt;
+&lt;p&gt;How do we know someone is not performing well? We are dealing with a delicate matter here, so we can&amp;rsquo;t base our actions on a hunch or on someone&amp;rsquo;s comment out of the blue. We need to gather data, and we need to do it all year round.&lt;/p&gt;
+&lt;p&gt;Ask your employees for regular self-assessments, use measurable performance metrics when possible (e.g. number of project iterations completed successfully) and use 360° feedback. It&amp;rsquo;s important to keep notes of any relevant fact, achievement or complaint that has happened throughout the year. A single comment should be taken with a pinch of salt, but if you see a pattern, or similar comments coming from different sources, that might be a cue to action.&lt;/p&gt;
+&lt;p&gt;However, don&amp;rsquo;t fall into the trap of trying to measure every single thing. Not all metrics are equally valuable. Some of them might even be harmful.&lt;/p&gt;
 &lt;p&gt;Take as an example measuring lines of code, in the context of a team of developers. If you use this as a metric, developers will tend to write verbose code when not necessary, just to perform well according to the (wrong) metric.&lt;/p&gt;
 &lt;p&gt;Another example, if you are using an issue tracking system for instance, when the number of closed tickets is your main metric, your employees will complete the smallest and easiest tickets first, leaving other most complex tasks unattended.&lt;/p&gt;
 &lt;p&gt;Sometimes the solution is to combine multiple metrics or refine the criteria. In the previous example, if instead of just counting the number of tickets, there was a way to objectively add complexity or business value to the mix, then you can reinforce other behaviours that are more beneficial for the company, the team and ultimately the employee.&lt;/p&gt;
 &lt;h4 id=&#34;improve-your-feedback&#34;&gt;Improve your feedback&lt;/h4&gt;
 &lt;p&gt;Feedback should be direct and succinct. Let your employee know that you noticed a drop in performance and you would like to do something about it. There is no point in trying to cover up the message with positive comments, something known as the sandwich technique where you put a bad piece of feedback between two positive ones. People can often see right through this, and your message will lose clarity. Focus on one thing at a time. Praise is necessary, but right now we are dealing with bad performance, and it needs to be fixed.&lt;/p&gt;
-&lt;p&gt;Be understanding though, your employee probably feels bad about it already, there is no need to be harsh. Instead, focus on what needs to be done to correct course. Be open as well, and give the person space to express their feelings, but don&#39;t allow excuses, you have your data to back you up.&lt;/p&gt;
+&lt;p&gt;Be understanding though, your employee probably feels bad about it already, there is no need to be harsh. Instead, focus on what needs to be done to correct course. Be open as well, and give the person space to express their feelings, but don&amp;rsquo;t allow excuses, you have your data to back you up.&lt;/p&gt;
 &lt;h4 id=&#34;find-out-reasons-for-bad-performance&#34;&gt;Find out reasons for bad performance&lt;/h4&gt;
 &lt;p&gt;If there is a reasonable explanation, it is your duty as a manager to find out. There could be personal issues, problems outside work, lack of motivation, burnout, skill gaps&amp;hellip; even a lack of confidence in their own abilities.&lt;/p&gt;
 &lt;p&gt;Nonetheless, you should explore all the options, and get to the bottom of the issue.&lt;/p&gt;
@@ -1241,22 +1241,22 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;h4 id=&#34;clearly-outline-expectations&#34;&gt;Clearly outline expectations&lt;/h4&gt;
 &lt;p&gt;If they are a new starter, or recently assumed a new role, or are working on a new project, ask them if there is any part of the job where they do not understand what is expected of them. Give them the opportunity to ask questions and iron out any potential areas of confusion.&lt;/p&gt;
 &lt;h4 id=&#34;prepare-an-action-plan&#34;&gt;Prepare an action plan&lt;/h4&gt;
-&lt;p&gt;Without a viable solution, any negative feedback is rather useless. People might even feel we are giving up on them. The best way to show that we care is with a well crafted plan. Be open to input and fine-tune the details with the employee. Ultimately, it&#39;s paramount to get buy in and come to an agreement.&lt;/p&gt;
+&lt;p&gt;Without a viable solution, any negative feedback is rather useless. People might even feel we are giving up on them. The best way to show that we care is with a well crafted plan. Be open to input and fine-tune the details with the employee. Ultimately, it&amp;rsquo;s paramount to get buy in and come to an agreement.&lt;/p&gt;
 &lt;h4 id=&#34;set-new-goals&#34;&gt;Set new goals&lt;/h4&gt;
-&lt;p&gt;If the old goals were misaligned, it&#39;s time to review them. Clarify grey areas and find new goals that are focused on recovering and getting back on track. Reassign some of the old but still important goals to someone else if possible. That way you&#39;ll create some space for them to focus on their improvement. Make sure you explain why you are doing it, or they might feel you lost your trust in them.&lt;/p&gt;
+&lt;p&gt;If the old goals were misaligned, it&amp;rsquo;s time to review them. Clarify grey areas and find new goals that are focused on recovering and getting back on track. Reassign some of the old but still important goals to someone else if possible. That way you&amp;rsquo;ll create some space for them to focus on their improvement. Make sure you explain why you are doing it, or they might feel you lost your trust in them.&lt;/p&gt;
 &lt;p&gt;Sometimes all they need is to relieve some stress, hit some wins, regain their confidence, and they are back in business.&lt;/p&gt;
 &lt;h4 id=&#34;make-them-understand-the-impact&#34;&gt;Make them understand the impact&lt;/h4&gt;
-&lt;p&gt;Sometimes low performers are unaware of the impact of their actions. They might think it&#39;s no big deal to miss a deadline here and there, or to produce some low quality hacks.&lt;/p&gt;
-&lt;p&gt;Make them see the implications, how it&#39;s impacting team morale, how other people need to fix issues they left unattended and how it&#39;s costing money and resources.&lt;/p&gt;
-&lt;p&gt;If understanding that their bad performance is making their team unhappy and putting their jobs at risk doesn&#39;t make them react, then nothing will.&lt;/p&gt;
+&lt;p&gt;Sometimes low performers are unaware of the impact of their actions. They might think it&amp;rsquo;s no big deal to miss a deadline here and there, or to produce some low quality hacks.&lt;/p&gt;
+&lt;p&gt;Make them see the implications, how it&amp;rsquo;s impacting team morale, how other people need to fix issues they left unattended and how it&amp;rsquo;s costing money and resources.&lt;/p&gt;
+&lt;p&gt;If understanding that their bad performance is making their team unhappy and putting their jobs at risk doesn&amp;rsquo;t make them react, then nothing will.&lt;/p&gt;
 &lt;h4 id=&#34;follow-up&#34;&gt;Follow up&lt;/h4&gt;
 &lt;p&gt;Raising awareness of the issue and putting together an improvement plan is just the beginning. Have regular catch-ups, focus on providing support, and highlight progress made. As a general rule, try to avoid micromanaging, but at this point, a bit more handholding than usual is acceptable as a temporary measure. As always, be transparent about what you are doing.&lt;/p&gt;
 &lt;h4 id=&#34;say-it-when-performance-is-back-to-good&#34;&gt;Say it when performance is back to good&lt;/h4&gt;
 &lt;p&gt;A performance improvement plan must have an end. And it has to be clearly defined and agreed from the beginning. Make sure you say it when the performance is good enough again. But remind them  that moving forward, you both should keep and eye on the issues that were fixed, so that they stay on the right track.&lt;/p&gt;
 &lt;h4 id=&#34;clear-the-deadwood&#34;&gt;Clear the deadwood&lt;/h4&gt;
-&lt;p&gt;Sometimes enough is enough. When improvement doesn&#39;t happen after a reasonable amount of time, it&#39;s time to let your employee go. Think of your team, they are having a hard time too, covering for unfinished work, and feeling somewhat helpless. At the end of the day, if you have done everything in your hand to help the person improve and nothing changed (or didn&#39;t change enough), you will have made the right decision.&lt;/p&gt;
+&lt;p&gt;Sometimes enough is enough. When improvement doesn&amp;rsquo;t happen after a reasonable amount of time, it&amp;rsquo;s time to let your employee go. Think of your team, they are having a hard time too, covering for unfinished work, and feeling somewhat helpless. At the end of the day, if you have done everything in your hand to help the person improve and nothing changed (or didn&amp;rsquo;t change enough), you will have made the right decision.&lt;/p&gt;
 &lt;h4 id=&#34;be-proactive-by-avoiding-low-performance-hires&#34;&gt;Be proactive by avoiding low-performance hires&lt;/h4&gt;
-&lt;p&gt;It is impossible to predict low performance 100% accurately during recruitment, but it&#39;s definitely something to have in mind when assessing a candidate. Ask yourself, will they perform at the level we require in the time that we need? If the answer is no and you still hire, chances are you will be revisiting this post soon enough.&lt;/p&gt;
+&lt;p&gt;It is impossible to predict low performance 100% accurately during recruitment, but it&amp;rsquo;s definitely something to have in mind when assessing a candidate. Ask yourself, will they perform at the level we require in the time that we need? If the answer is no and you still hire, chances are you will be revisiting this post soon enough.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Want to know more? Check out this book 👇
 &lt;p&gt;
@@ -1302,16 +1302,16 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;/ol&gt;
 &lt;p&gt;Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.&lt;/p&gt;
 &lt;h4 id=&#34;2-capacity&#34;&gt;2. Capacity&lt;/h4&gt;
-&lt;p&gt;How many users does your system have? How much data do you need? Now it&#39;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
+&lt;p&gt;How many users does your system have? How much data do you need? Now it&amp;rsquo;s the time to clarify those, apply basic Maths and jot down the numbers. Remember that 1 character in UTF-8 can be between 1 and 4 bytes.&lt;/p&gt;
 &lt;p&gt;Number of users, requests per second, gigabytes of memory&amp;hellip; those are things that you are typically looking for here.&lt;/p&gt;
 &lt;h4 id=&#34;3-application-layers&#34;&gt;3. Application layers&lt;/h4&gt;
 &lt;p&gt;There will be three layers to consider in any system.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Data layer: if you have a database, which type? SQL/NoSQL/Graph&amp;hellip; Do you need tables? Design the schema now if you need one.&lt;/li&gt;
 &lt;li&gt;API/UI: what kind of interface will your system have? a web UI or a REST API are some of the options depending on what your system does. You might even have both. Design the API now if you need one, what endpoints, how would you name them and what data will they accept and return.&lt;/li&gt;
-&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&#39;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
+&lt;li&gt;Business logic: this is the meat in the middle, the code that actually solves the business problems that your project sponsor has. At this point you should consider different algorithms and techniques. If you don&amp;rsquo;t know where to start, try first a naive approach and optimise later.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&#39;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
+&lt;p&gt;At this point you should be able to draw a basic block diagram of your system. Don&amp;rsquo;t worry too much about the details just yet, there is still room for optimisation. Use a whiteboard if you can, as you will have to move things around a few times most likely.&lt;/p&gt;
 &lt;h4 id=&#34;4-optimisation&#34;&gt;4. Optimisation&lt;/h4&gt;
 &lt;p&gt;There are at least four things to consider:&lt;/p&gt;
 &lt;ol&gt;
@@ -1324,9 +1324,9 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.&lt;/p&gt;
 &lt;p&gt;Think about whether you will need any special kind of testing. Unit, integration, functional, load and security are the most common ones, and most likely you will need all of those.&lt;/p&gt;
 &lt;p&gt;Consider aspects like infrastructure-as-code, containers, blue/green deployments and continuous integration. Your system should be compatible with these practices to be easily deployable and maintainable.&lt;/p&gt;
-&lt;p&gt;It&#39;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
-&lt;p&gt;Don&#39;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
-&lt;p&gt;And remember to share your design with other people! It&#39;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
+&lt;p&gt;It&amp;rsquo;s worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens&amp;hellip;&lt;/p&gt;
+&lt;p&gt;And remember to share your design with other people! It&amp;rsquo;s very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1344,7 +1344,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;&lt;strong&gt;Formulate the question appropriately&lt;/strong&gt;: find out what you are really looking for. This is not always straightforward, as the real enquiry can be obscured by other factors. If the underlying question is not clear, you can try the &lt;em&gt;5 whys technique&lt;/em&gt; to identify the root of the problem at hand (ask why 5 times in a row to explore reasons deeper than the obvious and immediate ones).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Gather information&lt;/strong&gt;: having a clear idea of your question will help you determine what is relevant. You might ask an expert for their advise or seek other people&#39;s testimonies. This will help you weigh different options.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Gather information&lt;/strong&gt;: having a clear idea of your question will help you determine what is relevant. You might ask an expert for their advise or seek other people&amp;rsquo;s testimonies. This will help you weigh different options.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Apply the information&lt;/strong&gt;: consider what concepts apply, be aware of what assumptions you are making and ask yourself if your interpretation of the situation is logically sound. By asking critical questions to yourself, challenging what you know about the problem, you will narrow down your alternatives.&lt;/p&gt;
@@ -1375,7 +1375,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;Focus on the conversation at hand: do not multitask! You will hear the message more clearly when you focus only on the conversation. This shows respect, and when you give them undivided attention, they will respect you more as well.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Do not bring up controversial topics: there is a time and place for everything, but in general, your workplace is not good for controversy. Religion and politics are the most common ones. Even if you have strong views on particular issues, your goal is to respect everyone&#39;s different points of view. This kind of topics are best discussed with friends outside work.&lt;/p&gt;
+&lt;p&gt;Do not bring up controversial topics: there is a time and place for everything, but in general, your workplace is not good for controversy. Religion and politics are the most common ones. Even if you have strong views on particular issues, your goal is to respect everyone&amp;rsquo;s different points of view. This kind of topics are best discussed with friends outside work.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Pay attention to nonverbal communication: for example, eye contact shows respect, nodding shows comprehension, facing them directly shows attention and focus, and leaning in demonstrates interest. Even when you are not speaking, your body language says a lot.&lt;/p&gt;
@@ -1438,7 +1438,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;p&gt;Start talking: ask your team members about how they feel and pay attention to what they say with both their words and body language. Have genuine conversations regularly. You can use your 1:1 meetings for these.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Slow down a little now: otherwise you will be risking being forced to slow down a lot later when the team hits its breaking point. Review the team&#39;s objectives and re-prioritise if possible.&lt;/p&gt;
+&lt;p&gt;Slow down a little now: otherwise you will be risking being forced to slow down a lot later when the team hits its breaking point. Review the team&amp;rsquo;s objectives and re-prioritise if possible.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Provide support and resources: help the team to stay connected, share good news and keep people in the loop. Remember to thank everyone for their work. In terms of resources, consider ways to ease off, make the office a fun place to work, and help them become more efficient by adopting new tools and techniques, reviewing tedious procedures and simplifying workflows.&lt;/p&gt;
@@ -1490,7 +1490,7 @@ elementum integer. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl.&
 &lt;/ol&gt;
 &lt;p&gt;From these principles you can probably see what my management style looks like. I will explore each of the principles in more detail below.&lt;/p&gt;
 &lt;h4 id=&#34;1-a-manager-must-be-supportive-and-work-for-team&#34;&gt;1. A manager must be supportive and work for team&lt;/h4&gt;
-&lt;p&gt;This principle has to do with the concept of &lt;strong&gt;servant leader&lt;/strong&gt;.  The approach is supportive, encouraging and enabling those around. Servant leadership requires the leader to facilitate the success of the team by answering the question &amp;ldquo;what can I do for my team by removing obstacles to them achieving their organisational goal?&amp;quot;.&lt;/p&gt;
+&lt;p&gt;This principle has to do with the concept of &lt;strong&gt;servant leader&lt;/strong&gt;.  The approach is supportive, encouraging and enabling those around. Servant leadership requires the leader to facilitate the success of the team by answering the question &amp;ldquo;what can I do for my team by removing obstacles to them achieving their organisational goal?&amp;rdquo;.&lt;/p&gt;
 &lt;h4 id=&#34;2-a-manager-must-be-flexible-and-adapt-to-the-situation-at-hand&#34;&gt;2. A manager must be flexible and adapt to the situation at hand&lt;/h4&gt;
 &lt;p&gt;Increasing your flexibility as a leader will allow you to be more effective when working with diverse individuals and responding to a variety of situations. Through self-awareness and hard work it is possible to increase your level of flexibility regardless of your natural style.&lt;/p&gt;
 &lt;h4 id=&#34;3-a-manager-must-be-aware-and-connected&#34;&gt;3. A manager must be aware and connected&lt;/h4&gt;

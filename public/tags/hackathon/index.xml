@@ -17,7 +17,7 @@
       
       <guid>https://retrolog.io/blog/twilio-hackathon-covid-19-peak-detector/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://retrolog.io/images/twilio-hackathon-covid-19-peak-detector.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&#39;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m taking part in the Twilio x DEV.to Hackathon and this is my project. I&amp;rsquo;ll show here how I built it and how it works. Keep reading if you want to know more.&lt;/p&gt;
 &lt;h4 id=&#34;the-application&#34;&gt;The application&lt;/h4&gt;
 &lt;p&gt;COVID-19 Peak Detector is a Java Spring Boot application with a DynamoDB store that displays graph information with stats about COVID-19. You can select the country you are interested in and you can create an alert by entering your phone number.&lt;/p&gt;
 &lt;p&gt;A scheduled process will check the data periodically and will send the alert when a peak is detected.&lt;/p&gt;
@@ -36,14 +36,14 @@
 &lt;li&gt;Twilio Sync for news&lt;/li&gt;
 &lt;li&gt;Gradle as the build tool&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;For the COVID-19 data and the news, I&#39;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For the COVID-19 data and the news, I&amp;rsquo;m using free APIs that are available via the Postman website here &lt;a href=&#34;https://covid-19-apis.postman.com/&#34;&gt;https://covid-19-apis.postman.com/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The demo application was deployed in AWS using Elastic Beanstalk.&lt;/p&gt;
-&lt;p&gt;I&#39;ll explain some of the most interesting pieces.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll explain some of the most interesting pieces.&lt;/p&gt;
 &lt;h4 id=&#34;the-welcome-controller&#34;&gt;The Welcome controller&lt;/h4&gt;
 &lt;p&gt;This is where everything starts. The controller is in charge of calling the different services to fetch the necessary data to populate the view.&lt;/p&gt;
 &lt;p&gt;From here, we call the DataService to fetch the historical data, and we use Faker, a Java library to generate random data sets, to assign a random username to the user landing the page. This username will be important for the chat widget.&lt;/p&gt;
 &lt;p&gt;Fun fact, all the usernames are characters from Game of Thrones 🤓&lt;/p&gt;
-&lt;p&gt;It is important to mention that the data about COVID-19 doesn&#39;t change very frequently. Therefore, I&#39;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
+&lt;p&gt;It is important to mention that the data about COVID-19 doesn&amp;rsquo;t change very frequently. Therefore, I&amp;rsquo;m caching the data in memory for 12 hourse before calling the third-party API again.&lt;/p&gt;
 &lt;p&gt;This is a small optimisation, because those APIs are not very flexible, and they force you to fetch all the historical data in every call. This way, we minimise the amount of data transfered over the wire in exchange for a bit of up-to-dateness.&lt;/p&gt;
 &lt;h4 id=&#34;the-data-api&#34;&gt;The Data API&lt;/h4&gt;
 &lt;p&gt;We expose our data in an endpoint available at &lt;code&gt;/countries/{countryAndProvince}&lt;/code&gt;. This endpoint is called using AJAX from the browser everytime the user selects a different country from the dropdown.&lt;/p&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;This is a monolithic application, so typically we render the views on the server-side using Thymeleaf. However, it is useful to also call the back-end from Javascript and render changes without refreshing the page. This provides a better user experience.&lt;/p&gt;
 &lt;h4 id=&#34;creating-an-alert&#34;&gt;Creating an alert&lt;/h4&gt;
 &lt;p&gt;Another thing we can do here is to create an SMS alert for a given country. When the user signs up, a confirmation SMS will be sent. When a peak is detected, a second SMS will be sent and the phone number will be deleted from the DynamoDB.&lt;/p&gt;
-&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&#39;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
+&lt;p&gt;But before that, we need to insert the data in Dynamo. For that, we use &lt;code&gt;spring-data-dynamodb&lt;/code&gt;. This library allows us to set up our repositories like normal JPA repositories. It&amp;rsquo;s very convenient, and it makes it very easy to read and write from your tables.&lt;/p&gt;
 &lt;p&gt;The key components here are the DyanmoDBConfiguration class, the model and the repository.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Configuration
 @EnableDynamoDBRepositories(basePackages = &amp;quot;com.plopcas.twiliohackathon.cpd.repository&amp;quot;)
@@ -117,20 +117,20 @@ public class Alert {
     @EnableScan
     public List&amp;lt;Alert&amp;gt; findAll();
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&#39;t exist already.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I am creating the table upfront, on app startup, if it doesn&amp;rsquo;t exist already.&lt;/p&gt;
 &lt;p&gt;Of course, all the sensitive information is externalised as environment variables.&lt;/p&gt;
-&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&#39;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
+&lt;p&gt;Like usual with Spring JPA repositories, all the CRUD operations are automagically available. I&amp;rsquo;m explicitely declaring the &lt;code&gt;findAll&lt;/code&gt; one so that I can annotate it with &lt;code&gt;@EnableScan&lt;/code&gt;. All methods of the repository are implemented as queries by default. However, if there is no index to query, these will fail. So you need to explicitly enable the scan operations with the annotation.&lt;/p&gt;
 &lt;p&gt;More information can be found &lt;a href=&#34;https://www.baeldung.com/spring-data-dynamodb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&#39;s not there, it&#39;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
+&lt;p&gt;Once these pieces are reading, we can call the &lt;code&gt;save&lt;/code&gt; method in the repository (it&amp;rsquo;s not there, it&amp;rsquo;s magic), to insert new alerts. This is done in the AlertService as expected.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Alert alert = new Alert(country, phone);
 alertRepository.save(alert);
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-scheduled-peak-detector&#34;&gt;The scheduled peak detector&lt;/h4&gt;
-&lt;p&gt;In order to detect peaks we use a very naive approach. It&#39;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
+&lt;p&gt;In order to detect peaks we use a very naive approach. It&amp;rsquo;s a hack project, please bear with me. We check if the number of cases today is lower than yesterday and lower than the day before yesterday.&lt;/p&gt;
 &lt;p&gt;If that is the case, we consider a peak detected, and we send an alert to all the phone numbers that subscribed to that country.&lt;/p&gt;
 &lt;p&gt;In order to run the process periodically, we use the &lt;code&gt;@Scheduled&lt;/code&gt; annotation with a fixedRate of 12 hours.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Scheduled(fixedRate = 12 * 60 * 60 * 1000)
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;the-sms-service&#34;&gt;The SMS service&lt;/h4&gt;
-&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&#39;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
+&lt;p&gt;Twilio makes it very easy to send SMS messages. Once you have your account set up, it&amp;rsquo;s as easy as using their SDK, get an access token and start sending messages. Note that you need to get a phone number first, that will be the number from which the messages will be sent.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class SmsService {
     private String fromPhone;
@@ -163,8 +163,8 @@ public class SmsService {
 &lt;h4 id=&#34;the-chat&#34;&gt;The Chat&lt;/h4&gt;
 &lt;p&gt;The idea behind the chat is to have a forum for people to talk about the situation, ramble and share. I created a very simple UI, and using the Twilio Javascript SDK, I create a channel, and sychronise all the messages between all the users.&lt;/p&gt;
 &lt;p&gt;In addition to this, to spice things up, I use the Sync service to store a shared state that contains COVID-19 news. Every 5 minutes, a process posts one headline for people to chat about. Using Sync, I can post the same headline to every browser at the same time.&lt;/p&gt;
-&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&#39;s fairly simple and it&#39;s all explained in their documentation.&lt;/p&gt;
-&lt;h4 id=&#34;thats-it&#34;&gt;That&#39;s it!&lt;/h4&gt;
+&lt;p&gt;Keeping state in a distributed environment is not easy, and Twilio makes it very straightforward. Again, this requires some configuration in you Twilio console, but it&amp;rsquo;s fairly simple and it&amp;rsquo;s all explained in their documentation.&lt;/p&gt;
+&lt;h4 id=&#34;thats-it&#34;&gt;That&amp;rsquo;s it!&lt;/h4&gt;
 &lt;p&gt;I hope you enjoyed this post. All the code is publicly available in GitHub here&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/plopcas/covid19-peak-detector&#34;&gt;https://github.com/plopcas/covid19-peak-detector&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;and the demo application (at least for a few days) is available here&lt;/p&gt;
