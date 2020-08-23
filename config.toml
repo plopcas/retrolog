@@ -43,6 +43,7 @@ theme = "papaya"
   [[deployment.targets]]
   name = "s3"
   URL = "s3://retrolog.io?region=eu-west-2"
+  cloudFrontDistributionID = "E2XDDIETJB87L"
 
 [markup]
   [markup.highlight]
