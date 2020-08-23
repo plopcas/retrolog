@@ -31,7 +31,7 @@ I have created a Docker Container action for this. Documentation available [here
 
 To define my container I use a Dockerfile.
 
-```
+{{< highlight docker >}}
 FROM pahud/awscli-v2:node-lts
 
 RUN yum update -y && \
@@ -40,7 +40,7 @@ RUN yum update -y && \
 COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
-```
+{{< /highlight >}}
 
 I'm using a base image that contains AWS CLI already, so that I can perform the CloudFront invalidation. Reference at the bottom.
 
@@ -52,46 +52,46 @@ Finally, I specify the entrypoint.
 
 Important to remember to make it executable as explained in the documentation.
 
-```
+{{< highlight bash >}}
 chmod +x entrypoint.sh
-```
+{{< /highlight >}}
 
 The entrypoint is what contains the logic that will be executed when the action runs.
 
 First, fail the pipeline immediately if there are any errors.
 
-```
+{{< highlight bash >}}
 set -eo pipefail
-```
+{{< /highlight >}}
 
 Check the different parameters that we pass as environment variables. E.g.:
 
-```
+{{< highlight bash >}}
 if [ -z "$AWS_ACCESS_KEY_ID" ]; then
   echo "error: AWS_ACCESS_KEY_ID is not set"
   err=1
 fi
-```
+{{< /highlight >}}
 
 Create an AWS profile for this action.
 
-```
+{{< highlight bash >}}
 aws configure --profile hugo-s3 <<-EOF > /dev/null 2>&1
 ${AWS_ACCESS_KEY_ID}
 ${AWS_SECRET_ACCESS_KEY}
 ${AWS_REGION}
 text
 EOF
-```
+{{< /highlight >}}
 
 Then install Hugo by fetching the latest version with curl (not adding the code here, but can be found in the repo).
 
 Build and deploy the site.
 
-```
+{{< highlight bash >}}
 hugo
 hugo deploy
-```
+{{< /highlight >}}
 
 And finally, we clean up the AWS profile (not really needed if the container is destroyed immediately afterwards but good practice to clean up after ourselves).
 
@@ -99,7 +99,7 @@ And finally, we clean up the AWS profile (not really needed if the container is 
 
 Contains the metadata for the action.
 
-```
+{{< highlight yml >}}
 name: 'Hugo S3'
 description: 'Deploy Hugo with an S3 target'
 author: 'Pedro Lopez'
@@ -109,7 +109,7 @@ branding:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-```
+{{< /highlight >}}
 
 ### Submission Category
 
@@ -120,8 +120,6 @@ DIY Deployments
 This action is now available in the GitHub Marketplace 
 https://github.com/marketplace/actions/hugo-s3.
 
-{% github https://github.com/plopcas/hugo-s3-action %}
-
 I've also configured it on my personal site https://retrolog.io/, which is also publicly available on GitHub.
 
 An example of a successful run is available here 
@@ -129,7 +127,7 @@ https://github.com/plopcas/retrolog/runs/1018289670.
 
 **Usage**
 
-```
+{{< highlight yml >}}
 name: Hugo S3
 
 on:
@@ -153,7 +151,7 @@ jobs:
           AWS_REGION: 'eu-west-2'
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.ACCESS_KEY_SECRET }}
-```
+{{< /highlight >}}
 
 ### Additional Resources / Info
 
