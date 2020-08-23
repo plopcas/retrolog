@@ -19,26 +19,5 @@ jobs:
       - name: Check out master
         uses: actions/checkout@master
 
-      - name: Install curl and jq
-        run: sudo apt install curl jq
-        
-      - name: Install Hugo
-        run: |
-          HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | jq -r '.tag_name')
-          mkdir tmp/ && cd tmp/
-          curl -sSL https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_extended_${HUGO_VERSION: -6}_Linux-64bit.tar.gz | tar -xvzf-
-          sudo mv hugo /usr/local/bin/
-          cd .. && rm -rf tmp/
-          hugo version
-          
-      - name: Build site
-        run: hugo
-        
-      - name: Push changes
-        run: |
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add .
-          git commit -am "Deploy with ${GITHUB_WORKFLOW}"
-          git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
-    
+      - name: Hugo S3
+        uses: plopcas/hugo-s3-action@v1.0.1
