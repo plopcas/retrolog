@@ -151,11 +151,11 @@ jobs:
 
 ### Additional Resources / Info
 
-GitHub repository https://github.com/plopcas/hugo-s3-action
-Personal site on GitHub https://github.com/plopcas/retrolog
+- GitHub repository https://github.com/plopcas/hugo-s3-action
+- Personal site on GitHub https://github.com/plopcas/retrolog
 
 #### References
 
-GitHub actions documentation https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
-Hugo on GitHub https://github.com/gohugoio/hugo
-AWS CLI Docker base image https://hub.docker.com/r/pahud/awscli-v2
+- GitHub actions documentation https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action
+- Hugo on GitHub https://github.com/gohugoio/hugo
+- AWS CLI Docker base image https://hub.docker.com/r/pahud/awscli-v2
