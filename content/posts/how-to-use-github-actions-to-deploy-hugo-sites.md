@@ -1,5 +1,5 @@
 ---
-title: "How to use GitHub Actions to Deploy Hugo Sites"
+title: "How to use GitHub Actions to deploy Hugo sites"
 date: 2020-08-23T22:09:48+01:00
 tags: ["software", "tools"]
 draft: false
