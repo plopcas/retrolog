@@ -27,7 +27,7 @@ A high level overview of the board we used looks like this:
 
 #### 2. Ice-breaker
 
-It's usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.
+It is usually a good idea to start with an ice-breaker that will get people in the right mood. During the workshop, everyone needs to be participative. Spending a few minutes at the beginning, having a laugh and chatting informally, will definitely be beneficial.
 
 You can use classic exercises from your retrospectives, like guessing everyone's favourite food or describing your current mood with an emoji. The sky is the limit.
 
