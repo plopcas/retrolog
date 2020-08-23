@@ -111,10 +111,6 @@ runs:
   image: 'Dockerfile'
 {{< /highlight >}}
 
-### Submission Category
-
-DIY Deployments
-
 ### Yaml File or Link to Code
 
 This action is now available in the GitHub Marketplace 
