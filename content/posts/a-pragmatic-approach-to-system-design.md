@@ -18,6 +18,7 @@ This approach consists of four sections or steps:
 - Capacity
 - Application layers
 - Optimisation
+- Monitoring
 - Final considerations
 
 #### 1. Requirements
@@ -29,7 +30,7 @@ Ask as many questions as you need to explore the details. Focus on two different
 1. Functional: they specify something that the system should do, e.g. let user post tweets, send emails or upload photos.
 2. Non Functional: they describe how the system should behave, e.g. in terms of performance, scalability, capacity, availability, latency or security.
 
-Then take a moment to consider your design goals. Now is the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.
+Then take a moment to consider your design goals. Now it's the time to balance some of those requirements and make compromises where necessary, e.g. consistency vs availability.
 
 #### 2. Capacity
 
@@ -56,7 +57,13 @@ There are at least four things to consider:
 3. Caching: most likely some of the data in your application can be cached to reduce latency and improve performance. Look at different CDN options and in-app caching. Adding a key-value in-memory data store like Redis is a great option to consider.
 4. Loadbalancing: finally, some of your services, depending on your capacity analysis, will require some form of loadbalancing so that the load is distributed between the nodes. Round-robin DNS and virtual IP are the most common ones.
 
-#### 5. Final considerations
+#### 5. Monitoring
+
+Typically a combination of application and audit logs are always necessary. Consider PII data, and whether you need to redact your logs or have a security layer on top to restrict access to sensitive information.
+
+At this point consider also alerting, what metrics will you capture and when paging would  be necessary.
+
+#### 6. Final considerations
 
 If you followed these steps, you should now have a pretty comprehensive draft of your system. Spend a few minutes going through all the information that you collected and produced, making sure you covered all the requirements.
 
@@ -66,6 +73,6 @@ Consider aspects like infrastructure-as-code, containers, blue/green deployments
 
 It's worth at this point considering also how many resources you would need to build the system, in terms of teams, time and budget.
 
-Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens...
+Don't forget to include security in your design, do you need an API gateway? will your services be internal or exposed to the public? Are you using basic auth, an API key, JWT tokens... Is anomaly detection necessary? Sketching a thread model of your design is also highly recommended.
 
 And remember to share your design with other people! It's very easy to miss something and there is no silver bullet when it comes to system design, so a second pair of eyes is always useful.
