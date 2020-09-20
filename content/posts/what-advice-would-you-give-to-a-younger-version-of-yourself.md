@@ -1,11 +1,11 @@
 ---
 title: "What advice would you give to a younger version of yourself"
-date: 2020-10-6T12:00:00+01:00
+date: 2020-10-06T12:00:00+01:00
 tags: ["management"]
-draft: true
+draft: false
 ---
 
-![image](/images/what-advice-would-you-give-to-a-younger-version-of-yourself.jpeg)
+![image](/images/what-advice-would-you-give-to-a-younger-version-of-yourself.jpg)
 
 A few weeks ago, as part of my regular 121s with the team, I decided to ask them the question "What advice would you give to a younger version of yourself trying to get to where you are today in half the time?". Now, this is typically a question that I would ask a mentor of mine, not that my mentor would ask me. However, I decided to try this question as a self-reflecting question for a change, and the results were pretty amazing as you will see.
 
@@ -53,7 +53,9 @@ Learn beyond what's in your hands at a given moment. Read what's new in your ind
 
 #### But at the same time, Stay focused
 
-Looking outwards helps to find new opportunities, generate a (healthy) discomfort and expand our knowledge. However, it's also crucial to stay in the moment, and balance out that explorer mindset we talked about earlier, with laser focus. Once you've identified an opportunity, or an area of interest, you'll need to invest enough time to really get the grasp of it and understand it inside out, to the point that you could teach it to others maybe, that's a good benchmark usually. Setting uninterrupted time aside, to get in the flow, working on something, is the best way to make the most of your efforts and really master that one thing before moving on to something else.
+Looking outwards helps to find new opportunities, generate a (healthy) discomfort and expand our knowledge. However, it's also crucial to stay in the moment, and balance out that explorer mindset we talked about earlier, with laser focus.
+
+Once you've identified an opportunity, or an area of interest, you'll need to invest enough time to really get the grasp of it and understand it inside out, to the point that you could teach it to others maybe, that's a good benchmark usually. Setting uninterrupted time aside, to get in the flow, working on something, is the best way to make the most of your efforts and really master that one thing before moving on to something else.
 
 #### Changing careers slows you down but it may be worth it
 
@@ -65,12 +67,18 @@ A very common motivator between software engineers is to be able to work on thin
 
 #### Work towards your next job
 
-An interesting way to keep you on the right path is to think about your future on a regular basis and make investments on things that are aligned with your mid-term to long-term goals. For example, even though at Skyscanner this is more of hat that you wear, let's say you are looking to become an architect one day, sign up for opportunities that will allow you to work on architectural designs, stay closer to senior architects within your organisation and learn from them, stay informed about the latest developments in the field and bring in those learnings so that they become part of your current job as much as possible.
+An interesting way to keep you on the right path is to think about your future on a regular basis and make investments on things that are aligned with your mid-term to long-term goals.
+
+For example, even though at Skyscanner this is more of hat that you wear, let's say you are looking to become an architect one day, sign up for opportunities that will allow you to work on architectural designs, stay closer to senior architects within your organisation and learn from them, stay informed about the latest developments in the field and bring in those learnings so that they become part of your current job as much as possible.
 
 #### Politics are part of the job
 
-Some places are more "political" than others but in all companies, it is possible to promote yourself and your cause without compromising your values or those of your organisation by playing the office politics correctly (and positively). This is not (or shouldn't be) about backstabbing, it's about understanding the organigram and the informal networks, building connections and developing "people" skills. By leveraging your circle of influence, you can increase your impact and promote win-win situations.
+Some places are more "political" than others but in all companies, it is possible to promote yourself and your cause without compromising your values or those of your organisation by playing the office politics correctly (and positively).
+
+This is not (or shouldn't be) about backstabbing, it's about understanding the organigram and the informal networks, building connections and developing "people" skills. By leveraging your circle of influence, you can increase your impact and promote win-win situations.
 
 #### The bad, the good and the ugly, all of it is worth it
 
-It is important to learn from the bad things as much as the good things. Nothing tells as much about ourselves as how we reacted to adversity. Using misses as learning opportunities is also hugely beneficial because it gives us the opportunity to have somewhat awkward and difficult conversations that can push us forward when done correctly. There are also lessons to be learned from the tedious work (ugly) that we must do from time to time, even if it just how to automate it for next time it comes our way.
+It is important to learn from the bad things as much as the good things. Nothing tells as much about ourselves as how we reacted to adversity. Using misses as learning opportunities is also hugely beneficial because it gives us the opportunity to have somewhat awkward and difficult conversations that can push us forward when done correctly.
+
+There are also lessons to be learned from the tedious work (ugly) that we must do from time to time, even if it just how to automate it for next time it comes our way.
