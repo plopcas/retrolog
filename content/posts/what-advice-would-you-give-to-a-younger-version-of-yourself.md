@@ -81,4 +81,4 @@ This is not (or shouldn't be) about backstabbing, it's about understanding the o
 
 It is important to learn from the bad things as much as the good things. Nothing tells as much about ourselves as how we reacted to adversity. Using misses as learning opportunities is also hugely beneficial because it gives us the opportunity to have somewhat awkward and difficult conversations that can push us forward when done correctly.
 
-There are also lessons to be learned from the tedious work (ugly) that we must do from time to time, even if it just how to automate it for next time it comes our way.
+There are also lessons to be learned from the tedious work that we must do from time to time (ugly), even if it just how to automate it for next time it comes our way.
