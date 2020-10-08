@@ -1,5 +1,5 @@
 ---
-title: "What advice would you give to a younger version of yourself"
+title: "What advice would you give to a younger version of yourself?"
 date: 2020-10-06T10:00:00+01:00
 tags: ["management"]
 draft: false
