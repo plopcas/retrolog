@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ .Site.Params.description }}" />
     <meta name="monetization" content="{{ .Site.Params.monetization }}">
+    <script src="https://unpkg.com/applause-button/dist/applause-button.js"></script>
     {{ if .Site.Params.googleAnalytics }}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
     <script>
@@ -14,6 +15,7 @@
     {{ end }}
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/applause-button/dist/applause-button.css">
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
