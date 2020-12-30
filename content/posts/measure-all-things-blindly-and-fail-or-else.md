@@ -75,7 +75,7 @@ There are a lot of other metrics that can sometimes be useful too, for example w
 - Number of production incidents by impact
 - Cost per service (in the context of project management, to make sure we are within budget)
 
-Only recently I learned about code risk metrics i.e. what areas of the code are more at risk if a core maintainer leaves the organisation ([CodeScene](https://codescene.io/)). Another twist to the more traidtional static analysis tools, like SonarQube or Codacy.
+Only recently I learned about code risk metrics i.e. what areas of the code are more at risk if a core maintainer leaves the organisation ([CodeScene](https://codescene.io/)). Another twist to the more traditional static analysis tools, like SonarQube or Codacy.
 
 Be wary of using any metrics to compare different teams, though. For the most part, metrics should only be used to compare a team with itself, with a focus on continuous improvement. They are very much context dependent and its interpretation requires a critical but flexible eye (favouring tracking trends over absolute numbers ☝️).
 
