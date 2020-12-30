@@ -77,7 +77,7 @@ There are a lot of other metrics that can sometimes be useful too, for example w
 
 Only recently I learned about code risk metrics i.e. what areas of the code are more at risk if a core maintainer leaves the organisation ([CodeScene](https://codescene.io/)). Another twist to the more traditional static analysis tools, like SonarQube or Codacy.
 
-Be wary of using any metrics to compare different teams, though. For the most part, metrics should only be used to compare a team with itself, with a focus on continuous improvement. They are very much context dependent and its interpretation requires a critical but flexible eye (favouring tracking trends over absolute numbers ☝️).
+Be wary of using metrics to compare different teams, though. For the most part, metrics should only be used to compare a team with itself, with a focus on continuous improvement. They are very much context dependent and its interpretation requires a critical but flexible eye (favouring tracking trends over absolute numbers ☝️).
 
 Of course, there's a whole set of operational metrics to monitor our services, infrastructure and security. But that’s a different beast for a different time.
 
