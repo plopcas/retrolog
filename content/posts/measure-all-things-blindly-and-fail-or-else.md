@@ -36,7 +36,7 @@ Used to understand whether the delivery of a project is at risk, and whether we 
 
 - Weekly commitments
 - Project milestones
-- Key results ( if you use Objectives and Key Results - OKRs)
+- Key results (if you use Objectives and Key Results - OKRs)
 
 Can usually take one of “on track”, “at risk” or “achieved”. In the case of key results, they can be more specific.
 
