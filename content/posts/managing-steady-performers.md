@@ -32,7 +32,7 @@ So, what can we do as managers to support our steady performers? Here are some t
 
 - **Give them flexibility**, steady performers value work-life balance very much so use every opportunity to be understanding, empathic and flexible towards their needs.
 
-- **Identify the right opportunities**, and don’t push them into something misaligned with their aspirations.
+- **Identify the right opportunities**, and don’t push them into something misaligned with their aspirations. Sometimes a promotion means doing a different job, and this might not be what they want.
 
 - **Leverage their skills to support others**, B players usually make for excellent teachers and mentors.
 
