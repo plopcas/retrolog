@@ -40,6 +40,6 @@ Managing managers is a common step in any Engineering Manager's career path. As 
 
 What is not so different? In some ways, managing managers is similar to managing anyone else, you need to align their goals with yours, provide feedback and help them advance their careers.
 
-Thanks Mattia and Pedro V for sharing their thoughts on this topic.
+Thanks to Mattia and Pedro V for sharing their thoughts on this topic.
 
 Happy managing!
