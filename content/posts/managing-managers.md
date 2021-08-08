@@ -8,7 +8,7 @@ author: "Pedro Lopez"
 
 ![image](/images/managing-managers.jpg)
 
-Managing managers is a common step in any Engineering Manager's career path. As a mid-level manager, your main focus has probably been to execute through others. Once you get to a senior level, you are expected to **lead through others**. I've been reading about this topic lately, so here is a recap of what I have learned.
+Managing managers is a common step in any Engineering Manager's career path. As a mid-level manager, your main focus has probably been to execute through others. Once you get to a senior level, you are expected to **lead through others**. I have been reading about this topic lately, so here is a recap of what I learned.
 
 <!--more-->
 
