@@ -39,11 +39,10 @@ Project Owners have end-to-end responsibility for the execution of the project a
 
 Project Owners are NOT:
 
-- The only person that works on the tickets
+- The only person that works on the project
 - The silo of information or domain knowledge
 - The gatekeeper to the code/repo
-- Solely responsible for the delivery of the product
-- Solely responsible for the success of the product
+- Solely responsible for the delivery and success of the product / feature
 
 #### 🤝 Set up a framework for collaboration
 
