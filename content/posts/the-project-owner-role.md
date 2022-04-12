@@ -41,7 +41,7 @@ Project Owners are NOT:
 
 - The only person that works on the project
 - The silo of information or domain knowledge
-- The gatekeeper to the code/repo
+- The gatekeeper to the code
 - Solely responsible for the delivery and success of the product / feature
 
 #### 🤝 Set up a framework for collaboration
