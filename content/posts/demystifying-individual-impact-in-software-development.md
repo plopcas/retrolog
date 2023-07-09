@@ -9,6 +9,8 @@ draft: false
 
 When we say a developer has impact, we generally mean their work creates **meaningful change**. The end result of a developer's work could be a feature that significantly improves user experience, or an innovative piece of code that makes the system more efficient. The question is then: how can one correctly assess this impact?
 
+<!--more-->
+
 This is not an easy question to answer. The challenge with impact is that it is hard to measure, particularly at an individual level. As Forsgren, Humble, and Kim (2018) explore in their book Accelerate, assessing impact involves understanding the scope and objective of a project, and the specific role you play in it. But a goal that makes business sense is equally important. This means that the software you develop should solve real problems for its users and create real value for the business.
 
 > A good question to always ask yourself before starting any project is "how will this create value for users / customers / partners / ourselves?"
