@@ -42,6 +42,8 @@ In the world of software development, it's clear that both individual and team e
 
 Understanding this begins with the acknowledgment that the nature of software development is inherently collaborative. The most efficient software development teams operate with a high degree of interdependence. Tasks are divided amongst team members, who then contribute their expertise to solve different parts of the same problem. Therefore, it's important to understand that an individual's impact is not diminished if the original idea came from someone else, or if a task was assigned rather than self-initiated.
 
+> The ability to take an idea from a colleague and turn it into a tangible, high-quality output is a clear demonstration of impact
+
 In fact, it's quite the opposite. The ability to take an idea from a colleague and turn it into a tangible, high-quality output is a clear demonstration of impact. After all, software development is not just about generating ideas, but also about executing them effectively. Furthermore, being able to work on an assigned task shows an ability to contribute positively to the team's overall goals and priorities.
 
 In other words, individual impact in a software development team is as much about "how" we contribute to the team's success as it is about "what" we achieve on our own. This "how" includes our ability to collaborate, our capacity to execute on tasks (whether assigned or self-initiated), our openness to learning from others, and our contribution to a supportive, productive team culture.
