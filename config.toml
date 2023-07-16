@@ -33,8 +33,6 @@ theme = "papaya"
   dateFormat = "Jan 2, 2006"
   authorName = "Pedro Lopez"
   privacyPolicyUrl = "/pages/privacy-policy"
-  googleAnalytics = "UA-156682837-1"
-  monetization = "$ilp.uphold.com/hkmXm3ghEK3R"
 
 [social]
   twitter = "Retrologio"
