@@ -52,8 +52,4 @@ When we measure individual impact in this way, we embrace the complex, interwove
 
 Assessing the impact of a software engineer goes beyond tracking lines of code or number of commits. It involves looking at the larger picture of how an engineer's work contributes to product improvement, team efficiency, business growth, and user satisfaction. Part of this assessment also includes understanding that the impact of one's work may not be immediately visible and it may take time for the true value to unfold.
 
-As an engineering manager, it's essential to set clear expectations, offer guidance, and give recognition where it's due. By cultivating an environment where engineers are encouraged to seek impact and understand its different facets, we can foster growth, innovation, and ultimately, success.
-
-### The success of a team is the sum of the individual impacts of its members
-
-After all, the success of a software development team is indeed the sum of the individual impacts of its members. However, metrics are not the goal. They're a tool to help us see how close we are to reaching our goal. So, we must always be careful of the potentially harmful effects of poorly chosen metrics and aim to keep a healthy, balanced approach in our teams.
+As an engineering manager, it's essential to set clear expectations, offer guidance, and give recognition where it's due. By cultivating an environment where engineers are encouraged to seek impact and understand its different facets, we can foster growth, innovation, and ultimately success.
