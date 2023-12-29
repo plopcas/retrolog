@@ -42,17 +42,17 @@ Alright, we know saying no is important, but when do you actually do it? It's no
 
 So, how do you say no without coming off as the office party pooper? It's not just about the no; it's how you say it. Let's dive into some tactics that can make saying no as smooth as your morning coffee.
 
-1. **Clear communication** – Honesty is your best friend here. Let's say a project isn't right for your team. Instead of a flat-out "no", try something like, "I see the value in this, but given our current priorities, we can't give this the attention it deserves." It's like telling someone their haircut looks great, but just not on you.
+1. **Clear communication** – Honesty is your best friend here. Let's say a project isn't right for your team. Instead of a flat-out "no", try something like, "I see the value in this, but given our current priorities, we can't give this the attention it deserves."
 
 2. **Offering alternatives** – Saying no doesn't mean shutting the door completely. Maybe you can't take on a full project, but how about a smaller part of it? Or maybe you know someone else who's a perfect fit. It's like saying, "I can't cook the whole banquet, but I can definitely bring the dessert."
 
-3. **Involving the team in decision making** – This is a big one. Bring your team into the conversation. Maybe they have insights you haven't thought of. Or perhaps they'll agree that it's a no-go. It's like deciding on a movie with your friends, everyone gets a say, and you end up watching something everyone enjoys.
+3. **Involving the team in decision making** – This is a big one. Bring your team into the conversation. Maybe they have insights you haven't thought of. Or perhaps they'll agree that it's a no-go.
 
 ### Knowing when to say yes
 
 We've talked a lot about saying no, but let's not forget the power of a well-timed "yes." It's not all about keeping things off your plate; sometimes, adding the right thing can be just as important. Here's how to spot those golden opportunities.
 
-1. **Opportunities for growth and innovation** – Sometimes, a project comes along that's like a golden ticket, it's challenging, sure, but it's packed with potential for growth and innovation. If it aligns with your team's long-term goals and offers a chance to learn new skills or break new ground, that's a yes waiting to happen. It's like getting an invitation to a secret concert of your favorite band, you don't pass that up!
+1. **Opportunities for growth and innovation** – Sometimes, a project comes along that's like a golden ticket, it's challenging, sure, but it's packed with potential for growth and innovation. If it aligns with your team's long-term goals and offers a chance to learn new skills or break new ground, that's a yes waiting to happen.
 
 2. **Building relationships and goodwill** – There are times when saying yes is about playing the long game. Maybe a project helps build a bridge with another team or department, or it's a chance to do a solid for a colleague. These moments build relationships and goodwill, which can be super valuable down the line. Think of it as planting a garden, a little effort now can lead to some beautiful blooms later.
 
