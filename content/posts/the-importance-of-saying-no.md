@@ -71,4 +71,4 @@ So, there we have it, a whirlwind tour through the land of saying no (and yes!).
 #### Final Thoughts
 Being an engineering manager isn't just about managing tech and people; it's about managing choices. Each yes and no shapes the path your team takes. So, the next time you're faced with a decision, take a breath, think about these tips, and remember, you've got this!
 
-__Disclaimer: this blog post was created with the assistance of AI technology. While the content has been carefully reviewed and edited, please note that the ideas and information presented are for informational purposes only. The views and opinions expressed in this post are those of the author and do not necessarily reflect the views of the AI technology used in its creation.__
+_Disclaimer: this blog post was created with the assistance of AI technology. While the content has been carefully reviewed and edited, please note that the ideas and information presented are for informational purposes only. The views and opinions expressed in this post are those of the author and do not necessarily reflect the views of the AI technology used in its creation._
