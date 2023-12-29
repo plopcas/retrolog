@@ -62,13 +62,13 @@ We've talked a lot about saying no, but let's not forget the power of a well-tim
 
 So, there we have it, a whirlwind tour through the land of saying no (and yes!). It's not always easy to decide which way to lean, but remember, at the end of the day, it's all about what's best for your team and your projects.
 
-#### Key Takeaways
+#### Key takeaways
 
 - **Saying no is about focus**: it helps keep your team on track and prevents spreading yourselves too thin.
 - **Balance is key**: mix your nos with yeses. It's like a good playlist, you need both the upbeat tracks and the mellow tunes.
 - **Communication is crucial**: whether you're saying no or yes, how you communicate it makes all the difference.
 
-#### Final Thoughts
+#### Final thoughts
 Being an engineering manager isn't just about managing tech and people; it's about managing choices. Each yes and no shapes the path your team takes. So, the next time you're faced with a decision, take a breath, think about these tips, and remember, you've got this!
 
 _Disclaimer: this blog post was created with the assistance of AI technology. While the content has been carefully reviewed and edited, please note that the ideas and information presented are for informational purposes only. The views and opinions expressed in this post are those of the author and do not necessarily reflect the views of the AI technology used in its creation._
