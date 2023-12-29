@@ -1,5 +1,5 @@
 ---
-title: "The Project Owner Role"
+title: "The Importance of Saying No"
 date: 2023-12-19T20:00:00Z
 draft: false
 tags: ["management", "leadership", "productivity", "teamwork"]
@@ -8,15 +8,15 @@ author: "Pedro Lopez"
 
 ![image](/images/the-importance-of-saying-no.jpg)
 
-Hey there! In this post, I want to chat about something that doesn't get enough airtime in our world of software engineering: the importance of saying "no." It might sound simple, but trust me, it's one of those skills that can make a huge difference in your career and your team's success.
+Hey there! In this post, I want to chat about something that doesn't get enough airtime in the software engineering world: the importance of saying "no." It might sound simple, but it's one of those skills that can make a huge difference in your career and your team's success.
+
+<!--more-->
 
 Let me paint a picture for you. Imagine it's a typical Monday morning. Your inbox is overflowing, your Slack is buzzing, and you've got back-to-back meetings lined up. Amidst this chaos, here comes another request landing on your desk. It's an exciting idea, sure, but deep down, you know your team is already stretched thin. What do you do? Do you add this to your team's already overflowing plate, or do you take a stand and say that dreaded two-letter word: "no"?
 
-I've been there, and let me tell you, learning to say no was a game-changer for me. It wasn't easy at first – nobody wants to be the bearer of bad news or miss out on exciting opportunities. But with time, I realized that saying no, when necessary, isn't just about rejecting something; it's about protecting your team's time, maintaining focus on current projects, and ensuring the quality of your work doesn't slip.
+I've been there, and let me tell you, learning to say no was a game-changer for me. It wasn't easy at first – nobody wants to be the bearer of bad news or miss out on exciting opportunities. But with time, I realised that saying no, when necessary, isn't just about rejecting something; it's about protecting your team's time, maintaining focus on current projects, and ensuring the quality of your work doesn't slip.
 
 In this post, I'm going to dive into why saying no is crucial, how to do it effectively, and when it actually makes sense to say yes. So grab your coffee, and let's get into it!
-
-<!--more-->
 
 ### Why saying "no" is a big deal
 
