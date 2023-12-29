@@ -2,7 +2,7 @@
 title: "The Project Owner Role"
 date: 2023-12-19T20:00:00Z
 draft: false
-tags: ["management", "leadership"m "productivity", "teamwork"]
+tags: ["management", "leadership", "productivity", "teamwork"]
 author: "Pedro Lopez"
 ---
 
