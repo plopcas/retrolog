@@ -42,7 +42,7 @@ Moving on to the product development side of things, let’s see what our trusty
 
 4. Necessity is the mother of invention (La necesidad es la madre de la invención): Ever wondered where the best product ideas come from? They're born out of real needs. When we're scratching our heads trying to come up with the next big thing, it's the real-world problems and necessities that spark true innovation. So, when brainstorming for your next product feature or update, ask yourself: What do users really need? What problem am I solving? Sometimes, the best inventions are just about finding solutions to everyday hassles.
 
-Where there's smoke, there's fire (Cuando el río suena, agua lleva): Ever noticed a trend or a bit of feedback that keeps popping up? Don't ignore it! In product development, these little signals often point to bigger opportunities or problems. Stay alert and be ready to act on these clues. After all, where there’s a hint of smoke, there might just be a fire worth discovering.
+5. Where there's smoke, there's fire (Cuando el río suena, agua lleva): Ever noticed a trend or a bit of feedback that keeps popping up? Don't ignore it! In product development, these little signals often point to bigger opportunities or problems. Stay alert and be ready to act on these clues. After all, where there’s a hint of smoke, there might just be a fire worth discovering.
 
 So, the moral of the story for product development? Do more than talk, cherish what’s working, and always keep an eye out for those subtle hints that could lead to your next big thing!
 
