@@ -231,7 +231,3 @@ There is official documentation that covers this use case, however it's split be
 - [CloudFront HTTPs requests and S3](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/)
 
 Thanks for reading!
-
----
-
-{{< book link="https://www.amazon.co.uk/gp/product/1617295116/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=1617295116&linkCode=as2&tag=retrolog-21&linkId=922f43e440dce0cd617f120fd471608c" image="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=1617295116&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=retrolog-21" pixel="///ir-uk.amazon-adsystem.com/e/ir?t=retrolog-21&l=am2&o=2&a=1617295116" >}}
