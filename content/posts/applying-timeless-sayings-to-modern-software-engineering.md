@@ -6,7 +6,7 @@ draft: false
 author: "Pedro Lopez"
 ---
 
-![image](/images/applying-timeless-sayings-to-modern-tech-leadership.jpg)
+![image](/images/applying-timeless-sayings-to-modern-software-engineering.jpg)
 
 Have you ever heard a saying that stuck with you for days? Those short, snappy phrases our grandparents used to say, filled with years of wisdom? 
 
