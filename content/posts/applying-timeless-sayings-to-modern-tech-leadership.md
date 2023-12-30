@@ -1,6 +1,6 @@
 ---
 title: "Applying Timeless Sayings to Modern Tech Leadership"
-date: 2023-12-30T12:00:00Z
+date: 2023-12-30T10:00:00Z
 tags: ["management", "leadership"]
 draft: false
 author: "Pedro Lopez"
