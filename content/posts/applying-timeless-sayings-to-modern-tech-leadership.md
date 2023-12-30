@@ -18,7 +18,7 @@ Why? Because sometimes, the best way to look at our modern challenges is through
 
 ### Adaptability and innovation
 
-Let's kick things off by seeing how old wisdom helps us think outside the box in tech. It's all about being flexible and coming up with new ideas.
+Let's kick things off by seeing how old wisdom helps us think outside the box.
 
 1. **Necessity is the mother of invention (La necesidad es la madre de la invención)** – Ever wondered where the best product ideas come from? They're born out of real needs. When we're scratching our heads trying to come up with the next big thing, it's the real-world problems and necessities that spark true innovation. Think of the creation of ride-sharing apps like Uber or Lyft. These apps were developed out of the necessity for more convenient, reliable, and accessible transportation options. So, when brainstorming for your next product feature or update, ask yourself: What do users really need? What problem am I solving? Sometimes, the best inventions are just about finding solutions to everyday hassles.
 
@@ -42,7 +42,7 @@ Great things happen when we respect, support, and learn from each other. So here
 
 ### Resilience and problem-solving
 
-Next up, tackling tough times and tricky problems. Here's how some old-school advice can guide us through the ups and downs in tech.
+Next up, tackling tough times and tricky problems. Here's how some old-school advice can guide us throug ups and downs.
 
 1. **Every cloud has a silver lining (No hay mal que por bien no venga)** – Let's face it, not everything goes according to plan.  Bugs everywhere, deadlines missed, coffee machine broken. But as a leader, your job is to find the upside, the learning, the unexpected opportunity, the hidden blessing. When things go south, look for that silver lining. Maybe you learn a new skill, find a more efficient process, or bond with your team over late-night pizza. It’s there, I promise. And it can turn a setback into a step forward.
 
@@ -58,7 +58,7 @@ In tech, being resilient and a problem-solver isn't just a part of the job; it's
 
 ### Vision and strategic planning
 
-Finally, setting big goals and making smart plans. These sayings shine a light on how to lead the way and make those big tech dreams happen.
+Finally, setting big goals and making smart plans. These sayings shine a light on how to lead the way.
 
 1. **The early bird catches the worm (A quien madruga, Dios le ayuda)** – In tech, being proactive is key. It's about seizing opportunities and not waiting for them to come to you. Whether it's jumping on a new tech trend or addressing team issues before they become problems, being the 'early bird' can make all the difference.
 
