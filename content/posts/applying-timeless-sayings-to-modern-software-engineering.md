@@ -79,7 +79,3 @@ So there we have it. We've taken a stroll down memory lane, linking classic sayi
 Feel free to share your thoughts or any other sayings you find relevant to the tech world. Let's keep learning from the past to innovate for the future!
 
 Looking for more sayings in Spanish and English? Check [this](https://en.wikiquote.org/wiki/Spanish_proverbs) out!
-
----
-
-_Disclaimer: this blog post was created with the assistance of AI technology. While the content has been carefully reviewed and edited, please note that the ideas and information presented are for informational purposes only. The views and opinions expressed in this post are those of the author and do not necessarily reflect the views of the AI technology used in its creation._
