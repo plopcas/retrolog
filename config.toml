@@ -34,9 +34,6 @@ theme = "papaya"
   authorName = "Pedro Lopez"
   privacyPolicyUrl = "/pages/privacy-policy"
 
-[social]
-  twitter = "Retrologio"
-
 [deployment]
   [[deployment.targets]]
   name = "s3"
