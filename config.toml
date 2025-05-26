@@ -1,4 +1,4 @@
-baseURL = "https://retrolog.io/"
+baseURL = "https://plopcas.github.io/retrolog/"
 languageCode = "en-gb"
 title = "Retrolog.io"
 
@@ -10,7 +10,6 @@ theme = "papaya"
 [permalinks]
   posts = "/blog/:title/"
 
-# The value of pre is the icon name in https://feathericons.com/
 [menu]
   [[menu.main]]
     name = "Home"
@@ -33,12 +32,6 @@ theme = "papaya"
   dateFormat = "Jan 2, 2006"
   authorName = "Pedro Lopez"
   privacyPolicyUrl = "/pages/privacy-policy"
-
-[deployment]
-  [[deployment.targets]]
-  name = "s3"
-  URL = "s3://retrolog.io?region=eu-west-2"
-  cloudFrontDistributionID = "E2XDDIETJB87L"
 
 [markup]
   [markup.highlight]
