@@ -3,6 +3,7 @@ languageCode = "en-gb"
 title = "Retrolog.io"
 
 theme = "papaya"
+canonifyURLs = true
 
 [taxonomies]
   tag = "tags"
